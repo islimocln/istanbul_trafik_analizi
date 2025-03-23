@@ -1,0 +1,5178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bee9f126cfe81fd7a92e6b72d63f9065 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bee9f126cfe81fd7a92e6b72d63f9065" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bee9f126cfe81fd7a92e6b72d63f9065 = L.map(
+                "map_bee9f126cfe81fd7a92e6b72d63f9065",
+                {
+                    center: [41.0082, 28.9784],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aa83bc72906effba47e231de35d0d819 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_aa83bc72906effba47e231de35d0d819.addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var marker_45d3033a58094f09f1811220d66fd6ad = L.marker(
+                [41.0113437, 28.8887821],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_3d8c3be4c90f2b990d52e140d28dfa4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88dbe38e98e84e591fad33c64cb73b82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac7405f849f68ede3c45d2a37ace8f4b = $(`<div id="html_ac7405f849f68ede3c45d2a37ace8f4b" style="width: 100.0%; height: 100.0%;">Unknown</div>`)[0];
+                popup_88dbe38e98e84e591fad33c64cb73b82.setContent(html_ac7405f849f68ede3c45d2a37ace8f4b);
+            
+        
+
+        marker_45d3033a58094f09f1811220d66fd6ad.bindPopup(popup_88dbe38e98e84e591fad33c64cb73b82)
+        ;
+
+        
+    
+    
+                marker_45d3033a58094f09f1811220d66fd6ad.setIcon(icon_3d8c3be4c90f2b990d52e140d28dfa4e);
+            
+    
+            var marker_863b664c1636345e56cfe8322afcbe10 = L.marker(
+                [40.8637872, 29.2735795],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_e866410e81a33910ed2131ce6e3edb8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9273fed7f4aab2edfef8d84056a4e59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb7ee4cefdd22615f97e534f996b89f3 = $(`<div id="html_fb7ee4cefdd22615f97e534f996b89f3" style="width: 100.0%; height: 100.0%;">Neomarin</div>`)[0];
+                popup_f9273fed7f4aab2edfef8d84056a4e59.setContent(html_fb7ee4cefdd22615f97e534f996b89f3);
+            
+        
+
+        marker_863b664c1636345e56cfe8322afcbe10.bindPopup(popup_f9273fed7f4aab2edfef8d84056a4e59)
+        ;
+
+        
+    
+    
+                marker_863b664c1636345e56cfe8322afcbe10.setIcon(icon_e866410e81a33910ed2131ce6e3edb8a);
+            
+    
+            var marker_67707724d190b549dc6b5731302bf5bc = L.marker(
+                [41.0672695, 28.8604966],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_97843f50e70a190a08f39763600dbf65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1559fb50b408109f71b392c227ada110 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e3a4e04a81dea418c01a97ad1cfec74 = $(`<div id="html_8e3a4e04a81dea418c01a97ad1cfec74" style="width: 100.0%; height: 100.0%;">Tekstilkent A Kapısı</div>`)[0];
+                popup_1559fb50b408109f71b392c227ada110.setContent(html_8e3a4e04a81dea418c01a97ad1cfec74);
+            
+        
+
+        marker_67707724d190b549dc6b5731302bf5bc.bindPopup(popup_1559fb50b408109f71b392c227ada110)
+        ;
+
+        
+    
+    
+                marker_67707724d190b549dc6b5731302bf5bc.setIcon(icon_97843f50e70a190a08f39763600dbf65);
+            
+    
+            var marker_87619488e1918d9ce1817f3206549985 = L.marker(
+                [41.0337869, 28.9781982],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_9bc6ad385cd8e4a972a8b4342dbf0ee8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28cdc8cad941eee1cfe4d9064e8b228d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53778ad89b10affa5276fb1a627aff44 = $(`<div id="html_53778ad89b10affa5276fb1a627aff44" style="width: 100.0%; height: 100.0%;">Ors Turistik is merkezi</div>`)[0];
+                popup_28cdc8cad941eee1cfe4d9064e8b228d.setContent(html_53778ad89b10affa5276fb1a627aff44);
+            
+        
+
+        marker_87619488e1918d9ce1817f3206549985.bindPopup(popup_28cdc8cad941eee1cfe4d9064e8b228d)
+        ;
+
+        
+    
+    
+                marker_87619488e1918d9ce1817f3206549985.setIcon(icon_9bc6ad385cd8e4a972a8b4342dbf0ee8);
+            
+    
+            var marker_804370af696aef66148faffe3e674355 = L.marker(
+                [41.0341134, 28.9792135],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_c87fa69cae2dc3572ae3ca821d6f61f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78f80e9cba4747607d5b24d138de378c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3534070f15659a4410f1352c9358f2aa = $(`<div id="html_3534070f15659a4410f1352c9358f2aa" style="width: 100.0%; height: 100.0%;">Atlas Pasajı</div>`)[0];
+                popup_78f80e9cba4747607d5b24d138de378c.setContent(html_3534070f15659a4410f1352c9358f2aa);
+            
+        
+
+        marker_804370af696aef66148faffe3e674355.bindPopup(popup_78f80e9cba4747607d5b24d138de378c)
+        ;
+
+        
+    
+    
+                marker_804370af696aef66148faffe3e674355.setIcon(icon_c87fa69cae2dc3572ae3ca821d6f61f3);
+            
+    
+            var marker_8a1960b1ef32538939efc3a655778123 = L.marker(
+                [41.031056, 28.9755901],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_9189a7247053e94d18974e0ff8cc77ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e4838d964cc6c2b21df89cbcfafd0b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f8b391d6563846c1a79729b36bfdc3e = $(`<div id="html_7f8b391d6563846c1a79729b36bfdc3e" style="width: 100.0%; height: 100.0%;">Terkos Pasajı</div>`)[0];
+                popup_9e4838d964cc6c2b21df89cbcfafd0b5.setContent(html_7f8b391d6563846c1a79729b36bfdc3e);
+            
+        
+
+        marker_8a1960b1ef32538939efc3a655778123.bindPopup(popup_9e4838d964cc6c2b21df89cbcfafd0b5)
+        ;
+
+        
+    
+    
+                marker_8a1960b1ef32538939efc3a655778123.setIcon(icon_9189a7247053e94d18974e0ff8cc77ed);
+            
+    
+            var marker_a963f719756301685e28baedf218323b = L.marker(
+                [41.0247304, 29.1063989],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_df0913e81e24ba61d5c0c45a5a884a93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98d527a9fcef82f4bef8e24406e26709 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e9f69f409213c076611bfae5d90e860 = $(`<div id="html_9e9f69f409213c076611bfae5d90e860" style="width: 100.0%; height: 100.0%;">Canpark Alışveriş Merkezi</div>`)[0];
+                popup_98d527a9fcef82f4bef8e24406e26709.setContent(html_9e9f69f409213c076611bfae5d90e860);
+            
+        
+
+        marker_a963f719756301685e28baedf218323b.bindPopup(popup_98d527a9fcef82f4bef8e24406e26709)
+        ;
+
+        
+    
+    
+                marker_a963f719756301685e28baedf218323b.setIcon(icon_df0913e81e24ba61d5c0c45a5a884a93);
+            
+    
+            var marker_efe12ad860942ea6f4322d9e30814121 = L.marker(
+                [41.1091663, 29.1138195],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_17301073a778fc6272460dfe6006a4e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2909e1c40c01f363f35c89af93f09f79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4459efa9a3aff7361ee6fd33eaafd3cd = $(`<div id="html_4459efa9a3aff7361ee6fd33eaafd3cd" style="width: 100.0%; height: 100.0%;">Acrloft</div>`)[0];
+                popup_2909e1c40c01f363f35c89af93f09f79.setContent(html_4459efa9a3aff7361ee6fd33eaafd3cd);
+            
+        
+
+        marker_efe12ad860942ea6f4322d9e30814121.bindPopup(popup_2909e1c40c01f363f35c89af93f09f79)
+        ;
+
+        
+    
+    
+                marker_efe12ad860942ea6f4322d9e30814121.setIcon(icon_17301073a778fc6272460dfe6006a4e7);
+            
+    
+            var marker_6388ff0fdbef4d76a9f7af14987f59a8 = L.marker(
+                [41.0635802, 28.7466293],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_b8745fc20c832f98293f728cc4420bcd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f79b7ce433a9b3847e8517acf1d6948 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fe5076979bf9df07ab1ffc2be0827ed = $(`<div id="html_6fe5076979bf9df07ab1ffc2be0827ed" style="width: 100.0%; height: 100.0%;">Happy Center</div>`)[0];
+                popup_3f79b7ce433a9b3847e8517acf1d6948.setContent(html_6fe5076979bf9df07ab1ffc2be0827ed);
+            
+        
+
+        marker_6388ff0fdbef4d76a9f7af14987f59a8.bindPopup(popup_3f79b7ce433a9b3847e8517acf1d6948)
+        ;
+
+        
+    
+    
+                marker_6388ff0fdbef4d76a9f7af14987f59a8.setIcon(icon_b8745fc20c832f98293f728cc4420bcd);
+            
+    
+            var marker_9ee5df561de4b1cbaaf6551a5c420b90 = L.marker(
+                [41.0154863, 29.1308692],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_bac62bb12e9fadf4cbddd1e8a752adce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71741c1ceb36435ef15c69b81104bf20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5ae300bb0a2c656a517b5b009737111 = $(`<div id="html_a5ae300bb0a2c656a517b5b009737111" style="width: 100.0%; height: 100.0%;">Cadde AVM</div>`)[0];
+                popup_71741c1ceb36435ef15c69b81104bf20.setContent(html_a5ae300bb0a2c656a517b5b009737111);
+            
+        
+
+        marker_9ee5df561de4b1cbaaf6551a5c420b90.bindPopup(popup_71741c1ceb36435ef15c69b81104bf20)
+        ;
+
+        
+    
+    
+                marker_9ee5df561de4b1cbaaf6551a5c420b90.setIcon(icon_bac62bb12e9fadf4cbddd1e8a752adce);
+            
+    
+            var marker_34e45d44376c18dfdfac10d81191be10 = L.marker(
+                [41.015749, 29.1305796],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_46f094d9d0c341252e734e1ae5b83b12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1a879c85e9a894668cc36e865462429 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67e3707146805ff37d8b5e949e0feb09 = $(`<div id="html_67e3707146805ff37d8b5e949e0feb09" style="width: 100.0%; height: 100.0%;">Gamze Outlet</div>`)[0];
+                popup_c1a879c85e9a894668cc36e865462429.setContent(html_67e3707146805ff37d8b5e949e0feb09);
+            
+        
+
+        marker_34e45d44376c18dfdfac10d81191be10.bindPopup(popup_c1a879c85e9a894668cc36e865462429)
+        ;
+
+        
+    
+    
+                marker_34e45d44376c18dfdfac10d81191be10.setIcon(icon_46f094d9d0c341252e734e1ae5b83b12);
+            
+    
+            var marker_51741a724993f80421c28db663dbd819 = L.marker(
+                [40.9442662, 29.1187113],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_60f8c42ead480916a7db31076959a015 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce031f2cd72babb3caa74e80a8ad3ef2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5beaf294652cf9f21e31dcff618a82f3 = $(`<div id="html_5beaf294652cf9f21e31dcff618a82f3" style="width: 100.0%; height: 100.0%;">Mopaş</div>`)[0];
+                popup_ce031f2cd72babb3caa74e80a8ad3ef2.setContent(html_5beaf294652cf9f21e31dcff618a82f3);
+            
+        
+
+        marker_51741a724993f80421c28db663dbd819.bindPopup(popup_ce031f2cd72babb3caa74e80a8ad3ef2)
+        ;
+
+        
+    
+    
+                marker_51741a724993f80421c28db663dbd819.setIcon(icon_60f8c42ead480916a7db31076959a015);
+            
+    
+            var marker_efdc767e3c095e732e4ee2089097bc68 = L.marker(
+                [40.9240097, 29.1322721],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_16f689a19fceadeb64e68e40283823e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_570cf76172cbae0639f03decb8c4cb38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e70af5feea12717f80732dbe2df9eac5 = $(`<div id="html_e70af5feea12717f80732dbe2df9eac5" style="width: 100.0%; height: 100.0%;">İstanbul A.V.M</div>`)[0];
+                popup_570cf76172cbae0639f03decb8c4cb38.setContent(html_e70af5feea12717f80732dbe2df9eac5);
+            
+        
+
+        marker_efdc767e3c095e732e4ee2089097bc68.bindPopup(popup_570cf76172cbae0639f03decb8c4cb38)
+        ;
+
+        
+    
+    
+                marker_efdc767e3c095e732e4ee2089097bc68.setIcon(icon_16f689a19fceadeb64e68e40283823e0);
+            
+    
+            var marker_f20a6c85bd216870a7536ed7487646cb = L.marker(
+                [40.9239293, 29.1324173],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_64276e030c3a219e7314709c4bf208ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3603467defa49a8e92ac58b51292c95d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40d4e39da2387b8645dfab052210c790 = $(`<div id="html_40d4e39da2387b8645dfab052210c790" style="width: 100.0%; height: 100.0%;">İstanbul AVM</div>`)[0];
+                popup_3603467defa49a8e92ac58b51292c95d.setContent(html_40d4e39da2387b8645dfab052210c790);
+            
+        
+
+        marker_f20a6c85bd216870a7536ed7487646cb.bindPopup(popup_3603467defa49a8e92ac58b51292c95d)
+        ;
+
+        
+    
+    
+                marker_f20a6c85bd216870a7536ed7487646cb.setIcon(icon_64276e030c3a219e7314709c4bf208ef);
+            
+    
+            var marker_ef56e6063b145814616c5634bd4600d7 = L.marker(
+                [40.9237154, 29.1327767],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_103161181401934caef374aa19366093 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e46527f1240e1217412faf523a0e39f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0aad94251ce26afdfcb655d562e3901b = $(`<div id="html_0aad94251ce26afdfcb655d562e3901b" style="width: 100.0%; height: 100.0%;">A.V.M. 34</div>`)[0];
+                popup_e46527f1240e1217412faf523a0e39f3.setContent(html_0aad94251ce26afdfcb655d562e3901b);
+            
+        
+
+        marker_ef56e6063b145814616c5634bd4600d7.bindPopup(popup_e46527f1240e1217412faf523a0e39f3)
+        ;
+
+        
+    
+    
+                marker_ef56e6063b145814616c5634bd4600d7.setIcon(icon_103161181401934caef374aa19366093);
+            
+    
+            var marker_7bfd0e16d8e2946c8c039cab9ade1dd9 = L.marker(
+                [41.0102509, 29.2107767],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_e8b558e5606938644899c816da79791e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f1059fe816d347494674c8e66c34607 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_487270d3be002087190288b54c26e595 = $(`<div id="html_487270d3be002087190288b54c26e595" style="width: 100.0%; height: 100.0%;">Sancak Park AVM</div>`)[0];
+                popup_4f1059fe816d347494674c8e66c34607.setContent(html_487270d3be002087190288b54c26e595);
+            
+        
+
+        marker_7bfd0e16d8e2946c8c039cab9ade1dd9.bindPopup(popup_4f1059fe816d347494674c8e66c34607)
+        ;
+
+        
+    
+    
+                marker_7bfd0e16d8e2946c8c039cab9ade1dd9.setIcon(icon_e8b558e5606938644899c816da79791e);
+            
+    
+            var marker_b480f6a5e13c8d00797a560eab35c369 = L.marker(
+                [41.0057112, 29.2112218],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_8819f70c78b2223f69f3e58bf76a98f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85b3a7b8cbfb0ea6d9a0f5e3cbe7e99e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6895885827ffa50e1ed84344232ae28 = $(`<div id="html_a6895885827ffa50e1ed84344232ae28" style="width: 100.0%; height: 100.0%;">Vandal Çamsan Park</div>`)[0];
+                popup_85b3a7b8cbfb0ea6d9a0f5e3cbe7e99e.setContent(html_a6895885827ffa50e1ed84344232ae28);
+            
+        
+
+        marker_b480f6a5e13c8d00797a560eab35c369.bindPopup(popup_85b3a7b8cbfb0ea6d9a0f5e3cbe7e99e)
+        ;
+
+        
+    
+    
+                marker_b480f6a5e13c8d00797a560eab35c369.setIcon(icon_8819f70c78b2223f69f3e58bf76a98f1);
+            
+    
+            var marker_17fdea80cc0b09125915188d083f7b85 = L.marker(
+                [41.0093125, 28.9500082],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_07e317c97cf25ade4c2b9359e87de3b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46f0ef136abcb2d37edb5c7dc07d4c9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f15b313c135cc8766390d1678f7d68ba = $(`<div id="html_f15b313c135cc8766390d1678f7d68ba" style="width: 100.0%; height: 100.0%;">Ender</div>`)[0];
+                popup_46f0ef136abcb2d37edb5c7dc07d4c9a.setContent(html_f15b313c135cc8766390d1678f7d68ba);
+            
+        
+
+        marker_17fdea80cc0b09125915188d083f7b85.bindPopup(popup_46f0ef136abcb2d37edb5c7dc07d4c9a)
+        ;
+
+        
+    
+    
+                marker_17fdea80cc0b09125915188d083f7b85.setIcon(icon_07e317c97cf25ade4c2b9359e87de3b4);
+            
+    
+            var marker_65234ec433dbd66e00ed15014381f257 = L.marker(
+                [41.0142881, 28.9762417],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_0e7643ea269107af2a17355ceeda7770 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e35ae98727526ce2f36fcebda1a869fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f1b71a430742b5711bafe4d9e8b40c9 = $(`<div id="html_4f1b71a430742b5711bafe4d9e8b40c9" style="width: 100.0%; height: 100.0%;">Hayyam Çarşısı</div>`)[0];
+                popup_e35ae98727526ce2f36fcebda1a869fe.setContent(html_4f1b71a430742b5711bafe4d9e8b40c9);
+            
+        
+
+        marker_65234ec433dbd66e00ed15014381f257.bindPopup(popup_e35ae98727526ce2f36fcebda1a869fe)
+        ;
+
+        
+    
+    
+                marker_65234ec433dbd66e00ed15014381f257.setIcon(icon_0e7643ea269107af2a17355ceeda7770);
+            
+    
+            var marker_0b9540747cee3e5885c5ca141d8336e6 = L.marker(
+                [41.0132297, 28.9748444],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_9c510a90a1b0a9c328002b4a92fae6f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c58ad77025776d8d869e10628ce582c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e268354741feebe5d9a15b7568112f98 = $(`<div id="html_e268354741feebe5d9a15b7568112f98" style="width: 100.0%; height: 100.0%;">ALIŞVERİŞ ELKTRONİK</div>`)[0];
+                popup_6c58ad77025776d8d869e10628ce582c.setContent(html_e268354741feebe5d9a15b7568112f98);
+            
+        
+
+        marker_0b9540747cee3e5885c5ca141d8336e6.bindPopup(popup_6c58ad77025776d8d869e10628ce582c)
+        ;
+
+        
+    
+    
+                marker_0b9540747cee3e5885c5ca141d8336e6.setIcon(icon_9c510a90a1b0a9c328002b4a92fae6f6);
+            
+    
+            var marker_411a24607b47e7f6dd31d2f1dc035caf = L.marker(
+                [41.009067, 28.9738089],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_5f2e0c85131b1f0e07ff412b7fd9f299 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb4a705dde3cdb7895bb6cc5db54d403 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a12a9947fcf99cedeade7d55c0e89929 = $(`<div id="html_a12a9947fcf99cedeade7d55c0e89929" style="width: 100.0%; height: 100.0%;">Bolis Pirlanta</div>`)[0];
+                popup_fb4a705dde3cdb7895bb6cc5db54d403.setContent(html_a12a9947fcf99cedeade7d55c0e89929);
+            
+        
+
+        marker_411a24607b47e7f6dd31d2f1dc035caf.bindPopup(popup_fb4a705dde3cdb7895bb6cc5db54d403)
+        ;
+
+        
+    
+    
+                marker_411a24607b47e7f6dd31d2f1dc035caf.setIcon(icon_5f2e0c85131b1f0e07ff412b7fd9f299);
+            
+    
+            var marker_36166c7f92e96076586d36933efeab10 = L.marker(
+                [41.018166, 28.9580718],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_218d52008a27006266bd608cf44fada1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11c29766da38d92d17711c26f07078fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03232e9447d75cc8c7cfff29bb4aebde = $(`<div id="html_03232e9447d75cc8c7cfff29bb4aebde" style="width: 100.0%; height: 100.0%;">imç çarşısı 3.blok</div>`)[0];
+                popup_11c29766da38d92d17711c26f07078fa.setContent(html_03232e9447d75cc8c7cfff29bb4aebde);
+            
+        
+
+        marker_36166c7f92e96076586d36933efeab10.bindPopup(popup_11c29766da38d92d17711c26f07078fa)
+        ;
+
+        
+    
+    
+                marker_36166c7f92e96076586d36933efeab10.setIcon(icon_218d52008a27006266bd608cf44fada1);
+            
+    
+            var marker_e9f8aefb7fc2a21f19209d2d03a98157 = L.marker(
+                [41.007992, 28.9560381],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_630dd146fa410637c7e5ebafd86f5481 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f2d1bfe743a43a7697be781d23fb2c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f76afb6a8337c00ad8015619c5d5e0a0 = $(`<div id="html_f76afb6a8337c00ad8015619c5d5e0a0" style="width: 100.0%; height: 100.0%;">Kalvi Center</div>`)[0];
+                popup_2f2d1bfe743a43a7697be781d23fb2c9.setContent(html_f76afb6a8337c00ad8015619c5d5e0a0);
+            
+        
+
+        marker_e9f8aefb7fc2a21f19209d2d03a98157.bindPopup(popup_2f2d1bfe743a43a7697be781d23fb2c9)
+        ;
+
+        
+    
+    
+                marker_e9f8aefb7fc2a21f19209d2d03a98157.setIcon(icon_630dd146fa410637c7e5ebafd86f5481);
+            
+    
+            var marker_ec757c9d32e6839e305ce4a3723e6483 = L.marker(
+                [41.0073322, 28.9384282],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_b151be7e23d26bff1f32c4f7ee251ec9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31b5a100c44414b7ad6a4f4b75d26622 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_baeb7c57ee7afac6a24b00e322157a93 = $(`<div id="html_baeb7c57ee7afac6a24b00e322157a93" style="width: 100.0%; height: 100.0%;">evim avm</div>`)[0];
+                popup_31b5a100c44414b7ad6a4f4b75d26622.setContent(html_baeb7c57ee7afac6a24b00e322157a93);
+            
+        
+
+        marker_ec757c9d32e6839e305ce4a3723e6483.bindPopup(popup_31b5a100c44414b7ad6a4f4b75d26622)
+        ;
+
+        
+    
+    
+                marker_ec757c9d32e6839e305ce4a3723e6483.setIcon(icon_b151be7e23d26bff1f32c4f7ee251ec9);
+            
+    
+            var marker_ca0943dca10eaeeff983a92cefacb1ef = L.marker(
+                [41.0288543, 28.9448993],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_dde1683f0ae761d9a0e4998a8056bbb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3075b7f3f029b9146d175f2e4cbd06eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb76d30fa1c169852587fbd043c9f847 = $(`<div id="html_cb76d30fa1c169852587fbd043c9f847" style="width: 100.0%; height: 100.0%;">Fatih Ucuzluk Pazarı</div>`)[0];
+                popup_3075b7f3f029b9146d175f2e4cbd06eb.setContent(html_cb76d30fa1c169852587fbd043c9f847);
+            
+        
+
+        marker_ca0943dca10eaeeff983a92cefacb1ef.bindPopup(popup_3075b7f3f029b9146d175f2e4cbd06eb)
+        ;
+
+        
+    
+    
+                marker_ca0943dca10eaeeff983a92cefacb1ef.setIcon(icon_dde1683f0ae761d9a0e4998a8056bbb0);
+            
+    
+            var marker_415581c70df5857daf4d2614749edaeb = L.marker(
+                [41.0063554, 28.9788085],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_1b172af54c1540d26f884d92fb77ddbc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_965d9667e998c5156008d2c374748cc6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56eb183474d2584a33e6b1b7026e2ee4 = $(`<div id="html_56eb183474d2584a33e6b1b7026e2ee4" style="width: 100.0%; height: 100.0%;">İstanbul Sanatları Çarşısı</div>`)[0];
+                popup_965d9667e998c5156008d2c374748cc6.setContent(html_56eb183474d2584a33e6b1b7026e2ee4);
+            
+        
+
+        marker_415581c70df5857daf4d2614749edaeb.bindPopup(popup_965d9667e998c5156008d2c374748cc6)
+        ;
+
+        
+    
+    
+                marker_415581c70df5857daf4d2614749edaeb.setIcon(icon_1b172af54c1540d26f884d92fb77ddbc);
+            
+    
+            var marker_caa5cfb8f41f3924db65571f166a296e = L.marker(
+                [41.0089911, 28.9564944],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_715ee0463272c889db8cfc7fa3c8b164 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5270d714f8aecc87d5c6a9942429f8bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a469b6608d5fd8c7d2f7066b476ca4ac = $(`<div id="html_a469b6608d5fd8c7d2f7066b476ca4ac" style="width: 100.0%; height: 100.0%;">Babaman Center</div>`)[0];
+                popup_5270d714f8aecc87d5c6a9942429f8bf.setContent(html_a469b6608d5fd8c7d2f7066b476ca4ac);
+            
+        
+
+        marker_caa5cfb8f41f3924db65571f166a296e.bindPopup(popup_5270d714f8aecc87d5c6a9942429f8bf)
+        ;
+
+        
+    
+    
+                marker_caa5cfb8f41f3924db65571f166a296e.setIcon(icon_715ee0463272c889db8cfc7fa3c8b164);
+            
+    
+            var marker_4eb179b4a903c3b138f550105aedf71c = L.marker(
+                [41.0081869, 28.9540425],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_b44c994f349743c4d910d62fb037cfcc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4675a2d93165634349e08b03f38b919c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_924e49f0954bac1198e0ea354565f376 = $(`<div id="html_924e49f0954bac1198e0ea354565f376" style="width: 100.0%; height: 100.0%;">Aksa İş Merkez</div>`)[0];
+                popup_4675a2d93165634349e08b03f38b919c.setContent(html_924e49f0954bac1198e0ea354565f376);
+            
+        
+
+        marker_4eb179b4a903c3b138f550105aedf71c.bindPopup(popup_4675a2d93165634349e08b03f38b919c)
+        ;
+
+        
+    
+    
+                marker_4eb179b4a903c3b138f550105aedf71c.setIcon(icon_b44c994f349743c4d910d62fb037cfcc);
+            
+    
+            var marker_231a2317b78d8869244c9c76122b7e56 = L.marker(
+                [41.0089024, 28.9538519],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_d39693385cd5b47be6cc762e113aec09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7226290d528356ca15ea5cbef20e5eb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0171852dcff0c8eb3199ae6cd582ac3a = $(`<div id="html_0171852dcff0c8eb3199ae6cd582ac3a" style="width: 100.0%; height: 100.0%;">İstanbul Bazaar</div>`)[0];
+                popup_7226290d528356ca15ea5cbef20e5eb9.setContent(html_0171852dcff0c8eb3199ae6cd582ac3a);
+            
+        
+
+        marker_231a2317b78d8869244c9c76122b7e56.bindPopup(popup_7226290d528356ca15ea5cbef20e5eb9)
+        ;
+
+        
+    
+    
+                marker_231a2317b78d8869244c9c76122b7e56.setIcon(icon_d39693385cd5b47be6cc762e113aec09);
+            
+    
+            var marker_2d626670d64ddcf8b941deb45e717f6c = L.marker(
+                [41.00719, 28.9558264],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_95d78e7ab23b182f5a1c3d8c8e1208ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c587280936f4b172015ebca266f15f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0210dedfe13ee6846d9f67b6846c28e3 = $(`<div id="html_0210dedfe13ee6846d9f67b6846c28e3" style="width: 100.0%; height: 100.0%;">Hakan Bazaar</div>`)[0];
+                popup_7c587280936f4b172015ebca266f15f9.setContent(html_0210dedfe13ee6846d9f67b6846c28e3);
+            
+        
+
+        marker_2d626670d64ddcf8b941deb45e717f6c.bindPopup(popup_7c587280936f4b172015ebca266f15f9)
+        ;
+
+        
+    
+    
+                marker_2d626670d64ddcf8b941deb45e717f6c.setIcon(icon_95d78e7ab23b182f5a1c3d8c8e1208ce);
+            
+    
+            var marker_03afacaca8a5731afec61f36c9545680 = L.marker(
+                [41.0171464, 28.9433505],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_6e205e3d83719d10b1b7feaced9a8663 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a9f4a371a90f9a758229aa8face4d51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b5e99f3c1ea674e851d5ccf57f83c68 = $(`<div id="html_7b5e99f3c1ea674e851d5ccf57f83c68" style="width: 100.0%; height: 100.0%;">Çin pazarı</div>`)[0];
+                popup_2a9f4a371a90f9a758229aa8face4d51.setContent(html_7b5e99f3c1ea674e851d5ccf57f83c68);
+            
+        
+
+        marker_03afacaca8a5731afec61f36c9545680.bindPopup(popup_2a9f4a371a90f9a758229aa8face4d51)
+        ;
+
+        
+    
+    
+                marker_03afacaca8a5731afec61f36c9545680.setIcon(icon_6e205e3d83719d10b1b7feaced9a8663);
+            
+    
+            var marker_41f6a58dc6f1191f2681e05dd01e8c56 = L.marker(
+                [41.0092695, 28.9718013],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_d7aab7a7572950c1171cab80a4af8d35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bcda876606a19db0a961a2c7c60722d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72e5b9099283d8581afcb51a14551733 = $(`<div id="html_72e5b9099283d8581afcb51a14551733" style="width: 100.0%; height: 100.0%;">TAKIDASANAT ATÖLYE</div>`)[0];
+                popup_bcda876606a19db0a961a2c7c60722d8.setContent(html_72e5b9099283d8581afcb51a14551733);
+            
+        
+
+        marker_41f6a58dc6f1191f2681e05dd01e8c56.bindPopup(popup_bcda876606a19db0a961a2c7c60722d8)
+        ;
+
+        
+    
+    
+                marker_41f6a58dc6f1191f2681e05dd01e8c56.setIcon(icon_d7aab7a7572950c1171cab80a4af8d35);
+            
+    
+            var marker_6c9d60be18c9688f58c6d5aa3e0cd846 = L.marker(
+                [41.0079709, 28.9665015],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_c7de30e9ce0459da447e143ae90963bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02d5df04d9df2aaff942c7773dbe4ea8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a42de5673fbbede16c622448a732d62 = $(`<div id="html_9a42de5673fbbede16c622448a732d62" style="width: 100.0%; height: 100.0%;">mytopuk</div>`)[0];
+                popup_02d5df04d9df2aaff942c7773dbe4ea8.setContent(html_9a42de5673fbbede16c622448a732d62);
+            
+        
+
+        marker_6c9d60be18c9688f58c6d5aa3e0cd846.bindPopup(popup_02d5df04d9df2aaff942c7773dbe4ea8)
+        ;
+
+        
+    
+    
+                marker_6c9d60be18c9688f58c6d5aa3e0cd846.setIcon(icon_c7de30e9ce0459da447e143ae90963bd);
+            
+    
+            var marker_3ade36a7fa412b9842e46d39d41004c0 = L.marker(
+                [41.0079475, 28.9659945],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_99903ba1806861468e2dffb65bc0a42f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88c916f0ae40cbe082e5571a69018000 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_695e9c5559aa51c139f60f93ccb5b2b3 = $(`<div id="html_695e9c5559aa51c139f60f93ccb5b2b3" style="width: 100.0%; height: 100.0%;">Sözen Center</div>`)[0];
+                popup_88c916f0ae40cbe082e5571a69018000.setContent(html_695e9c5559aa51c139f60f93ccb5b2b3);
+            
+        
+
+        marker_3ade36a7fa412b9842e46d39d41004c0.bindPopup(popup_88c916f0ae40cbe082e5571a69018000)
+        ;
+
+        
+    
+    
+                marker_3ade36a7fa412b9842e46d39d41004c0.setIcon(icon_99903ba1806861468e2dffb65bc0a42f);
+            
+    
+            var marker_ce617cf81f53eaf963d2317db6859148 = L.marker(
+                [41.0071959, 28.9667084],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_032b1429b5c28d05ace6fb285a607a61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_496bc87f8f8c08fc066abb3cb42cf4b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_277c3ed5f1e79c6301b5f700a614fc83 = $(`<div id="html_277c3ed5f1e79c6301b5f700a614fc83" style="width: 100.0%; height: 100.0%;">Kent Center</div>`)[0];
+                popup_496bc87f8f8c08fc066abb3cb42cf4b7.setContent(html_277c3ed5f1e79c6301b5f700a614fc83);
+            
+        
+
+        marker_ce617cf81f53eaf963d2317db6859148.bindPopup(popup_496bc87f8f8c08fc066abb3cb42cf4b7)
+        ;
+
+        
+    
+    
+                marker_ce617cf81f53eaf963d2317db6859148.setIcon(icon_032b1429b5c28d05ace6fb285a607a61);
+            
+    
+            var marker_f535485987f33f4db25ead09053187ad = L.marker(
+                [41.0118115, 28.9690068],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_5e11af4cc6ce045bd701d3c221b1cb20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e9bcf86ae353d22de7cc91a6aef8050 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b871f80875eb0496353f355c08140e11 = $(`<div id="html_b871f80875eb0496353f355c08140e11" style="width: 100.0%; height: 100.0%;">Kapalıçarşı Mercan Kapısı</div>`)[0];
+                popup_2e9bcf86ae353d22de7cc91a6aef8050.setContent(html_b871f80875eb0496353f355c08140e11);
+            
+        
+
+        marker_f535485987f33f4db25ead09053187ad.bindPopup(popup_2e9bcf86ae353d22de7cc91a6aef8050)
+        ;
+
+        
+    
+    
+                marker_f535485987f33f4db25ead09053187ad.setIcon(icon_5e11af4cc6ce045bd701d3c221b1cb20);
+            
+    
+            var marker_20041d87b222168c4289beea09d874e2 = L.marker(
+                [41.1054442, 28.861258],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_0aa755fedd4a662c5e09611b5ae857f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19fd38b4e3093b8d3cc02c1322f779ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65cb3d0a1cc9848fd3c88000b3a5f8d1 = $(`<div id="html_65cb3d0a1cc9848fd3c88000b3a5f8d1" style="width: 100.0%; height: 100.0%;">Confident</div>`)[0];
+                popup_19fd38b4e3093b8d3cc02c1322f779ea.setContent(html_65cb3d0a1cc9848fd3c88000b3a5f8d1);
+            
+        
+
+        marker_20041d87b222168c4289beea09d874e2.bindPopup(popup_19fd38b4e3093b8d3cc02c1322f779ea)
+        ;
+
+        
+    
+    
+                marker_20041d87b222168c4289beea09d874e2.setIcon(icon_0aa755fedd4a662c5e09611b5ae857f2);
+            
+    
+            var marker_780946b96d8777fe91f70b4f8deda036 = L.marker(
+                [41.1061827, 28.8608559],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_fdaa53c0fe4e0198be2ea257e91ab508 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af8b5efa4723bb273669c0c1edd1b407 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c34d8376e9a0efe4c5078175d9553cd4 = $(`<div id="html_c34d8376e9a0efe4c5078175d9553cd4" style="width: 100.0%; height: 100.0%;">Showland</div>`)[0];
+                popup_af8b5efa4723bb273669c0c1edd1b407.setContent(html_c34d8376e9a0efe4c5078175d9553cd4);
+            
+        
+
+        marker_780946b96d8777fe91f70b4f8deda036.bindPopup(popup_af8b5efa4723bb273669c0c1edd1b407)
+        ;
+
+        
+    
+    
+                marker_780946b96d8777fe91f70b4f8deda036.setIcon(icon_fdaa53c0fe4e0198be2ea257e91ab508);
+            
+    
+            var marker_fdecbd02364667f68549102baf9d6847 = L.marker(
+                [40.9716864, 29.2689354],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_4a90b69a3a26ba52a2a65bd92caf5fcd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e06605477e50964b5cc2df16af015ed2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ff92c5c00e07a9b42d169fc56ad3268 = $(`<div id="html_2ff92c5c00e07a9b42d169fc56ad3268" style="width: 100.0%; height: 100.0%;">Göknur Alışveriş</div>`)[0];
+                popup_e06605477e50964b5cc2df16af015ed2.setContent(html_2ff92c5c00e07a9b42d169fc56ad3268);
+            
+        
+
+        marker_fdecbd02364667f68549102baf9d6847.bindPopup(popup_e06605477e50964b5cc2df16af015ed2)
+        ;
+
+        
+    
+    
+                marker_fdecbd02364667f68549102baf9d6847.setIcon(icon_4a90b69a3a26ba52a2a65bd92caf5fcd);
+            
+    
+            var marker_db013d89305868a7e861a0a4d40c00cc = L.marker(
+                [40.9496556, 29.2794061],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_9d3be0e96bb1a14467bdb946b62922a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_edc44fa652f36841ab6d1fd9cd7fbadd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e78c48d4a9b57427da3ea07814b6f9f = $(`<div id="html_2e78c48d4a9b57427da3ea07814b6f9f" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_edc44fa652f36841ab6d1fd9cd7fbadd.setContent(html_2e78c48d4a9b57427da3ea07814b6f9f);
+            
+        
+
+        marker_db013d89305868a7e861a0a4d40c00cc.bindPopup(popup_edc44fa652f36841ab6d1fd9cd7fbadd)
+        ;
+
+        
+    
+    
+                marker_db013d89305868a7e861a0a4d40c00cc.setIcon(icon_9d3be0e96bb1a14467bdb946b62922a5);
+            
+    
+            var marker_4fb9f7bfab1c7831e8ac87bca8c14ee6 = L.marker(
+                [40.9764436, 29.2662451],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_5b300cd156b471808e13bb50e176b7e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_739d26c86dee1c7e0c6e3ff74232497a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_504d43d643abb38cd04c461c33d5b827 = $(`<div id="html_504d43d643abb38cd04c461c33d5b827" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_739d26c86dee1c7e0c6e3ff74232497a.setContent(html_504d43d643abb38cd04c461c33d5b827);
+            
+        
+
+        marker_4fb9f7bfab1c7831e8ac87bca8c14ee6.bindPopup(popup_739d26c86dee1c7e0c6e3ff74232497a)
+        ;
+
+        
+    
+    
+                marker_4fb9f7bfab1c7831e8ac87bca8c14ee6.setIcon(icon_5b300cd156b471808e13bb50e176b7e8);
+            
+    
+            var marker_55e45b414d3ce73e4cf3fd01880ba109 = L.marker(
+                [40.9503208, 29.272505],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_c1ae62436efd354c0ce161fc8cfb9ac2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb8986fe97be065968567b50c3bf3c4f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed40cca917a3a24e59098a87fcd04300 = $(`<div id="html_ed40cca917a3a24e59098a87fcd04300" style="width: 100.0%; height: 100.0%;">Hakim</div>`)[0];
+                popup_fb8986fe97be065968567b50c3bf3c4f.setContent(html_ed40cca917a3a24e59098a87fcd04300);
+            
+        
+
+        marker_55e45b414d3ce73e4cf3fd01880ba109.bindPopup(popup_fb8986fe97be065968567b50c3bf3c4f)
+        ;
+
+        
+    
+    
+                marker_55e45b414d3ce73e4cf3fd01880ba109.setIcon(icon_c1ae62436efd354c0ce161fc8cfb9ac2);
+            
+    
+            var marker_156a602e96503c0a0549eb32e66387a5 = L.marker(
+                [40.94942, 29.278122],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_2b890d99876ee1c253222e32d250d05f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_303b6ac5685a51f54ae21e9872f3ffb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67ce09fbc5283735a24e91868d800014 = $(`<div id="html_67ce09fbc5283735a24e91868d800014" style="width: 100.0%; height: 100.0%;">Kırtasiye Tühafiye</div>`)[0];
+                popup_303b6ac5685a51f54ae21e9872f3ffb2.setContent(html_67ce09fbc5283735a24e91868d800014);
+            
+        
+
+        marker_156a602e96503c0a0549eb32e66387a5.bindPopup(popup_303b6ac5685a51f54ae21e9872f3ffb2)
+        ;
+
+        
+    
+    
+                marker_156a602e96503c0a0549eb32e66387a5.setIcon(icon_2b890d99876ee1c253222e32d250d05f);
+            
+    
+            var marker_01704291226a6640ab9331c2b5d4163b = L.marker(
+                [40.9708833, 29.2693007],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_67f15efb35fd6c7a42453fea389b0ba4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ad3974f1c53ade47777719b0ebf3c70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97d54f52d432a548d582e9c66c529af5 = $(`<div id="html_97d54f52d432a548d582e9c66c529af5" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_5ad3974f1c53ade47777719b0ebf3c70.setContent(html_97d54f52d432a548d582e9c66c529af5);
+            
+        
+
+        marker_01704291226a6640ab9331c2b5d4163b.bindPopup(popup_5ad3974f1c53ade47777719b0ebf3c70)
+        ;
+
+        
+    
+    
+                marker_01704291226a6640ab9331c2b5d4163b.setIcon(icon_67f15efb35fd6c7a42453fea389b0ba4);
+            
+    
+            var marker_43d996e43ade037425d12a25d8fc8ed4 = L.marker(
+                [40.9669492, 29.274766],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_f71c6911875efb461240f53744ed2312 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_448859130db0e6d569073667a9538f87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bc73b623988b1b92f19be5abbad95b8 = $(`<div id="html_2bc73b623988b1b92f19be5abbad95b8" style="width: 100.0%; height: 100.0%;">Çocuk Dünyası</div>`)[0];
+                popup_448859130db0e6d569073667a9538f87.setContent(html_2bc73b623988b1b92f19be5abbad95b8);
+            
+        
+
+        marker_43d996e43ade037425d12a25d8fc8ed4.bindPopup(popup_448859130db0e6d569073667a9538f87)
+        ;
+
+        
+    
+    
+                marker_43d996e43ade037425d12a25d8fc8ed4.setIcon(icon_f71c6911875efb461240f53744ed2312);
+            
+    
+            var marker_8c71f1bd327ef2df78f5885a9d31e769 = L.marker(
+                [40.9718445, 29.2738255],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_96e744040958ba30f877fe5f255e3f6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b725c8b3f239a233bff9ca03b6342f19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a037192c937fdb9a3c6eb409be77723 = $(`<div id="html_1a037192c937fdb9a3c6eb409be77723" style="width: 100.0%; height: 100.0%;">Sezer AVM</div>`)[0];
+                popup_b725c8b3f239a233bff9ca03b6342f19.setContent(html_1a037192c937fdb9a3c6eb409be77723);
+            
+        
+
+        marker_8c71f1bd327ef2df78f5885a9d31e769.bindPopup(popup_b725c8b3f239a233bff9ca03b6342f19)
+        ;
+
+        
+    
+    
+                marker_8c71f1bd327ef2df78f5885a9d31e769.setIcon(icon_96e744040958ba30f877fe5f255e3f6d);
+            
+    
+            var marker_df9cdc0f669c7a84fc2beab62fc88481 = L.marker(
+                [40.9681239, 29.2718621],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_fbe428bf5806358f3186d32c3a89ae4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19ce61700ff55102f383ca2010bfae6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d98a2621947fa2ff7b054163b4a27196 = $(`<div id="html_d98a2621947fa2ff7b054163b4a27196" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_19ce61700ff55102f383ca2010bfae6a.setContent(html_d98a2621947fa2ff7b054163b4a27196);
+            
+        
+
+        marker_df9cdc0f669c7a84fc2beab62fc88481.bindPopup(popup_19ce61700ff55102f383ca2010bfae6a)
+        ;
+
+        
+    
+    
+                marker_df9cdc0f669c7a84fc2beab62fc88481.setIcon(icon_fbe428bf5806358f3186d32c3a89ae4c);
+            
+    
+            var marker_f07117b6f80f8aef391d077bb192557d = L.marker(
+                [40.9497888, 29.2746438],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_b7f33551bedcb65a409dd0c334d2fb99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03e2a7cf91f29662f5dd144fb4a18280 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14cbcbdf7149ebfde915b45fe53f58f9 = $(`<div id="html_14cbcbdf7149ebfde915b45fe53f58f9" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_03e2a7cf91f29662f5dd144fb4a18280.setContent(html_14cbcbdf7149ebfde915b45fe53f58f9);
+            
+        
+
+        marker_f07117b6f80f8aef391d077bb192557d.bindPopup(popup_03e2a7cf91f29662f5dd144fb4a18280)
+        ;
+
+        
+    
+    
+                marker_f07117b6f80f8aef391d077bb192557d.setIcon(icon_b7f33551bedcb65a409dd0c334d2fb99);
+            
+    
+            var marker_ba0dd3834770e80b35ebed44fbdf6415 = L.marker(
+                [40.9529929, 29.2695549],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_c3ca6b312d6b1d3189719a2660b063c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85311fbaef9451d985dc6228c8b7ae8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cc22851b303cbb993ea87902633598d = $(`<div id="html_0cc22851b303cbb993ea87902633598d" style="width: 100.0%; height: 100.0%;">Oruklar Avm</div>`)[0];
+                popup_85311fbaef9451d985dc6228c8b7ae8f.setContent(html_0cc22851b303cbb993ea87902633598d);
+            
+        
+
+        marker_ba0dd3834770e80b35ebed44fbdf6415.bindPopup(popup_85311fbaef9451d985dc6228c8b7ae8f)
+        ;
+
+        
+    
+    
+                marker_ba0dd3834770e80b35ebed44fbdf6415.setIcon(icon_c3ca6b312d6b1d3189719a2660b063c4);
+            
+    
+            var marker_31c9a690370eac7e5d7804a68a519e73 = L.marker(
+                [40.9763406, 29.2662554],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_75eb27c0ebf3723e2c28506016b44ff2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fad5975bdbbee32080fcd0f305a3172d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91f03f5d798ae6755f6ea8adc022b6dd = $(`<div id="html_91f03f5d798ae6755f6ea8adc022b6dd" style="width: 100.0%; height: 100.0%;">Gönen Alışveriş Merkezi</div>`)[0];
+                popup_fad5975bdbbee32080fcd0f305a3172d.setContent(html_91f03f5d798ae6755f6ea8adc022b6dd);
+            
+        
+
+        marker_31c9a690370eac7e5d7804a68a519e73.bindPopup(popup_fad5975bdbbee32080fcd0f305a3172d)
+        ;
+
+        
+    
+    
+                marker_31c9a690370eac7e5d7804a68a519e73.setIcon(icon_75eb27c0ebf3723e2c28506016b44ff2);
+            
+    
+            var marker_b27e6d5ccf07d5e7039cb495713a2f71 = L.marker(
+                [40.9739451, 29.2756976],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_0f5dbfb6a6b9c00aca71710493b13a90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e2302bc52ad6650e9d055a1686cfa1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92551862f358c670a6c9563b12d09899 = $(`<div id="html_92551862f358c670a6c9563b12d09899" style="width: 100.0%; height: 100.0%;">Yağmur Kırtasiye</div>`)[0];
+                popup_6e2302bc52ad6650e9d055a1686cfa1f.setContent(html_92551862f358c670a6c9563b12d09899);
+            
+        
+
+        marker_b27e6d5ccf07d5e7039cb495713a2f71.bindPopup(popup_6e2302bc52ad6650e9d055a1686cfa1f)
+        ;
+
+        
+    
+    
+                marker_b27e6d5ccf07d5e7039cb495713a2f71.setIcon(icon_0f5dbfb6a6b9c00aca71710493b13a90);
+            
+    
+            var marker_0d404841d2f3d13dce454f04b584bdef = L.marker(
+                [40.9562832, 29.2720019],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_dfe9df3c43da09fe8dd7bf065629d08f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3a80c117847096d57f10fdb756c8eba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_176e429defd132f5f3e8c23bb4970b3c = $(`<div id="html_176e429defd132f5f3e8c23bb4970b3c" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_f3a80c117847096d57f10fdb756c8eba.setContent(html_176e429defd132f5f3e8c23bb4970b3c);
+            
+        
+
+        marker_0d404841d2f3d13dce454f04b584bdef.bindPopup(popup_f3a80c117847096d57f10fdb756c8eba)
+        ;
+
+        
+    
+    
+                marker_0d404841d2f3d13dce454f04b584bdef.setIcon(icon_dfe9df3c43da09fe8dd7bf065629d08f);
+            
+    
+            var marker_06031db8fb94172a928b4f9d11c96b5c = L.marker(
+                [40.968719, 29.2763328],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_75e9b8c8f1b21f83778fb424972ff451 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51890fd74b266824dc3654f7b1606d6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_524917c09003e09fd9dd32e3fc7b6cad = $(`<div id="html_524917c09003e09fd9dd32e3fc7b6cad" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_51890fd74b266824dc3654f7b1606d6e.setContent(html_524917c09003e09fd9dd32e3fc7b6cad);
+            
+        
+
+        marker_06031db8fb94172a928b4f9d11c96b5c.bindPopup(popup_51890fd74b266824dc3654f7b1606d6e)
+        ;
+
+        
+    
+    
+                marker_06031db8fb94172a928b4f9d11c96b5c.setIcon(icon_75e9b8c8f1b21f83778fb424972ff451);
+            
+    
+            var marker_7b5b46812407a04d24e9d66b2ce0729c = L.marker(
+                [40.9669832, 29.2752582],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_04292a30d18face9d3ee99bb491f0cae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4107e7e06569a74eb2c725c5f77ef25e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5b206d513786ade8561bf0be75e2e0c = $(`<div id="html_f5b206d513786ade8561bf0be75e2e0c" style="width: 100.0%; height: 100.0%;">Güleryüz AVM</div>`)[0];
+                popup_4107e7e06569a74eb2c725c5f77ef25e.setContent(html_f5b206d513786ade8561bf0be75e2e0c);
+            
+        
+
+        marker_7b5b46812407a04d24e9d66b2ce0729c.bindPopup(popup_4107e7e06569a74eb2c725c5f77ef25e)
+        ;
+
+        
+    
+    
+                marker_7b5b46812407a04d24e9d66b2ce0729c.setIcon(icon_04292a30d18face9d3ee99bb491f0cae);
+            
+    
+            var marker_b89fa5c837eaaa09d951e2d721b0b5e4 = L.marker(
+                [40.9730554, 29.2696461],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_f603708edfce7f8f01416856b2dfb488 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_320cb51f93c8ddfdc304959b87d8858f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be128fd694f1ed40b85204336a02ed9f = $(`<div id="html_be128fd694f1ed40b85204336a02ed9f" style="width: 100.0%; height: 100.0%;">Nisanur Ucuzluk Pazarı</div>`)[0];
+                popup_320cb51f93c8ddfdc304959b87d8858f.setContent(html_be128fd694f1ed40b85204336a02ed9f);
+            
+        
+
+        marker_b89fa5c837eaaa09d951e2d721b0b5e4.bindPopup(popup_320cb51f93c8ddfdc304959b87d8858f)
+        ;
+
+        
+    
+    
+                marker_b89fa5c837eaaa09d951e2d721b0b5e4.setIcon(icon_f603708edfce7f8f01416856b2dfb488);
+            
+    
+            var marker_698c06d186a2e4ccc04d31a60955eb6b = L.marker(
+                [40.945445, 29.283905],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_38637945b0d1ac73142a4f8f45228454 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c449c70608cb4bcaea07e2dac2aa66e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66b6a69c475c488755129ffcde33bda0 = $(`<div id="html_66b6a69c475c488755129ffcde33bda0" style="width: 100.0%; height: 100.0%;">Ayaz AVM</div>`)[0];
+                popup_c449c70608cb4bcaea07e2dac2aa66e5.setContent(html_66b6a69c475c488755129ffcde33bda0);
+            
+        
+
+        marker_698c06d186a2e4ccc04d31a60955eb6b.bindPopup(popup_c449c70608cb4bcaea07e2dac2aa66e5)
+        ;
+
+        
+    
+    
+                marker_698c06d186a2e4ccc04d31a60955eb6b.setIcon(icon_38637945b0d1ac73142a4f8f45228454);
+            
+    
+            var marker_0592325b947e3711db2279b1555fcf44 = L.marker(
+                [40.9686874, 29.2760592],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_9b9bf662973f20b3cf0b7dd5fbcda4ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_685a7c0e1b89e70d095f5bb3e2e7b1fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24ffbf9c045f8f2b54629217850af118 = $(`<div id="html_24ffbf9c045f8f2b54629217850af118" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_685a7c0e1b89e70d095f5bb3e2e7b1fe.setContent(html_24ffbf9c045f8f2b54629217850af118);
+            
+        
+
+        marker_0592325b947e3711db2279b1555fcf44.bindPopup(popup_685a7c0e1b89e70d095f5bb3e2e7b1fe)
+        ;
+
+        
+    
+    
+                marker_0592325b947e3711db2279b1555fcf44.setIcon(icon_9b9bf662973f20b3cf0b7dd5fbcda4ce);
+            
+    
+            var marker_45f6ab378bc05c8e5f55ac2737ddc995 = L.marker(
+                [40.9523217, 29.2821524],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_77a5c65bea598104809792f0a9e6a8f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_37cf3138c504f2e8e3a15167386be2b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e3844da8c4a54f63b2941bc84728489 = $(`<div id="html_6e3844da8c4a54f63b2941bc84728489" style="width: 100.0%; height: 100.0%;">guvendir zuccaciye</div>`)[0];
+                popup_37cf3138c504f2e8e3a15167386be2b0.setContent(html_6e3844da8c4a54f63b2941bc84728489);
+            
+        
+
+        marker_45f6ab378bc05c8e5f55ac2737ddc995.bindPopup(popup_37cf3138c504f2e8e3a15167386be2b0)
+        ;
+
+        
+    
+    
+                marker_45f6ab378bc05c8e5f55ac2737ddc995.setIcon(icon_77a5c65bea598104809792f0a9e6a8f8);
+            
+    
+            var marker_e3beeb28fc66a01b9da8e78e555ebcdb = L.marker(
+                [40.9804154, 29.2656747],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_2c5538203c8beac0a89327aec0f9ccd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1bff01a0927f15283518686ec7e02f3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11d852e00f5e0079e995091698374033 = $(`<div id="html_11d852e00f5e0079e995091698374033" style="width: 100.0%; height: 100.0%;">Pusula Orman Ürünleri</div>`)[0];
+                popup_1bff01a0927f15283518686ec7e02f3f.setContent(html_11d852e00f5e0079e995091698374033);
+            
+        
+
+        marker_e3beeb28fc66a01b9da8e78e555ebcdb.bindPopup(popup_1bff01a0927f15283518686ec7e02f3f)
+        ;
+
+        
+    
+    
+                marker_e3beeb28fc66a01b9da8e78e555ebcdb.setIcon(icon_2c5538203c8beac0a89327aec0f9ccd8);
+            
+    
+            var marker_2d7efeeb0d7bd98112848b7fd0540b71 = L.marker(
+                [40.9536596, 29.2820928],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_7c280140f886859be98b93bd2ca76094 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_950754413d4d2160be148ed9b62beaef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d5a3bfdbcc0cd35f013c44d434c8d26 = $(`<div id="html_7d5a3bfdbcc0cd35f013c44d434c8d26" style="width: 100.0%; height: 100.0%;">Güleryüz</div>`)[0];
+                popup_950754413d4d2160be148ed9b62beaef.setContent(html_7d5a3bfdbcc0cd35f013c44d434c8d26);
+            
+        
+
+        marker_2d7efeeb0d7bd98112848b7fd0540b71.bindPopup(popup_950754413d4d2160be148ed9b62beaef)
+        ;
+
+        
+    
+    
+                marker_2d7efeeb0d7bd98112848b7fd0540b71.setIcon(icon_7c280140f886859be98b93bd2ca76094);
+            
+    
+            var marker_32e5e42160047105c14e816a3d295220 = L.marker(
+                [40.9755926, 29.2634367],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_f6db0b41c2c4772415c8885e2958604a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_361dcb0ee5b99387c4e335e85698e346 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8eec718c22f52b31fe32257a91199ba = $(`<div id="html_c8eec718c22f52b31fe32257a91199ba" style="width: 100.0%; height: 100.0%;">Öz keskin metal</div>`)[0];
+                popup_361dcb0ee5b99387c4e335e85698e346.setContent(html_c8eec718c22f52b31fe32257a91199ba);
+            
+        
+
+        marker_32e5e42160047105c14e816a3d295220.bindPopup(popup_361dcb0ee5b99387c4e335e85698e346)
+        ;
+
+        
+    
+    
+                marker_32e5e42160047105c14e816a3d295220.setIcon(icon_f6db0b41c2c4772415c8885e2958604a);
+            
+    
+            var marker_74eb6c2de666accd5d517e2f26d2cc6d = L.marker(
+                [40.9814112, 29.2575982],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_e3cae1e528c822b4b924eafa368e9599 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb45db21541fe7119c3e893fc1f8e09a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb973e848bdba1278d8be71cac60a8aa = $(`<div id="html_fb973e848bdba1278d8be71cac60a8aa" style="width: 100.0%; height: 100.0%;">Özkuruşlar</div>`)[0];
+                popup_fb45db21541fe7119c3e893fc1f8e09a.setContent(html_fb973e848bdba1278d8be71cac60a8aa);
+            
+        
+
+        marker_74eb6c2de666accd5d517e2f26d2cc6d.bindPopup(popup_fb45db21541fe7119c3e893fc1f8e09a)
+        ;
+
+        
+    
+    
+                marker_74eb6c2de666accd5d517e2f26d2cc6d.setIcon(icon_e3cae1e528c822b4b924eafa368e9599);
+            
+    
+            var marker_26a4c10c7cb2d68ab14bac822b174dbc = L.marker(
+                [40.9727981, 29.2600062],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_c43e00bcb2ae670ad20c67b3ea71bff6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fd0e3114a0a7c608733b2b0db02f63a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_875334269416209ca7c954a079317ea5 = $(`<div id="html_875334269416209ca7c954a079317ea5" style="width: 100.0%; height: 100.0%;">Sena Stone</div>`)[0];
+                popup_1fd0e3114a0a7c608733b2b0db02f63a.setContent(html_875334269416209ca7c954a079317ea5);
+            
+        
+
+        marker_26a4c10c7cb2d68ab14bac822b174dbc.bindPopup(popup_1fd0e3114a0a7c608733b2b0db02f63a)
+        ;
+
+        
+    
+    
+                marker_26a4c10c7cb2d68ab14bac822b174dbc.setIcon(icon_c43e00bcb2ae670ad20c67b3ea71bff6);
+            
+    
+            var marker_a8be595f1a69c6b0aacb71e6776f9349 = L.marker(
+                [40.965913, 29.2706635],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_ec0de83dcaa5dd3934c55ca90be37716 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5502c59688342886443a936bda5f08fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_461c15836798f485911e1220eb6d4171 = $(`<div id="html_461c15836798f485911e1220eb6d4171" style="width: 100.0%; height: 100.0%;">Confident</div>`)[0];
+                popup_5502c59688342886443a936bda5f08fa.setContent(html_461c15836798f485911e1220eb6d4171);
+            
+        
+
+        marker_a8be595f1a69c6b0aacb71e6776f9349.bindPopup(popup_5502c59688342886443a936bda5f08fa)
+        ;
+
+        
+    
+    
+                marker_a8be595f1a69c6b0aacb71e6776f9349.setIcon(icon_ec0de83dcaa5dd3934c55ca90be37716);
+            
+    
+            var marker_a5da98652b0ac1109164e1b61fae0ca3 = L.marker(
+                [40.9659496, 29.2668008],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_b28d52b8befdb0b458c369d7817dc702 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51cebdada9595a8de0b21bb5f8addc2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_387670626f1359895bbe312d4675bdfc = $(`<div id="html_387670626f1359895bbe312d4675bdfc" style="width: 100.0%; height: 100.0%;">Md fulla</div>`)[0];
+                popup_51cebdada9595a8de0b21bb5f8addc2b.setContent(html_387670626f1359895bbe312d4675bdfc);
+            
+        
+
+        marker_a5da98652b0ac1109164e1b61fae0ca3.bindPopup(popup_51cebdada9595a8de0b21bb5f8addc2b)
+        ;
+
+        
+    
+    
+                marker_a5da98652b0ac1109164e1b61fae0ca3.setIcon(icon_b28d52b8befdb0b458c369d7817dc702);
+            
+    
+            var marker_f055b2cf98364ca5063a019b4af526ee = L.marker(
+                [40.9662008, 29.2669295],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_c0df9c38f3153b87d97e98a03ec616f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b9a039b3ca049f3b636a490842fcb03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_297cf97849b738920d38f93035f28b11 = $(`<div id="html_297cf97849b738920d38f93035f28b11" style="width: 100.0%; height: 100.0%;">Küçük çarşı</div>`)[0];
+                popup_1b9a039b3ca049f3b636a490842fcb03.setContent(html_297cf97849b738920d38f93035f28b11);
+            
+        
+
+        marker_f055b2cf98364ca5063a019b4af526ee.bindPopup(popup_1b9a039b3ca049f3b636a490842fcb03)
+        ;
+
+        
+    
+    
+                marker_f055b2cf98364ca5063a019b4af526ee.setIcon(icon_c0df9c38f3153b87d97e98a03ec616f6);
+            
+    
+            var marker_b9327ed0f3101f7f8c827abf61f535dd = L.marker(
+                [40.9666792, 29.2688744],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_e374dca8559082676e6323165662b48b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3bc86c4e4d30efdc6be03b424d49607b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33c40c6607fe95c781228f71869ce555 = $(`<div id="html_33c40c6607fe95c781228f71869ce555" style="width: 100.0%; height: 100.0%;">Ev center</div>`)[0];
+                popup_3bc86c4e4d30efdc6be03b424d49607b.setContent(html_33c40c6607fe95c781228f71869ce555);
+            
+        
+
+        marker_b9327ed0f3101f7f8c827abf61f535dd.bindPopup(popup_3bc86c4e4d30efdc6be03b424d49607b)
+        ;
+
+        
+    
+    
+                marker_b9327ed0f3101f7f8c827abf61f535dd.setIcon(icon_e374dca8559082676e6323165662b48b);
+            
+    
+            var marker_e7c460e06881f4c90ae9db4d5b73c159 = L.marker(
+                [41.0289247, 29.1762078],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_1fec3a3c066ef0af9216271a23914a5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd165425837635f56a0dbf0b55ec9b2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96e2dfaeea6811b45691fe306fbf9340 = $(`<div id="html_96e2dfaeea6811b45691fe306fbf9340" style="width: 100.0%; height: 100.0%;">Beşyıldız Alışveriş Merkezi</div>`)[0];
+                popup_fd165425837635f56a0dbf0b55ec9b2b.setContent(html_96e2dfaeea6811b45691fe306fbf9340);
+            
+        
+
+        marker_e7c460e06881f4c90ae9db4d5b73c159.bindPopup(popup_fd165425837635f56a0dbf0b55ec9b2b)
+        ;
+
+        
+    
+    
+                marker_e7c460e06881f4c90ae9db4d5b73c159.setIcon(icon_1fec3a3c066ef0af9216271a23914a5c);
+            
+    
+            var marker_0de8127861a5807cb4475c29f9aab745 = L.marker(
+                [40.9650254, 29.2776333],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_42e5d5a8721e6917db589336067eaa9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09b3853c54d92b47161d803af01b93b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efa1b3fe1773a0bed0d00bacfeabe41a = $(`<div id="html_efa1b3fe1773a0bed0d00bacfeabe41a" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_09b3853c54d92b47161d803af01b93b3.setContent(html_efa1b3fe1773a0bed0d00bacfeabe41a);
+            
+        
+
+        marker_0de8127861a5807cb4475c29f9aab745.bindPopup(popup_09b3853c54d92b47161d803af01b93b3)
+        ;
+
+        
+    
+    
+                marker_0de8127861a5807cb4475c29f9aab745.setIcon(icon_42e5d5a8721e6917db589336067eaa9d);
+            
+    
+            var marker_cea9a64ea2d67442f7203883d0be7245 = L.marker(
+                [40.9802059, 29.2763114],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_34b691a2f0f5120d59fe439de8742829 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d7c01c1be1c557f2d0536a39288d4a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffb244873d8f71fe022be49c427c32a0 = $(`<div id="html_ffb244873d8f71fe022be49c427c32a0" style="width: 100.0%; height: 100.0%;">Ucuzluk pazari</div>`)[0];
+                popup_6d7c01c1be1c557f2d0536a39288d4a8.setContent(html_ffb244873d8f71fe022be49c427c32a0);
+            
+        
+
+        marker_cea9a64ea2d67442f7203883d0be7245.bindPopup(popup_6d7c01c1be1c557f2d0536a39288d4a8)
+        ;
+
+        
+    
+    
+                marker_cea9a64ea2d67442f7203883d0be7245.setIcon(icon_34b691a2f0f5120d59fe439de8742829);
+            
+    
+            var marker_e2c93ce64446d6f29a061e467af79d28 = L.marker(
+                [40.9680392, 29.2755604],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_c0a1eef9a68afac4319d758fa2e81f02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_871b82ce6656b99fb8ba465ace1268ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c541c3ba10f48dd740e552f2cfc7c0d0 = $(`<div id="html_c541c3ba10f48dd740e552f2cfc7c0d0" style="width: 100.0%; height: 100.0%;">Bereket kahvalti dünyasi</div>`)[0];
+                popup_871b82ce6656b99fb8ba465ace1268ca.setContent(html_c541c3ba10f48dd740e552f2cfc7c0d0);
+            
+        
+
+        marker_e2c93ce64446d6f29a061e467af79d28.bindPopup(popup_871b82ce6656b99fb8ba465ace1268ca)
+        ;
+
+        
+    
+    
+                marker_e2c93ce64446d6f29a061e467af79d28.setIcon(icon_c0a1eef9a68afac4319d758fa2e81f02);
+            
+    
+            var marker_ca8876658a12b6bc347be1c643666b73 = L.marker(
+                [40.9802759, 29.2747121],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_04723c9f61ee1ddc581e0918f455a24a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52fbc209930cc23e63cefacf5a0175f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_afbefddd08a2bbb8847e87d1763a434d = $(`<div id="html_afbefddd08a2bbb8847e87d1763a434d" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_52fbc209930cc23e63cefacf5a0175f3.setContent(html_afbefddd08a2bbb8847e87d1763a434d);
+            
+        
+
+        marker_ca8876658a12b6bc347be1c643666b73.bindPopup(popup_52fbc209930cc23e63cefacf5a0175f3)
+        ;
+
+        
+    
+    
+                marker_ca8876658a12b6bc347be1c643666b73.setIcon(icon_04723c9f61ee1ddc581e0918f455a24a);
+            
+    
+            var marker_6ce773b3208ba86121568be6afb46d76 = L.marker(
+                [40.9454251, 29.3003318],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_7fb1d6ead11fed3ee9f7d4f6da7b6154 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2799184f1327c39878ad25e0ca62c575 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc7e4d0d42b829227c0a5ee3f5841627 = $(`<div id="html_bc7e4d0d42b829227c0a5ee3f5841627" style="width: 100.0%; height: 100.0%;">Yedikapi endüstriyel ürünler</div>`)[0];
+                popup_2799184f1327c39878ad25e0ca62c575.setContent(html_bc7e4d0d42b829227c0a5ee3f5841627);
+            
+        
+
+        marker_6ce773b3208ba86121568be6afb46d76.bindPopup(popup_2799184f1327c39878ad25e0ca62c575)
+        ;
+
+        
+    
+    
+                marker_6ce773b3208ba86121568be6afb46d76.setIcon(icon_7fb1d6ead11fed3ee9f7d4f6da7b6154);
+            
+    
+            var marker_0e51673de0c6288a9b249f507ad02014 = L.marker(
+                [40.9789909, 29.2706895],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_31a93a8165333e72665baccd8c812880 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dafe43af41eb677dfb592c682456af67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_163dacf79f39ba3684acb880782090f0 = $(`<div id="html_163dacf79f39ba3684acb880782090f0" style="width: 100.0%; height: 100.0%;">Huzur</div>`)[0];
+                popup_dafe43af41eb677dfb592c682456af67.setContent(html_163dacf79f39ba3684acb880782090f0);
+            
+        
+
+        marker_0e51673de0c6288a9b249f507ad02014.bindPopup(popup_dafe43af41eb677dfb592c682456af67)
+        ;
+
+        
+    
+    
+                marker_0e51673de0c6288a9b249f507ad02014.setIcon(icon_31a93a8165333e72665baccd8c812880);
+            
+    
+            var marker_94bf78126ee18d4cec96df781254f555 = L.marker(
+                [40.9843851, 29.2785859],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_cd471df50cbbb490d308f06bfe9b8f18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a17c82eb5ece32992f6d20a029fb35d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d9ac0466392afab0bf1702053f24295 = $(`<div id="html_5d9ac0466392afab0bf1702053f24295" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_a17c82eb5ece32992f6d20a029fb35d0.setContent(html_5d9ac0466392afab0bf1702053f24295);
+            
+        
+
+        marker_94bf78126ee18d4cec96df781254f555.bindPopup(popup_a17c82eb5ece32992f6d20a029fb35d0)
+        ;
+
+        
+    
+    
+                marker_94bf78126ee18d4cec96df781254f555.setIcon(icon_cd471df50cbbb490d308f06bfe9b8f18);
+            
+    
+            var marker_a08561fc3298fe25b117c78bc832f7bd = L.marker(
+                [40.9675774, 29.2593092],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_22159c4e730c9a6cc4895b9c8c7180e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0f886eb8baa0aeac94f458ff0be56e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7bb30d4f833a97fc88cf81c6520774f = $(`<div id="html_d7bb30d4f833a97fc88cf81c6520774f" style="width: 100.0%; height: 100.0%;">İnci toyz</div>`)[0];
+                popup_e0f886eb8baa0aeac94f458ff0be56e6.setContent(html_d7bb30d4f833a97fc88cf81c6520774f);
+            
+        
+
+        marker_a08561fc3298fe25b117c78bc832f7bd.bindPopup(popup_e0f886eb8baa0aeac94f458ff0be56e6)
+        ;
+
+        
+    
+    
+                marker_a08561fc3298fe25b117c78bc832f7bd.setIcon(icon_22159c4e730c9a6cc4895b9c8c7180e7);
+            
+    
+            var marker_a61a3b2f0aaefb8f68298e4e40219f38 = L.marker(
+                [40.9674802, 29.259553],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_5c0a1f232f789184dbdd44336ca175aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df86172bc5ceac8b68dbe8bd0db712fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e671b6a6bfec93c6e8fe12b898c07995 = $(`<div id="html_e671b6a6bfec93c6e8fe12b898c07995" style="width: 100.0%; height: 100.0%;">Alhas Gıda</div>`)[0];
+                popup_df86172bc5ceac8b68dbe8bd0db712fa.setContent(html_e671b6a6bfec93c6e8fe12b898c07995);
+            
+        
+
+        marker_a61a3b2f0aaefb8f68298e4e40219f38.bindPopup(popup_df86172bc5ceac8b68dbe8bd0db712fa)
+        ;
+
+        
+    
+    
+                marker_a61a3b2f0aaefb8f68298e4e40219f38.setIcon(icon_5c0a1f232f789184dbdd44336ca175aa);
+            
+    
+            var marker_32ad578476932bbeba67ad5883896d33 = L.marker(
+                [40.9672695, 29.2604113],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_184463b0b1dc6711b040df06437d95d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8227388c6a1934fea66243e6a64849a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae10f4b2a2fa5180a0bc2c0bc1daa73d = $(`<div id="html_ae10f4b2a2fa5180a0bc2c0bc1daa73d" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_a8227388c6a1934fea66243e6a64849a.setContent(html_ae10f4b2a2fa5180a0bc2c0bc1daa73d);
+            
+        
+
+        marker_32ad578476932bbeba67ad5883896d33.bindPopup(popup_a8227388c6a1934fea66243e6a64849a)
+        ;
+
+        
+    
+    
+                marker_32ad578476932bbeba67ad5883896d33.setIcon(icon_184463b0b1dc6711b040df06437d95d2);
+            
+    
+            var marker_533c96b10cfb562402652bc0ab86b7bb = L.marker(
+                [40.9589653, 29.2567635],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_ac39017e79a38c80e37ee010edd592d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_087058f25555f08aad5f34eef6f99ead = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_338b985857ad28f503901c386c52f1a4 = $(`<div id="html_338b985857ad28f503901c386c52f1a4" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_087058f25555f08aad5f34eef6f99ead.setContent(html_338b985857ad28f503901c386c52f1a4);
+            
+        
+
+        marker_533c96b10cfb562402652bc0ab86b7bb.bindPopup(popup_087058f25555f08aad5f34eef6f99ead)
+        ;
+
+        
+    
+    
+                marker_533c96b10cfb562402652bc0ab86b7bb.setIcon(icon_ac39017e79a38c80e37ee010edd592d8);
+            
+    
+            var marker_a2935ddd4be8d7bb6df82c7245464d02 = L.marker(
+                [40.9692986, 29.2473056],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_1282e6baa89f928b4945872f9fe3b295 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86febf30ee6475fa8474b4bc25aca18e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aac4227dae385b629d5f8c532d6886f5 = $(`<div id="html_aac4227dae385b629d5f8c532d6886f5" style="width: 100.0%; height: 100.0%;">Pirilti</div>`)[0];
+                popup_86febf30ee6475fa8474b4bc25aca18e.setContent(html_aac4227dae385b629d5f8c532d6886f5);
+            
+        
+
+        marker_a2935ddd4be8d7bb6df82c7245464d02.bindPopup(popup_86febf30ee6475fa8474b4bc25aca18e)
+        ;
+
+        
+    
+    
+                marker_a2935ddd4be8d7bb6df82c7245464d02.setIcon(icon_1282e6baa89f928b4945872f9fe3b295);
+            
+    
+            var marker_0d5807be1e11bd3d5222a3f8deb0d7ff = L.marker(
+                [40.9675045, 29.2535877],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_4e9f207e7c07ace7590d80db9cc69786 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7e0a44027a3495e9023918397d1cd07 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_090ed12d97a7bc665b903b26bbe3c306 = $(`<div id="html_090ed12d97a7bc665b903b26bbe3c306" style="width: 100.0%; height: 100.0%;">Bayza</div>`)[0];
+                popup_b7e0a44027a3495e9023918397d1cd07.setContent(html_090ed12d97a7bc665b903b26bbe3c306);
+            
+        
+
+        marker_0d5807be1e11bd3d5222a3f8deb0d7ff.bindPopup(popup_b7e0a44027a3495e9023918397d1cd07)
+        ;
+
+        
+    
+    
+                marker_0d5807be1e11bd3d5222a3f8deb0d7ff.setIcon(icon_4e9f207e7c07ace7590d80db9cc69786);
+            
+    
+            var marker_54f0a1f41b395240f0e73f9541327404 = L.marker(
+                [40.9857619, 29.2764616],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_efb338652e391471e00b7208c4b48429 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e916d658409ae245f5589df2874a684 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a07dd65ef91bca19e1fb2b62cfe54f34 = $(`<div id="html_a07dd65ef91bca19e1fb2b62cfe54f34" style="width: 100.0%; height: 100.0%;">Yılmaz kardeşler</div>`)[0];
+                popup_1e916d658409ae245f5589df2874a684.setContent(html_a07dd65ef91bca19e1fb2b62cfe54f34);
+            
+        
+
+        marker_54f0a1f41b395240f0e73f9541327404.bindPopup(popup_1e916d658409ae245f5589df2874a684)
+        ;
+
+        
+    
+    
+                marker_54f0a1f41b395240f0e73f9541327404.setIcon(icon_efb338652e391471e00b7208c4b48429);
+            
+    
+            var marker_a021736b3b57cbc76d9922cbefa5053a = L.marker(
+                [40.9674089, 29.25335],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_7b45b4d0b0c2ac0acda150db9b0a9d77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dae74a5b1ae4b81e55c75ddf8e7fd845 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a7f7d8b9656d4c758abe70dc5efd5f5 = $(`<div id="html_0a7f7d8b9656d4c758abe70dc5efd5f5" style="width: 100.0%; height: 100.0%;">Bozkurt</div>`)[0];
+                popup_dae74a5b1ae4b81e55c75ddf8e7fd845.setContent(html_0a7f7d8b9656d4c758abe70dc5efd5f5);
+            
+        
+
+        marker_a021736b3b57cbc76d9922cbefa5053a.bindPopup(popup_dae74a5b1ae4b81e55c75ddf8e7fd845)
+        ;
+
+        
+    
+    
+                marker_a021736b3b57cbc76d9922cbefa5053a.setIcon(icon_7b45b4d0b0c2ac0acda150db9b0a9d77);
+            
+    
+            var marker_1f7db34195e6842140458a64838871ca = L.marker(
+                [40.9690227, 29.2609936],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_2b5dbbc63bfd2a0a16fb5994f76a139d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d0492a9b9d6edf07cae397e1dd2fa2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_775c9ae2b68dab5cb29508dff26ce376 = $(`<div id="html_775c9ae2b68dab5cb29508dff26ce376" style="width: 100.0%; height: 100.0%;">Plato alışveriş merkezi</div>`)[0];
+                popup_1d0492a9b9d6edf07cae397e1dd2fa2a.setContent(html_775c9ae2b68dab5cb29508dff26ce376);
+            
+        
+
+        marker_1f7db34195e6842140458a64838871ca.bindPopup(popup_1d0492a9b9d6edf07cae397e1dd2fa2a)
+        ;
+
+        
+    
+    
+                marker_1f7db34195e6842140458a64838871ca.setIcon(icon_2b5dbbc63bfd2a0a16fb5994f76a139d);
+            
+    
+            var marker_0852b1610c0958986bb1811c0aef2ac3 = L.marker(
+                [40.9765079, 29.2662243],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_3d332977207303b71a9b4a04b6278a20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9f13b46eab131b1ace9fb2d77f2383d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bf659b8b472f34364f858ae8568ca50 = $(`<div id="html_5bf659b8b472f34364f858ae8568ca50" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_b9f13b46eab131b1ace9fb2d77f2383d.setContent(html_5bf659b8b472f34364f858ae8568ca50);
+            
+        
+
+        marker_0852b1610c0958986bb1811c0aef2ac3.bindPopup(popup_b9f13b46eab131b1ace9fb2d77f2383d)
+        ;
+
+        
+    
+    
+                marker_0852b1610c0958986bb1811c0aef2ac3.setIcon(icon_3d332977207303b71a9b4a04b6278a20);
+            
+    
+            var marker_0d7ac6f43803d79e05bfc1790c086e6c = L.marker(
+                [40.9676908, 29.2588019],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_89bc561743a8f7261dbdb809950a595d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fefdb3bd57feb0d496c74c6220d3a494 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c95dbed12b9a9fd3f3c603f4ef8a471d = $(`<div id="html_c95dbed12b9a9fd3f3c603f4ef8a471d" style="width: 100.0%; height: 100.0%;">Kardeşler Ticaret</div>`)[0];
+                popup_fefdb3bd57feb0d496c74c6220d3a494.setContent(html_c95dbed12b9a9fd3f3c603f4ef8a471d);
+            
+        
+
+        marker_0d7ac6f43803d79e05bfc1790c086e6c.bindPopup(popup_fefdb3bd57feb0d496c74c6220d3a494)
+        ;
+
+        
+    
+    
+                marker_0d7ac6f43803d79e05bfc1790c086e6c.setIcon(icon_89bc561743a8f7261dbdb809950a595d);
+            
+    
+            var marker_f15ead04ea018871e2adb3b0d1ed3537 = L.marker(
+                [40.9657303, 29.2552829],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_36fcadf79669c6a634573fd31156427f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71ea239099c1cdcb426a58b8f4dce75b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25dab426627de90d44f547ef8642bdf8 = $(`<div id="html_25dab426627de90d44f547ef8642bdf8" style="width: 100.0%; height: 100.0%;">UCZ MARKETE</div>`)[0];
+                popup_71ea239099c1cdcb426a58b8f4dce75b.setContent(html_25dab426627de90d44f547ef8642bdf8);
+            
+        
+
+        marker_f15ead04ea018871e2adb3b0d1ed3537.bindPopup(popup_71ea239099c1cdcb426a58b8f4dce75b)
+        ;
+
+        
+    
+    
+                marker_f15ead04ea018871e2adb3b0d1ed3537.setIcon(icon_36fcadf79669c6a634573fd31156427f);
+            
+    
+            var marker_81f32d56e8c77b153128bd2c27bdbfe8 = L.marker(
+                [40.9785049, 29.2657757],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_87fefa511fac50924b060bd7bd3596b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8d0f198c4247d30148374f4445ab178 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aea6719fc1cac31601f01956866bc05c = $(`<div id="html_aea6719fc1cac31601f01956866bc05c" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_b8d0f198c4247d30148374f4445ab178.setContent(html_aea6719fc1cac31601f01956866bc05c);
+            
+        
+
+        marker_81f32d56e8c77b153128bd2c27bdbfe8.bindPopup(popup_b8d0f198c4247d30148374f4445ab178)
+        ;
+
+        
+    
+    
+                marker_81f32d56e8c77b153128bd2c27bdbfe8.setIcon(icon_87fefa511fac50924b060bd7bd3596b0);
+            
+    
+            var marker_0b59b7939885dcb21773f00a3cac31af = L.marker(
+                [40.978189, 29.2656469],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_c123a9bf77729cfbe196e1b087e37386 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67fa4cf22a4e2ded4f309b16e5cad8b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fbd26c076e589cb23fa452eecc7d1a8 = $(`<div id="html_0fbd26c076e589cb23fa452eecc7d1a8" style="width: 100.0%; height: 100.0%;">AK Çarşı</div>`)[0];
+                popup_67fa4cf22a4e2ded4f309b16e5cad8b4.setContent(html_0fbd26c076e589cb23fa452eecc7d1a8);
+            
+        
+
+        marker_0b59b7939885dcb21773f00a3cac31af.bindPopup(popup_67fa4cf22a4e2ded4f309b16e5cad8b4)
+        ;
+
+        
+    
+    
+                marker_0b59b7939885dcb21773f00a3cac31af.setIcon(icon_c123a9bf77729cfbe196e1b087e37386);
+            
+    
+            var marker_9064320a6dd2c4f9095320cb073b4e30 = L.marker(
+                [40.9681312, 29.2537444],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_d0d948104287ea74393bbeab9edefd89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_138935b48e898546ade1d8384bfead39 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6ddbfb49e92ab20ee20535fef28b7bf = $(`<div id="html_d6ddbfb49e92ab20ee20535fef28b7bf" style="width: 100.0%; height: 100.0%;">herşy beş</div>`)[0];
+                popup_138935b48e898546ade1d8384bfead39.setContent(html_d6ddbfb49e92ab20ee20535fef28b7bf);
+            
+        
+
+        marker_9064320a6dd2c4f9095320cb073b4e30.bindPopup(popup_138935b48e898546ade1d8384bfead39)
+        ;
+
+        
+    
+    
+                marker_9064320a6dd2c4f9095320cb073b4e30.setIcon(icon_d0d948104287ea74393bbeab9edefd89);
+            
+    
+            var marker_c16b4eabbac03e605870a78e35f90aaf = L.marker(
+                [40.9762045, 29.2717838],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_baabb16e8c3eb49916c5d7ad38de9393 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd6eb62e6976dae804d3e1d26718df93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3ed5b0b580411886b96c4b4af952641 = $(`<div id="html_e3ed5b0b580411886b96c4b4af952641" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_bd6eb62e6976dae804d3e1d26718df93.setContent(html_e3ed5b0b580411886b96c4b4af952641);
+            
+        
+
+        marker_c16b4eabbac03e605870a78e35f90aaf.bindPopup(popup_bd6eb62e6976dae804d3e1d26718df93)
+        ;
+
+        
+    
+    
+                marker_c16b4eabbac03e605870a78e35f90aaf.setIcon(icon_baabb16e8c3eb49916c5d7ad38de9393);
+            
+    
+            var marker_3a6ece357c979c204d5731e7a5d309ec = L.marker(
+                [40.9668645, 29.2638445],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_2ee55ba15c53fd7ee41042eeca7a0f7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e20e7b779b4dc214836d298a7f0996c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f63cd9b6fc641e43f2e166718e5bb54a = $(`<div id="html_f63cd9b6fc641e43f2e166718e5bb54a" style="width: 100.0%; height: 100.0%;">Hakmar</div>`)[0];
+                popup_8e20e7b779b4dc214836d298a7f0996c.setContent(html_f63cd9b6fc641e43f2e166718e5bb54a);
+            
+        
+
+        marker_3a6ece357c979c204d5731e7a5d309ec.bindPopup(popup_8e20e7b779b4dc214836d298a7f0996c)
+        ;
+
+        
+    
+    
+                marker_3a6ece357c979c204d5731e7a5d309ec.setIcon(icon_2ee55ba15c53fd7ee41042eeca7a0f7c);
+            
+    
+            var marker_deb0703911913b3a74abf2452083a108 = L.marker(
+                [40.9630244, 29.2561626],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_4b19f5653d2898243392e63f3f9a97e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6688ec18079544b3d602af2bd5814ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb2923a8b6a10832fb18aa80fac9ee95 = $(`<div id="html_fb2923a8b6a10832fb18aa80fac9ee95" style="width: 100.0%; height: 100.0%;">İstinye park</div>`)[0];
+                popup_a6688ec18079544b3d602af2bd5814ca.setContent(html_fb2923a8b6a10832fb18aa80fac9ee95);
+            
+        
+
+        marker_deb0703911913b3a74abf2452083a108.bindPopup(popup_a6688ec18079544b3d602af2bd5814ca)
+        ;
+
+        
+    
+    
+                marker_deb0703911913b3a74abf2452083a108.setIcon(icon_4b19f5653d2898243392e63f3f9a97e4);
+            
+    
+            var marker_13b7821e071e7bed76f83399b038c1ac = L.marker(
+                [40.9688117, 29.2614669],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_7382cbe4089a520514b9985f84be21e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee8f6fc485b4fa0fa1f40128726adbca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f26073c684863021583682296ba3bde7 = $(`<div id="html_f26073c684863021583682296ba3bde7" style="width: 100.0%; height: 100.0%;">Oruç</div>`)[0];
+                popup_ee8f6fc485b4fa0fa1f40128726adbca.setContent(html_f26073c684863021583682296ba3bde7);
+            
+        
+
+        marker_13b7821e071e7bed76f83399b038c1ac.bindPopup(popup_ee8f6fc485b4fa0fa1f40128726adbca)
+        ;
+
+        
+    
+    
+                marker_13b7821e071e7bed76f83399b038c1ac.setIcon(icon_7382cbe4089a520514b9985f84be21e8);
+            
+    
+            var marker_3fd3c01722b1d8d80556fd393ac9a53f = L.marker(
+                [40.9822631, 29.2799807],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_a6e3ea929238d03cfd7e5ad9805a3626 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24e799f98a05250b3a528ba7356c6238 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6feea169106e2757c4e31fff1268446 = $(`<div id="html_a6feea169106e2757c4e31fff1268446" style="width: 100.0%; height: 100.0%;">Göymen Hipermarketleri</div>`)[0];
+                popup_24e799f98a05250b3a528ba7356c6238.setContent(html_a6feea169106e2757c4e31fff1268446);
+            
+        
+
+        marker_3fd3c01722b1d8d80556fd393ac9a53f.bindPopup(popup_24e799f98a05250b3a528ba7356c6238)
+        ;
+
+        
+    
+    
+                marker_3fd3c01722b1d8d80556fd393ac9a53f.setIcon(icon_a6e3ea929238d03cfd7e5ad9805a3626);
+            
+    
+            var marker_5d2588c338546165e233056eb8a457d6 = L.marker(
+                [41.0363902, 28.9216],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_6f5735c821b69e80e982101cb0fa4de9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cbc08b8f4b014957b69e65024649f382 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd79c01e5d6a2505c6f8007d0338d7e8 = $(`<div id="html_bd79c01e5d6a2505c6f8007d0338d7e8" style="width: 100.0%; height: 100.0%;">2. Matbaacılar Sitesi</div>`)[0];
+                popup_cbc08b8f4b014957b69e65024649f382.setContent(html_bd79c01e5d6a2505c6f8007d0338d7e8);
+            
+        
+
+        marker_5d2588c338546165e233056eb8a457d6.bindPopup(popup_cbc08b8f4b014957b69e65024649f382)
+        ;
+
+        
+    
+    
+                marker_5d2588c338546165e233056eb8a457d6.setIcon(icon_6f5735c821b69e80e982101cb0fa4de9);
+            
+    
+            var marker_3a6d42c5c18ceccdd68786dbd3816735 = L.marker(
+                [41.0091089, 28.9066908],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_a61029ebd32accecf10bb6e4206ea08f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4737d172e97b6473a7660701db88d92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53830c3417f05bf5d7375cbb5a9d6229 = $(`<div id="html_53830c3417f05bf5d7375cbb5a9d6229" style="width: 100.0%; height: 100.0%;">Show Center</div>`)[0];
+                popup_d4737d172e97b6473a7660701db88d92.setContent(html_53830c3417f05bf5d7375cbb5a9d6229);
+            
+        
+
+        marker_3a6d42c5c18ceccdd68786dbd3816735.bindPopup(popup_d4737d172e97b6473a7660701db88d92)
+        ;
+
+        
+    
+    
+                marker_3a6d42c5c18ceccdd68786dbd3816735.setIcon(icon_a61029ebd32accecf10bb6e4206ea08f);
+            
+    
+            var marker_3779a81fd9fa6d3007b9ca9c2c794d1b = L.marker(
+                [41.0248815, 28.9186202],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_3c138b73632f9e8b9911f856f1fadce8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f201baaad92be5fca8607ee7cb361d0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec90b327566793ff2d7dc1fad1d42be9 = $(`<div id="html_ec90b327566793ff2d7dc1fad1d42be9" style="width: 100.0%; height: 100.0%;">2. Matbaacılar Sitesi</div>`)[0];
+                popup_f201baaad92be5fca8607ee7cb361d0e.setContent(html_ec90b327566793ff2d7dc1fad1d42be9);
+            
+        
+
+        marker_3779a81fd9fa6d3007b9ca9c2c794d1b.bindPopup(popup_f201baaad92be5fca8607ee7cb361d0e)
+        ;
+
+        
+    
+    
+                marker_3779a81fd9fa6d3007b9ca9c2c794d1b.setIcon(icon_3c138b73632f9e8b9911f856f1fadce8);
+            
+    
+            var marker_6143bb34c9b4c4acc62d55c71308dede = L.marker(
+                [41.0208384, 28.9122269],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_9ba26831447604f5172ba03d7d8130f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19654c3c19e16c96403416f1f786f224 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_513031980260d672ab9b092c2f4425e3 = $(`<div id="html_513031980260d672ab9b092c2f4425e3" style="width: 100.0%; height: 100.0%;">Ülker</div>`)[0];
+                popup_19654c3c19e16c96403416f1f786f224.setContent(html_513031980260d672ab9b092c2f4425e3);
+            
+        
+
+        marker_6143bb34c9b4c4acc62d55c71308dede.bindPopup(popup_19654c3c19e16c96403416f1f786f224)
+        ;
+
+        
+    
+    
+                marker_6143bb34c9b4c4acc62d55c71308dede.setIcon(icon_9ba26831447604f5172ba03d7d8130f9);
+            
+    
+            var marker_4e56b9b6fc609b8bd817ec945e305706 = L.marker(
+                [41.0037237, 28.902977],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_bae23fc78d7c2bb05b5e1d4649e9b51c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_445d3e51700a249067dcabbbbffecb52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_382ec40f785c8ec021794b08d5a81918 = $(`<div id="html_382ec40f785c8ec021794b08d5a81918" style="width: 100.0%; height: 100.0%;">Burda</div>`)[0];
+                popup_445d3e51700a249067dcabbbbffecb52.setContent(html_382ec40f785c8ec021794b08d5a81918);
+            
+        
+
+        marker_4e56b9b6fc609b8bd817ec945e305706.bindPopup(popup_445d3e51700a249067dcabbbbffecb52)
+        ;
+
+        
+    
+    
+                marker_4e56b9b6fc609b8bd817ec945e305706.setIcon(icon_bae23fc78d7c2bb05b5e1d4649e9b51c);
+            
+    
+            var marker_5cbd3e5a64a3842925b8f939cccccecf = L.marker(
+                [41.0013557, 28.9195331],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_d546c6ad75aec13101f5d87688cfa806 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b45e23fbf0d1abce92d3cf3c6fb5418 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2631a33967ec17c63b60de9baa4668ca = $(`<div id="html_2631a33967ec17c63b60de9baa4668ca" style="width: 100.0%; height: 100.0%;">Bizim Toptan Market</div>`)[0];
+                popup_8b45e23fbf0d1abce92d3cf3c6fb5418.setContent(html_2631a33967ec17c63b60de9baa4668ca);
+            
+        
+
+        marker_5cbd3e5a64a3842925b8f939cccccecf.bindPopup(popup_8b45e23fbf0d1abce92d3cf3c6fb5418)
+        ;
+
+        
+    
+    
+                marker_5cbd3e5a64a3842925b8f939cccccecf.setIcon(icon_d546c6ad75aec13101f5d87688cfa806);
+            
+    
+            var marker_b8f662f6992a4dba1764bcc26c412f37 = L.marker(
+                [41.0031981, 28.9139851],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_e3d8b5c061f7a8801fa53ddc0fbe0bed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91bac2061e697ae55de9123fc09156e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbb93d19f9ba95b6bafdfb134c55bd56 = $(`<div id="html_dbb93d19f9ba95b6bafdfb134c55bd56" style="width: 100.0%; height: 100.0%;">Textil Port</div>`)[0];
+                popup_91bac2061e697ae55de9123fc09156e6.setContent(html_dbb93d19f9ba95b6bafdfb134c55bd56);
+            
+        
+
+        marker_b8f662f6992a4dba1764bcc26c412f37.bindPopup(popup_91bac2061e697ae55de9123fc09156e6)
+        ;
+
+        
+    
+    
+                marker_b8f662f6992a4dba1764bcc26c412f37.setIcon(icon_e3d8b5c061f7a8801fa53ddc0fbe0bed);
+            
+    
+            var marker_6ebfbd40a8b8af2a87091205376f1729 = L.marker(
+                [41.0462314, 28.8597885],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_47ed7897d9fee5671b15b7b0ac356c8b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be251ee3bb2ce77fcf2e5c53730f0dfa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ff8f2791fff21b58d46fa314898e989 = $(`<div id="html_5ff8f2791fff21b58d46fa314898e989" style="width: 100.0%; height: 100.0%;">ÖRNEK</div>`)[0];
+                popup_be251ee3bb2ce77fcf2e5c53730f0dfa.setContent(html_5ff8f2791fff21b58d46fa314898e989);
+            
+        
+
+        marker_6ebfbd40a8b8af2a87091205376f1729.bindPopup(popup_be251ee3bb2ce77fcf2e5c53730f0dfa)
+        ;
+
+        
+    
+    
+                marker_6ebfbd40a8b8af2a87091205376f1729.setIcon(icon_47ed7897d9fee5671b15b7b0ac356c8b);
+            
+    
+            var marker_ebb85caad3dec167a7389610d0cb69f9 = L.marker(
+                [41.0236939, 28.8284752],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_1d1aefebbfbbd4553a4e82aed3f64795 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf1d1304be87245f17d39a27baf2b701 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d76b2ff1f38bb8119f1e8b4f007e3998 = $(`<div id="html_d76b2ff1f38bb8119f1e8b4f007e3998" style="width: 100.0%; height: 100.0%;">Redstar</div>`)[0];
+                popup_bf1d1304be87245f17d39a27baf2b701.setContent(html_d76b2ff1f38bb8119f1e8b4f007e3998);
+            
+        
+
+        marker_ebb85caad3dec167a7389610d0cb69f9.bindPopup(popup_bf1d1304be87245f17d39a27baf2b701)
+        ;
+
+        
+    
+    
+                marker_ebb85caad3dec167a7389610d0cb69f9.setIcon(icon_1d1aefebbfbbd4553a4e82aed3f64795);
+            
+    
+            var marker_7fd84420fe3a70a54a5f66fadfdf07c7 = L.marker(
+                [41.0226934, 28.8282815],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_7973e8399cb8b9257b7217a33ef754c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f1b1fd543dfda5fb62f0a881a73a121 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fcea8d173b3ab57f0bcaf4fa05a5854 = $(`<div id="html_5fcea8d173b3ab57f0bcaf4fa05a5854" style="width: 100.0%; height: 100.0%;">Asya nakis</div>`)[0];
+                popup_8f1b1fd543dfda5fb62f0a881a73a121.setContent(html_5fcea8d173b3ab57f0bcaf4fa05a5854);
+            
+        
+
+        marker_7fd84420fe3a70a54a5f66fadfdf07c7.bindPopup(popup_8f1b1fd543dfda5fb62f0a881a73a121)
+        ;
+
+        
+    
+    
+                marker_7fd84420fe3a70a54a5f66fadfdf07c7.setIcon(icon_7973e8399cb8b9257b7217a33ef754c8);
+            
+    
+            var marker_e0fa0690b4e49392db146d9a7960ce2a = L.marker(
+                [41.0408874, 28.8439841],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_dcfd17c41f74d0ceb1c03e30a6357f55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c6bf15465333e7eb616682bd428b249 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f4c109f8a0c351c4bfcc7e78ece466c = $(`<div id="html_7f4c109f8a0c351c4bfcc7e78ece466c" style="width: 100.0%; height: 100.0%;">Gormez avm</div>`)[0];
+                popup_5c6bf15465333e7eb616682bd428b249.setContent(html_7f4c109f8a0c351c4bfcc7e78ece466c);
+            
+        
+
+        marker_e0fa0690b4e49392db146d9a7960ce2a.bindPopup(popup_5c6bf15465333e7eb616682bd428b249)
+        ;
+
+        
+    
+    
+                marker_e0fa0690b4e49392db146d9a7960ce2a.setIcon(icon_dcfd17c41f74d0ceb1c03e30a6357f55);
+            
+    
+            var marker_1b0154da3f01a82dc3feb7842fe5425a = L.marker(
+                [41.0445838, 28.8302934],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_89d706e62fabf325074fcdbc1937fb20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4bd505731ef920f6b7675e0046578c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f28d1db132202cb843ab6dd649ee1f76 = $(`<div id="html_f28d1db132202cb843ab6dd649ee1f76" style="width: 100.0%; height: 100.0%;">Kiler GYO</div>`)[0];
+                popup_c4bd505731ef920f6b7675e0046578c4.setContent(html_f28d1db132202cb843ab6dd649ee1f76);
+            
+        
+
+        marker_1b0154da3f01a82dc3feb7842fe5425a.bindPopup(popup_c4bd505731ef920f6b7675e0046578c4)
+        ;
+
+        
+    
+    
+                marker_1b0154da3f01a82dc3feb7842fe5425a.setIcon(icon_89d706e62fabf325074fcdbc1937fb20);
+            
+    
+            var marker_f65c3cf2fb2a63264de3cca482589459 = L.marker(
+                [40.9960597, 28.8641597],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_03d7c728c656ffed908161819bf74674 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e6e267951c3910c818e1bdae9157843 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68e85a4602e0fd3aa81279ba87c6b910 = $(`<div id="html_68e85a4602e0fd3aa81279ba87c6b910" style="width: 100.0%; height: 100.0%;">E-Bebek</div>`)[0];
+                popup_5e6e267951c3910c818e1bdae9157843.setContent(html_68e85a4602e0fd3aa81279ba87c6b910);
+            
+        
+
+        marker_f65c3cf2fb2a63264de3cca482589459.bindPopup(popup_5e6e267951c3910c818e1bdae9157843)
+        ;
+
+        
+    
+    
+                marker_f65c3cf2fb2a63264de3cca482589459.setIcon(icon_03d7c728c656ffed908161819bf74674);
+            
+    
+            var marker_6fc0eceded77d18478f9117a2195a43a = L.marker(
+                [40.9348051, 29.1228296],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_f6c817029bd965b6e542f6b709a1ddf3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd444cbc1cd07ba18d613c37cb713bd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d7d7cec42f3816f5d2e907a0aee88dd = $(`<div id="html_0d7d7cec42f3816f5d2e907a0aee88dd" style="width: 100.0%; height: 100.0%;">Mopaş</div>`)[0];
+                popup_bd444cbc1cd07ba18d613c37cb713bd4.setContent(html_0d7d7cec42f3816f5d2e907a0aee88dd);
+            
+        
+
+        marker_6fc0eceded77d18478f9117a2195a43a.bindPopup(popup_bd444cbc1cd07ba18d613c37cb713bd4)
+        ;
+
+        
+    
+    
+                marker_6fc0eceded77d18478f9117a2195a43a.setIcon(icon_f6c817029bd965b6e542f6b709a1ddf3);
+            
+    
+            var marker_a5b0565486e33be670f9838738b1e28a = L.marker(
+                [41.0345008, 28.9790916],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_0f600f47c1d8bd1415b5bbbba35e4326 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7bb51a7fc1d91725fe074fec6c8e32f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c5e482b241543ec554f3458f9caa2ac = $(`<div id="html_8c5e482b241543ec554f3458f9caa2ac" style="width: 100.0%; height: 100.0%;">Halep Pasajı</div>`)[0];
+                popup_d7bb51a7fc1d91725fe074fec6c8e32f.setContent(html_8c5e482b241543ec554f3458f9caa2ac);
+            
+        
+
+        marker_a5b0565486e33be670f9838738b1e28a.bindPopup(popup_d7bb51a7fc1d91725fe074fec6c8e32f)
+        ;
+
+        
+    
+    
+                marker_a5b0565486e33be670f9838738b1e28a.setIcon(icon_0f600f47c1d8bd1415b5bbbba35e4326);
+            
+    
+            var marker_25a38e63e5a22cb8bd1524ff831a0b16 = L.marker(
+                [40.979692, 28.8740015],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_00422293e81f531e60f318fb4dd7235c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_098d6e1ca3859ed0c971f10a1317a0ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_844d6620593a67c16c68a983f29d798e = $(`<div id="html_844d6620593a67c16c68a983f29d798e" style="width: 100.0%; height: 100.0%;">Gür Çarşı İş Hanı</div>`)[0];
+                popup_098d6e1ca3859ed0c971f10a1317a0ed.setContent(html_844d6620593a67c16c68a983f29d798e);
+            
+        
+
+        marker_25a38e63e5a22cb8bd1524ff831a0b16.bindPopup(popup_098d6e1ca3859ed0c971f10a1317a0ed)
+        ;
+
+        
+    
+    
+                marker_25a38e63e5a22cb8bd1524ff831a0b16.setIcon(icon_00422293e81f531e60f318fb4dd7235c);
+            
+    
+            var marker_f3a78cfc13fa96cb602f3ad428c999a0 = L.marker(
+                [41.0549874, 28.9819133],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_fda84968e7a6c8d04a192d8f5baadc62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9670489ff8345956c3cc701746e17adc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08f6ac989b5bfdc7df211cfb8a8b1a37 = $(`<div id="html_08f6ac989b5bfdc7df211cfb8a8b1a37" style="width: 100.0%; height: 100.0%;">BOMONTİ PARK</div>`)[0];
+                popup_9670489ff8345956c3cc701746e17adc.setContent(html_08f6ac989b5bfdc7df211cfb8a8b1a37);
+            
+        
+
+        marker_f3a78cfc13fa96cb602f3ad428c999a0.bindPopup(popup_9670489ff8345956c3cc701746e17adc)
+        ;
+
+        
+    
+    
+                marker_f3a78cfc13fa96cb602f3ad428c999a0.setIcon(icon_fda84968e7a6c8d04a192d8f5baadc62);
+            
+    
+            var marker_7d233daff4119f17d4d3340eac695809 = L.marker(
+                [41.0115441, 28.8870567],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_ff4bb8e618ba98d13a34f32029bb9365 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da9778f0cd2ca2863941313f698e8cae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da339f795311bb84de140c283836e249 = $(`<div id="html_da339f795311bb84de140c283836e249" style="width: 100.0%; height: 100.0%;">Konsept Plaza A-Blok</div>`)[0];
+                popup_da9778f0cd2ca2863941313f698e8cae.setContent(html_da339f795311bb84de140c283836e249);
+            
+        
+
+        marker_7d233daff4119f17d4d3340eac695809.bindPopup(popup_da9778f0cd2ca2863941313f698e8cae)
+        ;
+
+        
+    
+    
+                marker_7d233daff4119f17d4d3340eac695809.setIcon(icon_ff4bb8e618ba98d13a34f32029bb9365);
+            
+    
+            var marker_b2003dc75d98e2509569b0d834e2e8e8 = L.marker(
+                [41.0112129, 28.8872478],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_131c54205dec92f82b6da9dd64da40c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a4411156f27391fc60dd17cb1505041 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bcc82ee23d1ab8d4f4d356fb83ca2a5 = $(`<div id="html_5bcc82ee23d1ab8d4f4d356fb83ca2a5" style="width: 100.0%; height: 100.0%;">Konsept Plaza B-Blok</div>`)[0];
+                popup_4a4411156f27391fc60dd17cb1505041.setContent(html_5bcc82ee23d1ab8d4f4d356fb83ca2a5);
+            
+        
+
+        marker_b2003dc75d98e2509569b0d834e2e8e8.bindPopup(popup_4a4411156f27391fc60dd17cb1505041)
+        ;
+
+        
+    
+    
+                marker_b2003dc75d98e2509569b0d834e2e8e8.setIcon(icon_131c54205dec92f82b6da9dd64da40c1);
+            
+    
+            var marker_b9af0d6762f492237d180ac05bc26423 = L.marker(
+                [41.011464, 28.8874106],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_dbaaf9f13b2e5a2b34ffee2c147f46b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_843d2bcfc7a0f7cc0091e23a254b7768 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_195abb62c335ca43c4170c290812f764 = $(`<div id="html_195abb62c335ca43c4170c290812f764" style="width: 100.0%; height: 100.0%;">Collesium Mall</div>`)[0];
+                popup_843d2bcfc7a0f7cc0091e23a254b7768.setContent(html_195abb62c335ca43c4170c290812f764);
+            
+        
+
+        marker_b9af0d6762f492237d180ac05bc26423.bindPopup(popup_843d2bcfc7a0f7cc0091e23a254b7768)
+        ;
+
+        
+    
+    
+                marker_b9af0d6762f492237d180ac05bc26423.setIcon(icon_dbaaf9f13b2e5a2b34ffee2c147f46b8);
+            
+    
+            var marker_ff1a4edd679b92ff14364caf7d8dbd1c = L.marker(
+                [41.0214353, 28.8799695],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_53412c6ebf9f46c5770da8cb01159054 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6bf17a90d431886925183f8c5c550c3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c7183b27653c14481257fff91d331fa = $(`<div id="html_3c7183b27653c14481257fff91d331fa" style="width: 100.0%; height: 100.0%;">Real Merter AVM</div>`)[0];
+                popup_6bf17a90d431886925183f8c5c550c3f.setContent(html_3c7183b27653c14481257fff91d331fa);
+            
+        
+
+        marker_ff1a4edd679b92ff14364caf7d8dbd1c.bindPopup(popup_6bf17a90d431886925183f8c5c550c3f)
+        ;
+
+        
+    
+    
+                marker_ff1a4edd679b92ff14364caf7d8dbd1c.setIcon(icon_53412c6ebf9f46c5770da8cb01159054);
+            
+    
+            var marker_82d582836b5a8ab34ce4ecf6a64f3e37 = L.marker(
+                [41.0781323, 29.0112099],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_6a0e6184d260e411c4d3f53d8b809ec1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f789c4d1ef5d6301ffc57c72e82f08d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd9b4ac4e9dbc32b7fd984beb47bc553 = $(`<div id="html_cd9b4ac4e9dbc32b7fd984beb47bc553" style="width: 100.0%; height: 100.0%;">Kanyon AVM</div>`)[0];
+                popup_f789c4d1ef5d6301ffc57c72e82f08d2.setContent(html_cd9b4ac4e9dbc32b7fd984beb47bc553);
+            
+        
+
+        marker_82d582836b5a8ab34ce4ecf6a64f3e37.bindPopup(popup_f789c4d1ef5d6301ffc57c72e82f08d2)
+        ;
+
+        
+    
+    
+                marker_82d582836b5a8ab34ce4ecf6a64f3e37.setIcon(icon_6a0e6184d260e411c4d3f53d8b809ec1);
+            
+    
+            var marker_ed894aa2f15ed481c3ba304fcabe3add = L.marker(
+                [40.994175, 29.1218458],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_7f4262e654fa964f11c827a71507599b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55e16b70ce09b50b9f34d74a4d81af2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f6840d71b585dd4eb1d499018689108 = $(`<div id="html_8f6840d71b585dd4eb1d499018689108" style="width: 100.0%; height: 100.0%;">Metropol İstanbul</div>`)[0];
+                popup_55e16b70ce09b50b9f34d74a4d81af2f.setContent(html_8f6840d71b585dd4eb1d499018689108);
+            
+        
+
+        marker_ed894aa2f15ed481c3ba304fcabe3add.bindPopup(popup_55e16b70ce09b50b9f34d74a4d81af2f)
+        ;
+
+        
+    
+    
+                marker_ed894aa2f15ed481c3ba304fcabe3add.setIcon(icon_7f4262e654fa964f11c827a71507599b);
+            
+    
+            var marker_8ba0e1bce601fdcc3d82d2777d406580 = L.marker(
+                [40.8780435, 29.2334008],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_8674a7807d5683366820c6869d15074c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31bb769c107e8606f7b2a17e73c20f5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19bd8629c881de6c17d251472cd218fd = $(`<div id="html_19bd8629c881de6c17d251472cd218fd" style="width: 100.0%; height: 100.0%;">Yön AVM</div>`)[0];
+                popup_31bb769c107e8606f7b2a17e73c20f5d.setContent(html_19bd8629c881de6c17d251472cd218fd);
+            
+        
+
+        marker_8ba0e1bce601fdcc3d82d2777d406580.bindPopup(popup_31bb769c107e8606f7b2a17e73c20f5d)
+        ;
+
+        
+    
+    
+                marker_8ba0e1bce601fdcc3d82d2777d406580.setIcon(icon_8674a7807d5683366820c6869d15074c);
+            
+    
+            var marker_b139efed2fe83733838c24660e005608 = L.marker(
+                [41.094122, 28.7748725],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_e203c34b8c5a81d8cf277341f633c18a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89d064bdb5cf02728d15d2180e9a3fd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7e1c44f4fdf3dff7767038055837a80 = $(`<div id="html_a7e1c44f4fdf3dff7767038055837a80" style="width: 100.0%; height: 100.0%;">medikule avm</div>`)[0];
+                popup_89d064bdb5cf02728d15d2180e9a3fd3.setContent(html_a7e1c44f4fdf3dff7767038055837a80);
+            
+        
+
+        marker_b139efed2fe83733838c24660e005608.bindPopup(popup_89d064bdb5cf02728d15d2180e9a3fd3)
+        ;
+
+        
+    
+    
+                marker_b139efed2fe83733838c24660e005608.setIcon(icon_e203c34b8c5a81d8cf277341f633c18a);
+            
+    
+            var marker_3ac3c9c8a30051561619640138eff901 = L.marker(
+                [41.0157676, 28.96621],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_2d4074b5851bdb7c9a798fa5d222fe59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef67feacea1c90c65c74281ef39d398c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_162fc23e5862aabc5700d63d1626f121 = $(`<div id="html_162fc23e5862aabc5700d63d1626f121" style="width: 100.0%; height: 100.0%;">Byz Dizayn</div>`)[0];
+                popup_ef67feacea1c90c65c74281ef39d398c.setContent(html_162fc23e5862aabc5700d63d1626f121);
+            
+        
+
+        marker_3ac3c9c8a30051561619640138eff901.bindPopup(popup_ef67feacea1c90c65c74281ef39d398c)
+        ;
+
+        
+    
+    
+                marker_3ac3c9c8a30051561619640138eff901.setIcon(icon_2d4074b5851bdb7c9a798fa5d222fe59);
+            
+    
+            var marker_d50b8db277e7d9ab8939107cdbf45f24 = L.marker(
+                [41.0017523, 28.7860451],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_f89ad3914b40d3e19aa01449cb3979c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_598e63b85d9a20510549332fb45d728d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d299f6f677fc9beffef44b121b4f3647 = $(`<div id="html_d299f6f677fc9beffef44b121b4f3647" style="width: 100.0%; height: 100.0%;">Sedef Perde</div>`)[0];
+                popup_598e63b85d9a20510549332fb45d728d.setContent(html_d299f6f677fc9beffef44b121b4f3647);
+            
+        
+
+        marker_d50b8db277e7d9ab8939107cdbf45f24.bindPopup(popup_598e63b85d9a20510549332fb45d728d)
+        ;
+
+        
+    
+    
+                marker_d50b8db277e7d9ab8939107cdbf45f24.setIcon(icon_f89ad3914b40d3e19aa01449cb3979c3);
+            
+    
+            var marker_296d3ee8d141df02f096fa1b242b23b3 = L.marker(
+                [40.9989841, 28.6506323],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_ccaf35762554583f040c53ab5c768210 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_521fbf67d04b757971bf2ac6d5e7b40b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_716c4bac2fd7f24676f5b6f1e3bd29ec = $(`<div id="html_716c4bac2fd7f24676f5b6f1e3bd29ec" style="width: 100.0%; height: 100.0%;">Beylik 2 AVM</div>`)[0];
+                popup_521fbf67d04b757971bf2ac6d5e7b40b.setContent(html_716c4bac2fd7f24676f5b6f1e3bd29ec);
+            
+        
+
+        marker_296d3ee8d141df02f096fa1b242b23b3.bindPopup(popup_521fbf67d04b757971bf2ac6d5e7b40b)
+        ;
+
+        
+    
+    
+                marker_296d3ee8d141df02f096fa1b242b23b3.setIcon(icon_ccaf35762554583f040c53ab5c768210);
+            
+    
+            var marker_b69e69616195fe328d06f9c864dd09a4 = L.marker(
+                [41.1062288, 28.8724883],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_a908ed9de69dcea773fc01f23d23f0cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5bf3aac8d979bb2eaec9f1f308a311eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eddf478c6b60ffea1bad3ec836bce2fd = $(`<div id="html_eddf478c6b60ffea1bad3ec836bce2fd" style="width: 100.0%; height: 100.0%;">Neva AVM</div>`)[0];
+                popup_5bf3aac8d979bb2eaec9f1f308a311eb.setContent(html_eddf478c6b60ffea1bad3ec836bce2fd);
+            
+        
+
+        marker_b69e69616195fe328d06f9c864dd09a4.bindPopup(popup_5bf3aac8d979bb2eaec9f1f308a311eb)
+        ;
+
+        
+    
+    
+                marker_b69e69616195fe328d06f9c864dd09a4.setIcon(icon_a908ed9de69dcea773fc01f23d23f0cf);
+            
+    
+            var marker_836f04c8774683d8edda87f3de1f42ba = L.marker(
+                [41.015242, 28.9752022],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_9fa462d00260c800b26e756dd25bbf8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52ab868e94b802f2fdd53082e5a3a0d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c382e61dc3a9e08edacf4ad652a7098 = $(`<div id="html_1c382e61dc3a9e08edacf4ad652a7098" style="width: 100.0%; height: 100.0%;">Nazifbey Hanı</div>`)[0];
+                popup_52ab868e94b802f2fdd53082e5a3a0d1.setContent(html_1c382e61dc3a9e08edacf4ad652a7098);
+            
+        
+
+        marker_836f04c8774683d8edda87f3de1f42ba.bindPopup(popup_52ab868e94b802f2fdd53082e5a3a0d1)
+        ;
+
+        
+    
+    
+                marker_836f04c8774683d8edda87f3de1f42ba.setIcon(icon_9fa462d00260c800b26e756dd25bbf8e);
+            
+    
+            var marker_e91c6c40333868d8d8fb8150c6563f85 = L.marker(
+                [41.0090954, 29.2134653],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_25af0bc7a66e1a3f5c18149cf4c4fdac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2b68a7f6bff626fec743e11f263a790 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e04f8104182ecaf701c05ee9cbf4516e = $(`<div id="html_e04f8104182ecaf701c05ee9cbf4516e" style="width: 100.0%; height: 100.0%;">Cennet Center</div>`)[0];
+                popup_c2b68a7f6bff626fec743e11f263a790.setContent(html_e04f8104182ecaf701c05ee9cbf4516e);
+            
+        
+
+        marker_e91c6c40333868d8d8fb8150c6563f85.bindPopup(popup_c2b68a7f6bff626fec743e11f263a790)
+        ;
+
+        
+    
+    
+                marker_e91c6c40333868d8d8fb8150c6563f85.setIcon(icon_25af0bc7a66e1a3f5c18149cf4c4fdac);
+            
+    
+            var marker_3074a6e977c052544304a2f8e98c6a8d = L.marker(
+                [41.0092934, 29.2124792],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_3b04e799f233ee165765bdbb1c40ecd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6de00f268e9054dab4af9b1246c470f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_414620cb1faaad79219614cabeed0bbf = $(`<div id="html_414620cb1faaad79219614cabeed0bbf" style="width: 100.0%; height: 100.0%;">Karınca</div>`)[0];
+                popup_6de00f268e9054dab4af9b1246c470f4.setContent(html_414620cb1faaad79219614cabeed0bbf);
+            
+        
+
+        marker_3074a6e977c052544304a2f8e98c6a8d.bindPopup(popup_6de00f268e9054dab4af9b1246c470f4)
+        ;
+
+        
+    
+    
+                marker_3074a6e977c052544304a2f8e98c6a8d.setIcon(icon_3b04e799f233ee165765bdbb1c40ecd8);
+            
+    
+            var marker_9b8ce9d66e65960eed74283cacf4980f = L.marker(
+                [41.0292548, 28.9747296],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_09e796957ed29020010d32fdb6fc8062 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d6bb591107f9a85d0cececf62036256 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e94c7020919f2a09926b4585e58e340e = $(`<div id="html_e94c7020919f2a09926b4585e58e340e" style="width: 100.0%; height: 100.0%;">Unknown</div>`)[0];
+                popup_5d6bb591107f9a85d0cececf62036256.setContent(html_e94c7020919f2a09926b4585e58e340e);
+            
+        
+
+        marker_9b8ce9d66e65960eed74283cacf4980f.bindPopup(popup_5d6bb591107f9a85d0cececf62036256)
+        ;
+
+        
+    
+    
+                marker_9b8ce9d66e65960eed74283cacf4980f.setIcon(icon_09e796957ed29020010d32fdb6fc8062);
+            
+    
+            var marker_3df9261ee86adcf86b5fafe5b09c7fcb = L.marker(
+                [41.023666, 29.1259933],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_299cc4ff3cff1cec16a598fdc5be98ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3cf9c8e544a2a603caf55da39836cfe3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab6e53e6d55cf02c4eabd778e2f84f0b = $(`<div id="html_ab6e53e6d55cf02c4eabd778e2f84f0b" style="width: 100.0%; height: 100.0%;">Meydan İstanbul Alışveriş ve Yaşam Merkezi</div>`)[0];
+                popup_3cf9c8e544a2a603caf55da39836cfe3.setContent(html_ab6e53e6d55cf02c4eabd778e2f84f0b);
+            
+        
+
+        marker_3df9261ee86adcf86b5fafe5b09c7fcb.bindPopup(popup_3cf9c8e544a2a603caf55da39836cfe3)
+        ;
+
+        
+    
+    
+                marker_3df9261ee86adcf86b5fafe5b09c7fcb.setIcon(icon_299cc4ff3cff1cec16a598fdc5be98ef);
+            
+    
+            var marker_657f91c8d4093de527198aebff996909 = L.marker(
+                [40.9239807, 29.1323279],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_8c291f77dd328fa6a3c43e377bc3c241 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c985c77cd446f35e8f2a372df1ce24f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_559da4aa41781ad39b2c3e32aadaca9a = $(`<div id="html_559da4aa41781ad39b2c3e32aadaca9a" style="width: 100.0%; height: 100.0%;">Evkur</div>`)[0];
+                popup_8c985c77cd446f35e8f2a372df1ce24f.setContent(html_559da4aa41781ad39b2c3e32aadaca9a);
+            
+        
+
+        marker_657f91c8d4093de527198aebff996909.bindPopup(popup_8c985c77cd446f35e8f2a372df1ce24f)
+        ;
+
+        
+    
+    
+                marker_657f91c8d4093de527198aebff996909.setIcon(icon_8c291f77dd328fa6a3c43e377bc3c241);
+            
+    
+            var marker_6f38e27d72462698b55de97076cd2034 = L.marker(
+                [40.9229049, 29.1345014],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_18bfd6b67f8b78e0a503f2a3bd539eab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1934fed9f1bde8be4be17fabe5bbb755 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bde9ff5342f0571e4af80abc84ac548d = $(`<div id="html_bde9ff5342f0571e4af80abc84ac548d" style="width: 100.0%; height: 100.0%;">Ev Shop</div>`)[0];
+                popup_1934fed9f1bde8be4be17fabe5bbb755.setContent(html_bde9ff5342f0571e4af80abc84ac548d);
+            
+        
+
+        marker_6f38e27d72462698b55de97076cd2034.bindPopup(popup_1934fed9f1bde8be4be17fabe5bbb755)
+        ;
+
+        
+    
+    
+                marker_6f38e27d72462698b55de97076cd2034.setIcon(icon_18bfd6b67f8b78e0a503f2a3bd539eab);
+            
+    
+            var marker_e605fd6a32513df356a515ecc8a3a8ac = L.marker(
+                [41.0145958, 29.2457157],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_c1081c208aedb7e500f1e35e1cb8c6aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05d4b9e69f5202fe4595e4e39efff553 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0d1450503590536fba6bbbee334a3f0 = $(`<div id="html_c0d1450503590536fba6bbbee334a3f0" style="width: 100.0%; height: 100.0%;">Neonya Meydan Alışveriş Merkezi</div>`)[0];
+                popup_05d4b9e69f5202fe4595e4e39efff553.setContent(html_c0d1450503590536fba6bbbee334a3f0);
+            
+        
+
+        marker_e605fd6a32513df356a515ecc8a3a8ac.bindPopup(popup_05d4b9e69f5202fe4595e4e39efff553)
+        ;
+
+        
+    
+    
+                marker_e605fd6a32513df356a515ecc8a3a8ac.setIcon(icon_c1081c208aedb7e500f1e35e1cb8c6aa);
+            
+    
+            var marker_4bb69694cef26ae7d8fcd5a8dd66a6e4 = L.marker(
+                [40.9259648, 29.1327412],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_34246d4bcd4a2fc7df9dad938d7e276a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ba2bb7c0c06c1c6c033c52efecf399d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c16643fb1a0abda09c1f018915f1b624 = $(`<div id="html_c16643fb1a0abda09c1f018915f1b624" style="width: 100.0%; height: 100.0%;">Hobilant AVM</div>`)[0];
+                popup_0ba2bb7c0c06c1c6c033c52efecf399d.setContent(html_c16643fb1a0abda09c1f018915f1b624);
+            
+        
+
+        marker_4bb69694cef26ae7d8fcd5a8dd66a6e4.bindPopup(popup_0ba2bb7c0c06c1c6c033c52efecf399d)
+        ;
+
+        
+    
+    
+                marker_4bb69694cef26ae7d8fcd5a8dd66a6e4.setIcon(icon_34246d4bcd4a2fc7df9dad938d7e276a);
+            
+    
+            var marker_fac1e98dd203231821605f54a2a11ce2 = L.marker(
+                [40.925924, 29.1325603],
+                {
+}
+            ).addTo(map_bee9f126cfe81fd7a92e6b72d63f9065);
+        
+    
+            var icon_0b26fc28bdfe17932ab960735320c326 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ecd651794170fa542c2bd5a913fbca5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09d585ffbea40998150e2a11308387c4 = $(`<div id="html_09d585ffbea40998150e2a11308387c4" style="width: 100.0%; height: 100.0%;">44 AVM</div>`)[0];
+                popup_ecd651794170fa542c2bd5a913fbca5d.setContent(html_09d585ffbea40998150e2a11308387c4);
+            
+        
+
+        marker_fac1e98dd203231821605f54a2a11ce2.bindPopup(popup_ecd651794170fa542c2bd5a913fbca5d)
+        ;
+
+        
+    
+    
+                marker_fac1e98dd203231821605f54a2a11ce2.setIcon(icon_0b26fc28bdfe17932ab960735320c326);
+            
+</script>
+</html>

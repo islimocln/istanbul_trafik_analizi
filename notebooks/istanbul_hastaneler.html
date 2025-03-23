@@ -1,0 +1,4988 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c608f60ba9931bd3a7df95b4359bc54c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c608f60ba9931bd3a7df95b4359bc54c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c608f60ba9931bd3a7df95b4359bc54c = L.map(
+                "map_c608f60ba9931bd3a7df95b4359bc54c",
+                {
+                    center: [41.0082, 28.9784],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f4c234be8efc45f3aff35c7642c25de2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f4c234be8efc45f3aff35c7642c25de2.addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var marker_be48abbd1cca8c13222ae6b842dab371 = L.marker(
+                [41.0259618, 29.0218119],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_e28211d07a2ef6b42ec58a8e8ee1f89d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cae93311bc7fa2f96be8c845ba538721 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc9896cb7def9435c0b88ddf44124d29 = $(`<div id="html_cc9896cb7def9435c0b88ddf44124d29" style="width: 100.0%; height: 100.0%;">Hospital Türk</div>`)[0];
+                popup_cae93311bc7fa2f96be8c845ba538721.setContent(html_cc9896cb7def9435c0b88ddf44124d29);
+            
+        
+
+        marker_be48abbd1cca8c13222ae6b842dab371.bindPopup(popup_cae93311bc7fa2f96be8c845ba538721)
+        ;
+
+        
+    
+    
+                marker_be48abbd1cca8c13222ae6b842dab371.setIcon(icon_e28211d07a2ef6b42ec58a8e8ee1f89d);
+            
+    
+            var marker_c8fd85dee80fad68b66014393522150e = L.marker(
+                [40.8880578, 29.1822183],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_94dd308246045b26a2899552b6a840cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e788a3aca324f1c82d1d11a1b6d53dac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b856408837a151557b2860a09426d09 = $(`<div id="html_0b856408837a151557b2860a09426d09" style="width: 100.0%; height: 100.0%;">Kartal Yavuz Selim Devlet Hastanesi</div>`)[0];
+                popup_e788a3aca324f1c82d1d11a1b6d53dac.setContent(html_0b856408837a151557b2860a09426d09);
+            
+        
+
+        marker_c8fd85dee80fad68b66014393522150e.bindPopup(popup_e788a3aca324f1c82d1d11a1b6d53dac)
+        ;
+
+        
+    
+    
+                marker_c8fd85dee80fad68b66014393522150e.setIcon(icon_94dd308246045b26a2899552b6a840cb);
+            
+    
+            var marker_4938a347f358bb60c171117d526785a8 = L.marker(
+                [41.0336496, 28.9641454],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_4e9d9bf70695d0154a2798223f0239fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46353aaaabdca892ea194da0c2b96690 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82306d610a85c463bfec929ed1a9fbc4 = $(`<div id="html_82306d610a85c463bfec929ed1a9fbc4" style="width: 100.0%; height: 100.0%;">Bilinmeyen Hastane</div>`)[0];
+                popup_46353aaaabdca892ea194da0c2b96690.setContent(html_82306d610a85c463bfec929ed1a9fbc4);
+            
+        
+
+        marker_4938a347f358bb60c171117d526785a8.bindPopup(popup_46353aaaabdca892ea194da0c2b96690)
+        ;
+
+        
+    
+    
+                marker_4938a347f358bb60c171117d526785a8.setIcon(icon_4e9d9bf70695d0154a2798223f0239fb);
+            
+    
+            var marker_574b01116e8297dacbb76652c86b47cf = L.marker(
+                [41.0111084, 29.0190475],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_ed33c6abd841468c2598fcff0df95534 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7970ca2d3df35cff80b47b2d04ae1605 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4433a1b6f1e5960edfa51b6fd2cb0e14 = $(`<div id="html_4433a1b6f1e5960edfa51b6fd2cb0e14" style="width: 100.0%; height: 100.0%;">Bilinmeyen Hastane</div>`)[0];
+                popup_7970ca2d3df35cff80b47b2d04ae1605.setContent(html_4433a1b6f1e5960edfa51b6fd2cb0e14);
+            
+        
+
+        marker_574b01116e8297dacbb76652c86b47cf.bindPopup(popup_7970ca2d3df35cff80b47b2d04ae1605)
+        ;
+
+        
+    
+    
+                marker_574b01116e8297dacbb76652c86b47cf.setIcon(icon_ed33c6abd841468c2598fcff0df95534);
+            
+    
+            var marker_8e0a9cebf36e7a6ecdc01983153b3816 = L.marker(
+                [41.0060255, 28.7968486],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_7a2b605cb66175b85ff91bb42d30e287 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d79cb4bfd2316abecf4d5487afed58d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09fe3a5730f728780a35fa575b89da81 = $(`<div id="html_09fe3a5730f728780a35fa575b89da81" style="width: 100.0%; height: 100.0%;">Vera Tıp Merkezi</div>`)[0];
+                popup_4d79cb4bfd2316abecf4d5487afed58d.setContent(html_09fe3a5730f728780a35fa575b89da81);
+            
+        
+
+        marker_8e0a9cebf36e7a6ecdc01983153b3816.bindPopup(popup_4d79cb4bfd2316abecf4d5487afed58d)
+        ;
+
+        
+    
+    
+                marker_8e0a9cebf36e7a6ecdc01983153b3816.setIcon(icon_7a2b605cb66175b85ff91bb42d30e287);
+            
+    
+            var marker_56b31ec7243d01c387d2091005ad5f8f = L.marker(
+                [41.0964088, 29.0535611],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_9d1458393dce4cb9db640bf7f155f7c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ddf238f0bea5282491483a060f272864 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9389e4d8d934c4f3c9334290a6e73c28 = $(`<div id="html_9389e4d8d934c4f3c9334290a6e73c28" style="width: 100.0%; height: 100.0%;">Baltalimanı Hastanesi</div>`)[0];
+                popup_ddf238f0bea5282491483a060f272864.setContent(html_9389e4d8d934c4f3c9334290a6e73c28);
+            
+        
+
+        marker_56b31ec7243d01c387d2091005ad5f8f.bindPopup(popup_ddf238f0bea5282491483a060f272864)
+        ;
+
+        
+    
+    
+                marker_56b31ec7243d01c387d2091005ad5f8f.setIcon(icon_9d1458393dce4cb9db640bf7f155f7c7);
+            
+    
+            var marker_6eaeccaf859e7c5eb32d17e1993f4878 = L.marker(
+                [41.0632063, 29.0042388],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_1be449b6aa0a0bf952504251e15d28a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3552e54d63b0aaeb74482d736465c745 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_526ac7c9ff5fbcaf8560ed85ac9af8a2 = $(`<div id="html_526ac7c9ff5fbcaf8560ed85ac9af8a2" style="width: 100.0%; height: 100.0%;">Florence Nightingale</div>`)[0];
+                popup_3552e54d63b0aaeb74482d736465c745.setContent(html_526ac7c9ff5fbcaf8560ed85ac9af8a2);
+            
+        
+
+        marker_6eaeccaf859e7c5eb32d17e1993f4878.bindPopup(popup_3552e54d63b0aaeb74482d736465c745)
+        ;
+
+        
+    
+    
+                marker_6eaeccaf859e7c5eb32d17e1993f4878.setIcon(icon_1be449b6aa0a0bf952504251e15d28a4);
+            
+    
+            var marker_63eb4bd7f007804756635494a0dd4a86 = L.marker(
+                [41.0396776, 29.0522183],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_6049a4cb77163ab72b2a1949980a98e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2825af18d88f592dbb6e7615a351f895 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e25458853610e64a141caeca2a72225 = $(`<div id="html_4e25458853610e64a141caeca2a72225" style="width: 100.0%; height: 100.0%;">Özel Küplüce Tıp Merkez</div>`)[0];
+                popup_2825af18d88f592dbb6e7615a351f895.setContent(html_4e25458853610e64a141caeca2a72225);
+            
+        
+
+        marker_63eb4bd7f007804756635494a0dd4a86.bindPopup(popup_2825af18d88f592dbb6e7615a351f895)
+        ;
+
+        
+    
+    
+                marker_63eb4bd7f007804756635494a0dd4a86.setIcon(icon_6049a4cb77163ab72b2a1949980a98e8);
+            
+    
+            var marker_679fc7d07579df69c8b8b8cedfe00e03 = L.marker(
+                [40.8787769, 29.2368748],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_5144ec0c3f0c659d599618f962c4e5aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22950d89903ba1323b194de04813828e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93f6322ff4a67a76b26f6a10abfe106f = $(`<div id="html_93f6322ff4a67a76b26f6a10abfe106f" style="width: 100.0%; height: 100.0%;">Özel Remedy Hospital</div>`)[0];
+                popup_22950d89903ba1323b194de04813828e.setContent(html_93f6322ff4a67a76b26f6a10abfe106f);
+            
+        
+
+        marker_679fc7d07579df69c8b8b8cedfe00e03.bindPopup(popup_22950d89903ba1323b194de04813828e)
+        ;
+
+        
+    
+    
+                marker_679fc7d07579df69c8b8b8cedfe00e03.setIcon(icon_5144ec0c3f0c659d599618f962c4e5aa);
+            
+    
+            var marker_7569a1dcc9ef79f0b8bf6aa5ecdf595d = L.marker(
+                [41.0479666, 28.8449942],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_130f98690e5230421eab8f18f3f224ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f41f4541050ce44782dc93db427dd3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eafcac9d167f8389be932cb3b4c3a1be = $(`<div id="html_eafcac9d167f8389be932cb3b4c3a1be" style="width: 100.0%; height: 100.0%;">Özel Bağcılar Tekden Hastanesi</div>`)[0];
+                popup_9f41f4541050ce44782dc93db427dd3a.setContent(html_eafcac9d167f8389be932cb3b4c3a1be);
+            
+        
+
+        marker_7569a1dcc9ef79f0b8bf6aa5ecdf595d.bindPopup(popup_9f41f4541050ce44782dc93db427dd3a)
+        ;
+
+        
+    
+    
+                marker_7569a1dcc9ef79f0b8bf6aa5ecdf595d.setIcon(icon_130f98690e5230421eab8f18f3f224ad);
+            
+    
+            var marker_1ee304087588f73b7c10d8ad6415a0d3 = L.marker(
+                [40.977664, 28.8730593],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_3b6ceec10f1724319edf97c519ba9021 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16b7e5af42f12a5b9bce7bbb21d88d8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ab32af1555bf60c17c0cd4f2091bbfa = $(`<div id="html_7ab32af1555bf60c17c0cd4f2091bbfa" style="width: 100.0%; height: 100.0%;">Acıbadem Hospital</div>`)[0];
+                popup_16b7e5af42f12a5b9bce7bbb21d88d8c.setContent(html_7ab32af1555bf60c17c0cd4f2091bbfa);
+            
+        
+
+        marker_1ee304087588f73b7c10d8ad6415a0d3.bindPopup(popup_16b7e5af42f12a5b9bce7bbb21d88d8c)
+        ;
+
+        
+    
+    
+                marker_1ee304087588f73b7c10d8ad6415a0d3.setIcon(icon_3b6ceec10f1724319edf97c519ba9021);
+            
+    
+            var marker_ca88a9d178fcf5dc8df9019b78c90c25 = L.marker(
+                [41.0672214, 29.0013232],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_e7f63da25a549024f87d37246bda14c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f50d204bee8c73b5f2c2f7ef133775dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a157594bf168889b8f7c3bd07f65060 = $(`<div id="html_0a157594bf168889b8f7c3bd07f65060" style="width: 100.0%; height: 100.0%;">Çevre Hastanesi</div>`)[0];
+                popup_f50d204bee8c73b5f2c2f7ef133775dd.setContent(html_0a157594bf168889b8f7c3bd07f65060);
+            
+        
+
+        marker_ca88a9d178fcf5dc8df9019b78c90c25.bindPopup(popup_f50d204bee8c73b5f2c2f7ef133775dd)
+        ;
+
+        
+    
+    
+                marker_ca88a9d178fcf5dc8df9019b78c90c25.setIcon(icon_e7f63da25a549024f87d37246bda14c2);
+            
+    
+            var marker_c2b463d86b9d00849811d3b2aaced05d = L.marker(
+                [41.0673508, 29.0013661],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_4c7fc23af648c0b30e43b1d4e3444015 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_526ace708c8375b6a22c15784e134c59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c47fb2e9278fdd3507e448c3b8737614 = $(`<div id="html_c47fb2e9278fdd3507e448c3b8737614" style="width: 100.0%; height: 100.0%;">Aksoy Hastanesi</div>`)[0];
+                popup_526ace708c8375b6a22c15784e134c59.setContent(html_c47fb2e9278fdd3507e448c3b8737614);
+            
+        
+
+        marker_c2b463d86b9d00849811d3b2aaced05d.bindPopup(popup_526ace708c8375b6a22c15784e134c59)
+        ;
+
+        
+    
+    
+                marker_c2b463d86b9d00849811d3b2aaced05d.setIcon(icon_4c7fc23af648c0b30e43b1d4e3444015);
+            
+    
+            var marker_1d96b202b1276d106692c689d0b2c9fa = L.marker(
+                [41.0112282, 28.6428053],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_9a0d7c0a9e3cd1b00200e5923de589ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_594ab8880e95f2dd3657ee194976b80c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_918e7e35749021a25653f167b9f19927 = $(`<div id="html_918e7e35749021a25653f167b9f19927" style="width: 100.0%; height: 100.0%;">Birinci Göz Hastanesi Beylikdüzü</div>`)[0];
+                popup_594ab8880e95f2dd3657ee194976b80c.setContent(html_918e7e35749021a25653f167b9f19927);
+            
+        
+
+        marker_1d96b202b1276d106692c689d0b2c9fa.bindPopup(popup_594ab8880e95f2dd3657ee194976b80c)
+        ;
+
+        
+    
+    
+                marker_1d96b202b1276d106692c689d0b2c9fa.setIcon(icon_9a0d7c0a9e3cd1b00200e5923de589ce);
+            
+    
+            var marker_533eff2aecd4fc202359796d17d2d988 = L.marker(
+                [41.019077, 28.6274846],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_1e58f6f20eb93473663e5822c7ea97ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c8379acf515a6cb74653263e5c0c965 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5be22301c0b3b7bfb61c2b684305ce0f = $(`<div id="html_5be22301c0b3b7bfb61c2b684305ce0f" style="width: 100.0%; height: 100.0%;">Dünya Göz Hastanesi Beykent</div>`)[0];
+                popup_0c8379acf515a6cb74653263e5c0c965.setContent(html_5be22301c0b3b7bfb61c2b684305ce0f);
+            
+        
+
+        marker_533eff2aecd4fc202359796d17d2d988.bindPopup(popup_0c8379acf515a6cb74653263e5c0c965)
+        ;
+
+        
+    
+    
+                marker_533eff2aecd4fc202359796d17d2d988.setIcon(icon_1e58f6f20eb93473663e5822c7ea97ef);
+            
+    
+            var marker_64314e3c15a99b60946a7ae58b723577 = L.marker(
+                [41.0533806, 28.9952948],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_d7cde5603a653f014ded590f0e5bd124 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93506da09875686094b96735c0477840 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_689846f0618d3a7c541730bd5a4513e2 = $(`<div id="html_689846f0618d3a7c541730bd5a4513e2" style="width: 100.0%; height: 100.0%;">Amerikan Hastanesi</div>`)[0];
+                popup_93506da09875686094b96735c0477840.setContent(html_689846f0618d3a7c541730bd5a4513e2);
+            
+        
+
+        marker_64314e3c15a99b60946a7ae58b723577.bindPopup(popup_93506da09875686094b96735c0477840)
+        ;
+
+        
+    
+    
+                marker_64314e3c15a99b60946a7ae58b723577.setIcon(icon_d7cde5603a653f014ded590f0e5bd124);
+            
+    
+            var marker_e16c4b78e9152c0be5cf52cb0ea1df69 = L.marker(
+                [41.057449, 28.9158289],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_860f1a8279d9269d565c383da118c67d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c93b0afb94e1ad480cf31bb35d4055b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e2e3e4d131b5f74430a79cfc3f2949a = $(`<div id="html_5e2e3e4d131b5f74430a79cfc3f2949a" style="width: 100.0%; height: 100.0%;">Belde Tıp Merkezi</div>`)[0];
+                popup_3c93b0afb94e1ad480cf31bb35d4055b.setContent(html_5e2e3e4d131b5f74430a79cfc3f2949a);
+            
+        
+
+        marker_e16c4b78e9152c0be5cf52cb0ea1df69.bindPopup(popup_3c93b0afb94e1ad480cf31bb35d4055b)
+        ;
+
+        
+    
+    
+                marker_e16c4b78e9152c0be5cf52cb0ea1df69.setIcon(icon_860f1a8279d9269d565c383da118c67d);
+            
+    
+            var marker_d6f8ea4a2f95a71fbaa830495dcd5db0 = L.marker(
+                [41.0347149, 28.6806966],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_a3a28ede00a2abcfa0a6805cf9495893 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_558ebbe1f6af5dbd195467ba63abfc45 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_164b2266688b53cd20f30ae4694b7aba = $(`<div id="html_164b2266688b53cd20f30ae4694b7aba" style="width: 100.0%; height: 100.0%;">Alataş Polikliniği</div>`)[0];
+                popup_558ebbe1f6af5dbd195467ba63abfc45.setContent(html_164b2266688b53cd20f30ae4694b7aba);
+            
+        
+
+        marker_d6f8ea4a2f95a71fbaa830495dcd5db0.bindPopup(popup_558ebbe1f6af5dbd195467ba63abfc45)
+        ;
+
+        
+    
+    
+                marker_d6f8ea4a2f95a71fbaa830495dcd5db0.setIcon(icon_a3a28ede00a2abcfa0a6805cf9495893);
+            
+    
+            var marker_3f7ba7e8c399c0aad8a8be393e611197 = L.marker(
+                [41.0557195, 28.9995499],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_2128600d09d077fa7d973da780c97b16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0342a09f8290db4d0be4cff96b6ff7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcc2758dfdf4200fef0ed9a621f90776 = $(`<div id="html_fcc2758dfdf4200fef0ed9a621f90776" style="width: 100.0%; height: 100.0%;">Acıbadem Fulya Hastanesi</div>`)[0];
+                popup_e0342a09f8290db4d0be4cff96b6ff7f.setContent(html_fcc2758dfdf4200fef0ed9a621f90776);
+            
+        
+
+        marker_3f7ba7e8c399c0aad8a8be393e611197.bindPopup(popup_e0342a09f8290db4d0be4cff96b6ff7f)
+        ;
+
+        
+    
+    
+                marker_3f7ba7e8c399c0aad8a8be393e611197.setIcon(icon_2128600d09d077fa7d973da780c97b16);
+            
+    
+            var marker_5187199671fcb9dec400a8ff5d8fbb6d = L.marker(
+                [41.0054462, 28.7061163],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_0b51703622166aa6aae730172fd3ae6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_427578ea3325c6d1f026e5ecc15826c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eba999b9f6b6b0e31e46e98812545ad9 = $(`<div id="html_eba999b9f6b6b0e31e46e98812545ad9" style="width: 100.0%; height: 100.0%;">Özel Avcılar Anadolu Hastanesi</div>`)[0];
+                popup_427578ea3325c6d1f026e5ecc15826c1.setContent(html_eba999b9f6b6b0e31e46e98812545ad9);
+            
+        
+
+        marker_5187199671fcb9dec400a8ff5d8fbb6d.bindPopup(popup_427578ea3325c6d1f026e5ecc15826c1)
+        ;
+
+        
+    
+    
+                marker_5187199671fcb9dec400a8ff5d8fbb6d.setIcon(icon_0b51703622166aa6aae730172fd3ae6d);
+            
+    
+            var marker_d1baaa60a15df7321b6fe80382654bf2 = L.marker(
+                [40.9947818, 28.709593],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_39b37e4251164d39d594a1ef3bd29baf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50ce1859a404e7712bc05e59792a0d55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_050f724d9e185fadb09c03512e514242 = $(`<div id="html_050f724d9e185fadb09c03512e514242" style="width: 100.0%; height: 100.0%;">Özel Avcılar Hospital</div>`)[0];
+                popup_50ce1859a404e7712bc05e59792a0d55.setContent(html_050f724d9e185fadb09c03512e514242);
+            
+        
+
+        marker_d1baaa60a15df7321b6fe80382654bf2.bindPopup(popup_50ce1859a404e7712bc05e59792a0d55)
+        ;
+
+        
+    
+    
+                marker_d1baaa60a15df7321b6fe80382654bf2.setIcon(icon_39b37e4251164d39d594a1ef3bd29baf);
+            
+    
+            var marker_742b8ef4a15d664e991f1469592a8330 = L.marker(
+                [40.9812753, 28.7211479],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_ec02216db74a774e0d02de538a8ad5e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_064f0e70381c52971e35b8774db9f6c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbaa5a2dc71a3e0a302c7878d129534f = $(`<div id="html_fbaa5a2dc71a3e0a302c7878d129534f" style="width: 100.0%; height: 100.0%;">Özel Medicana Hastanesi</div>`)[0];
+                popup_064f0e70381c52971e35b8774db9f6c5.setContent(html_fbaa5a2dc71a3e0a302c7878d129534f);
+            
+        
+
+        marker_742b8ef4a15d664e991f1469592a8330.bindPopup(popup_064f0e70381c52971e35b8774db9f6c5)
+        ;
+
+        
+    
+    
+                marker_742b8ef4a15d664e991f1469592a8330.setIcon(icon_ec02216db74a774e0d02de538a8ad5e7);
+            
+    
+            var marker_b1c38c8f3c028cc00e4e7e5e7282f99a = L.marker(
+                [41.0554676, 28.9983966],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_7ecf7e4b032504a04529075bbc3a489c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a12407258e6bf87d9f46ccf63e1b69aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ea6c1ef59e457d1c195c35c5fe917eb = $(`<div id="html_3ea6c1ef59e457d1c195c35c5fe917eb" style="width: 100.0%; height: 100.0%;">İstanbul Tüpbebek</div>`)[0];
+                popup_a12407258e6bf87d9f46ccf63e1b69aa.setContent(html_3ea6c1ef59e457d1c195c35c5fe917eb);
+            
+        
+
+        marker_b1c38c8f3c028cc00e4e7e5e7282f99a.bindPopup(popup_a12407258e6bf87d9f46ccf63e1b69aa)
+        ;
+
+        
+    
+    
+                marker_b1c38c8f3c028cc00e4e7e5e7282f99a.setIcon(icon_7ecf7e4b032504a04529075bbc3a489c);
+            
+    
+            var marker_35f576cf0433120a9b59f6c1a5972fcd = L.marker(
+                [41.0327835, 28.964016],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_f85c95d42d499557f38eea3bfa00ce0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_796d00eea1fb2628469b36b0c8cee1c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f8c822328bbbf35a3a21c967c1f6fab = $(`<div id="html_9f8c822328bbbf35a3a21c967c1f6fab" style="width: 100.0%; height: 100.0%;">Kasım Paşa Asker Hastanesi</div>`)[0];
+                popup_796d00eea1fb2628469b36b0c8cee1c4.setContent(html_9f8c822328bbbf35a3a21c967c1f6fab);
+            
+        
+
+        marker_35f576cf0433120a9b59f6c1a5972fcd.bindPopup(popup_796d00eea1fb2628469b36b0c8cee1c4)
+        ;
+
+        
+    
+    
+                marker_35f576cf0433120a9b59f6c1a5972fcd.setIcon(icon_f85c95d42d499557f38eea3bfa00ce0a);
+            
+    
+            var marker_c419e2285b78c758bc98cb8adbf71cf9 = L.marker(
+                [41.06524, 28.995985],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_1d8ccdd93a54223d8a5cfd591e7ded63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9524c81770c8743e33bca1c8158a6085 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_632ef08366f306f82db82721d56651fb = $(`<div id="html_632ef08366f306f82db82721d56651fb" style="width: 100.0%; height: 100.0%;">Mecidiyeköy KBB ve Vertigo Kliniği</div>`)[0];
+                popup_9524c81770c8743e33bca1c8158a6085.setContent(html_632ef08366f306f82db82721d56651fb);
+            
+        
+
+        marker_c419e2285b78c758bc98cb8adbf71cf9.bindPopup(popup_9524c81770c8743e33bca1c8158a6085)
+        ;
+
+        
+    
+    
+                marker_c419e2285b78c758bc98cb8adbf71cf9.setIcon(icon_1d8ccdd93a54223d8a5cfd591e7ded63);
+            
+    
+            var marker_7532fde9c7dd3bcae4316c8c9e854484 = L.marker(
+                [41.0789994, 28.9270647],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_0b1776cb4baf4cbcab1c785b57f7b7d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_658812c5a496ee621a023e768345a181 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be3d9699d93c37d807cf307377b2ddcc = $(`<div id="html_be3d9699d93c37d807cf307377b2ddcc" style="width: 100.0%; height: 100.0%;">Alibey Hastanesi</div>`)[0];
+                popup_658812c5a496ee621a023e768345a181.setContent(html_be3d9699d93c37d807cf307377b2ddcc);
+            
+        
+
+        marker_7532fde9c7dd3bcae4316c8c9e854484.bindPopup(popup_658812c5a496ee621a023e768345a181)
+        ;
+
+        
+    
+    
+                marker_7532fde9c7dd3bcae4316c8c9e854484.setIcon(icon_0b1776cb4baf4cbcab1c785b57f7b7d6);
+            
+    
+            var marker_4cb3a97e2cadbd06c9f4c1e37806b8fa = L.marker(
+                [41.0241414, 28.9166504],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_dbab378d7cf61b048febd8b7a12eb543 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a790d0e6d79fa5f244f308b7e46c4420 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a584d8ea1474771209fb919bc561c564 = $(`<div id="html_a584d8ea1474771209fb919bc561c564" style="width: 100.0%; height: 100.0%;">Koç Üniversitesi Hastanesi</div>`)[0];
+                popup_a790d0e6d79fa5f244f308b7e46c4420.setContent(html_a584d8ea1474771209fb919bc561c564);
+            
+        
+
+        marker_4cb3a97e2cadbd06c9f4c1e37806b8fa.bindPopup(popup_a790d0e6d79fa5f244f308b7e46c4420)
+        ;
+
+        
+    
+    
+                marker_4cb3a97e2cadbd06c9f4c1e37806b8fa.setIcon(icon_dbab378d7cf61b048febd8b7a12eb543);
+            
+    
+            var marker_05433064ad2d0df40b6a737dfe8c65e3 = L.marker(
+                [41.0178075, 28.6608987],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_ad11ec940e0713758b403c67819d26d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_daa5e9eb200c0ab3c1c40d46163b7349 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_196ced4d7dbd2f7c4348dccfbeabc76b = $(`<div id="html_196ced4d7dbd2f7c4348dccfbeabc76b" style="width: 100.0%; height: 100.0%;">Özel Mediplus Tıp Merkezi</div>`)[0];
+                popup_daa5e9eb200c0ab3c1c40d46163b7349.setContent(html_196ced4d7dbd2f7c4348dccfbeabc76b);
+            
+        
+
+        marker_05433064ad2d0df40b6a737dfe8c65e3.bindPopup(popup_daa5e9eb200c0ab3c1c40d46163b7349)
+        ;
+
+        
+    
+    
+                marker_05433064ad2d0df40b6a737dfe8c65e3.setIcon(icon_ad11ec940e0713758b403c67819d26d9);
+            
+    
+            var marker_17cf197167f072bdda959e6215f02f77 = L.marker(
+                [40.9970758, 28.8560596],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_37173daa3a08c2e73a5de54059c57500 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8eb0ef694d2107d8ab4b95438d4f5782 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3cd86de7f900fbc98484205d3e6ef504 = $(`<div id="html_3cd86de7f900fbc98484205d3e6ef504" style="width: 100.0%; height: 100.0%;">Bakırköy Dr. Sadi Konuk Eğitim ve Araştırma Hastanesi Bahçelievler Polikliniği</div>`)[0];
+                popup_8eb0ef694d2107d8ab4b95438d4f5782.setContent(html_3cd86de7f900fbc98484205d3e6ef504);
+            
+        
+
+        marker_17cf197167f072bdda959e6215f02f77.bindPopup(popup_8eb0ef694d2107d8ab4b95438d4f5782)
+        ;
+
+        
+    
+    
+                marker_17cf197167f072bdda959e6215f02f77.setIcon(icon_37173daa3a08c2e73a5de54059c57500);
+            
+    
+            var marker_a88c5c4a7a3c1704df26de1f2840a9cf = L.marker(
+                [41.0412184, 28.9820377],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_838dbd1c4a03d1e468c73430d3862ff1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fca9cb982915c03ef8da85a7b4ef1758 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00ddb770ecef5ef510a95a52902ce363 = $(`<div id="html_00ddb770ecef5ef510a95a52902ce363" style="width: 100.0%; height: 100.0%;">Bilinmeyen Hastane</div>`)[0];
+                popup_fca9cb982915c03ef8da85a7b4ef1758.setContent(html_00ddb770ecef5ef510a95a52902ce363);
+            
+        
+
+        marker_a88c5c4a7a3c1704df26de1f2840a9cf.bindPopup(popup_fca9cb982915c03ef8da85a7b4ef1758)
+        ;
+
+        
+    
+    
+                marker_a88c5c4a7a3c1704df26de1f2840a9cf.setIcon(icon_838dbd1c4a03d1e468c73430d3862ff1);
+            
+    
+            var marker_90fc55aeb1232f448651f0caf8db5422 = L.marker(
+                [41.0245743, 28.9742012],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_fe6d38f2f35b70b17fd0bc2424010c87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf854710e571818b41b27712f4b016f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddee2c404f27b2069e36867324a2d3b5 = $(`<div id="html_ddee2c404f27b2069e36867324a2d3b5" style="width: 100.0%; height: 100.0%;">Beyoğlu Göz Hastanesi</div>`)[0];
+                popup_cf854710e571818b41b27712f4b016f6.setContent(html_ddee2c404f27b2069e36867324a2d3b5);
+            
+        
+
+        marker_90fc55aeb1232f448651f0caf8db5422.bindPopup(popup_cf854710e571818b41b27712f4b016f6)
+        ;
+
+        
+    
+    
+                marker_90fc55aeb1232f448651f0caf8db5422.setIcon(icon_fe6d38f2f35b70b17fd0bc2424010c87);
+            
+    
+            var marker_c3df788e6f430cd2edcec413491af638 = L.marker(
+                [41.0614165, 28.8016254],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_00f90bd7e3641b9b239b1ec26c850da0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22e075fbd5f717fe62fe66ff80e77379 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c28fd97c304a35a87f88814896233cab = $(`<div id="html_c28fd97c304a35a87f88814896233cab" style="width: 100.0%; height: 100.0%;">Özel Akgün Tem Hastanesi</div>`)[0];
+                popup_22e075fbd5f717fe62fe66ff80e77379.setContent(html_c28fd97c304a35a87f88814896233cab);
+            
+        
+
+        marker_c3df788e6f430cd2edcec413491af638.bindPopup(popup_22e075fbd5f717fe62fe66ff80e77379)
+        ;
+
+        
+    
+    
+                marker_c3df788e6f430cd2edcec413491af638.setIcon(icon_00f90bd7e3641b9b239b1ec26c850da0);
+            
+    
+            var marker_f6010f11871c8d28914bd7b40dfc6eff = L.marker(
+                [41.0314549, 28.974911],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_3eece1d415e3399d7ead22d7015585dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d5e59600410d2d3186eed83d5582c4a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5fbd4015bc51f7dfeaa0a9f70e11224 = $(`<div id="html_b5fbd4015bc51f7dfeaa0a9f70e11224" style="width: 100.0%; height: 100.0%;">Beyoglu</div>`)[0];
+                popup_d5e59600410d2d3186eed83d5582c4a7.setContent(html_b5fbd4015bc51f7dfeaa0a9f70e11224);
+            
+        
+
+        marker_f6010f11871c8d28914bd7b40dfc6eff.bindPopup(popup_d5e59600410d2d3186eed83d5582c4a7)
+        ;
+
+        
+    
+    
+                marker_f6010f11871c8d28914bd7b40dfc6eff.setIcon(icon_3eece1d415e3399d7ead22d7015585dc);
+            
+    
+            var marker_4e1afb88290ecbdfb200d5a9ab72d95d = L.marker(
+                [41.0113498, 28.6451328],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_043c1842aff85bde72ea3f9053bea1ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_feb6d5b71e7f2dc3fc4b87a0346328e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45b8424cb564a9ba69de3a5e2b0b0933 = $(`<div id="html_45b8424cb564a9ba69de3a5e2b0b0933" style="width: 100.0%; height: 100.0%;">Bilinmeyen Hastane</div>`)[0];
+                popup_feb6d5b71e7f2dc3fc4b87a0346328e9.setContent(html_45b8424cb564a9ba69de3a5e2b0b0933);
+            
+        
+
+        marker_4e1afb88290ecbdfb200d5a9ab72d95d.bindPopup(popup_feb6d5b71e7f2dc3fc4b87a0346328e9)
+        ;
+
+        
+    
+    
+                marker_4e1afb88290ecbdfb200d5a9ab72d95d.setIcon(icon_043c1842aff85bde72ea3f9053bea1ae);
+            
+    
+            var marker_d46968e2199efe59750186ea3c4d1a32 = L.marker(
+                [41.0437273, 28.8796744],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_e08af09ebdeb6e22ccc4385383d70f49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26613075900d1f8a213be44032989ea8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0bbe5ba0a3a91f69fc04982529c27bc6 = $(`<div id="html_0bbe5ba0a3a91f69fc04982529c27bc6" style="width: 100.0%; height: 100.0%;">Güney Hastanesi</div>`)[0];
+                popup_26613075900d1f8a213be44032989ea8.setContent(html_0bbe5ba0a3a91f69fc04982529c27bc6);
+            
+        
+
+        marker_d46968e2199efe59750186ea3c4d1a32.bindPopup(popup_26613075900d1f8a213be44032989ea8)
+        ;
+
+        
+    
+    
+                marker_d46968e2199efe59750186ea3c4d1a32.setIcon(icon_e08af09ebdeb6e22ccc4385383d70f49);
+            
+    
+            var marker_48edab4c02b88191258153c09875f1a8 = L.marker(
+                [41.0125315, 28.9400268],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_1583cc7866efd8b2c250342ecf3cd4bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f6c73765dcc5b9918f6b4cf8c7a30c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_870b4de506b8be81aeea20a0883c5454 = $(`<div id="html_870b4de506b8be81aeea20a0883c5454" style="width: 100.0%; height: 100.0%;">Medipol Üniversitesi Fındıkzade Hastanesi</div>`)[0];
+                popup_3f6c73765dcc5b9918f6b4cf8c7a30c3.setContent(html_870b4de506b8be81aeea20a0883c5454);
+            
+        
+
+        marker_48edab4c02b88191258153c09875f1a8.bindPopup(popup_3f6c73765dcc5b9918f6b4cf8c7a30c3)
+        ;
+
+        
+    
+    
+                marker_48edab4c02b88191258153c09875f1a8.setIcon(icon_1583cc7866efd8b2c250342ecf3cd4bc);
+            
+    
+            var marker_ce196965186f52eb468d98d80e06347a = L.marker(
+                [41.0156766, 28.9507717],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_f618a22f5929bf6d815bbf600013c41d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e80b2d6b4403e86df281319ed73f094f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fa4503bdfd19c6dd2eeac565b2c9729 = $(`<div id="html_8fa4503bdfd19c6dd2eeac565b2c9729" style="width: 100.0%; height: 100.0%;">Özel Fatih Hastanesi</div>`)[0];
+                popup_e80b2d6b4403e86df281319ed73f094f.setContent(html_8fa4503bdfd19c6dd2eeac565b2c9729);
+            
+        
+
+        marker_ce196965186f52eb468d98d80e06347a.bindPopup(popup_e80b2d6b4403e86df281319ed73f094f)
+        ;
+
+        
+    
+    
+                marker_ce196965186f52eb468d98d80e06347a.setIcon(icon_f618a22f5929bf6d815bbf600013c41d);
+            
+    
+            var marker_5404d712e931f23a345d0572bed5d7af = L.marker(
+                [41.0555721, 28.9980027],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_ebd5bf1b3855eb994dc9dcad39ddb8a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a42d1a9ad94ada837a2af3086ad9fb36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2244078a663c51c3a37bcdd2fde68959 = $(`<div id="html_2244078a663c51c3a37bcdd2fde68959" style="width: 100.0%; height: 100.0%;">İstanbul Cerrahi Hastanesi</div>`)[0];
+                popup_a42d1a9ad94ada837a2af3086ad9fb36.setContent(html_2244078a663c51c3a37bcdd2fde68959);
+            
+        
+
+        marker_5404d712e931f23a345d0572bed5d7af.bindPopup(popup_a42d1a9ad94ada837a2af3086ad9fb36)
+        ;
+
+        
+    
+    
+                marker_5404d712e931f23a345d0572bed5d7af.setIcon(icon_ebd5bf1b3855eb994dc9dcad39ddb8a8);
+            
+    
+            var marker_bf27b5a90ba16a21e1c6b85f68640ad8 = L.marker(
+                [41.0092457, 28.9457972],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_a84d1f2c7218b5988e966b1dc512acc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5b07789c7ba5da44424f17acbf211fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_554c6e378e223551ce2c2de659d05880 = $(`<div id="html_554c6e378e223551ce2c2de659d05880" style="width: 100.0%; height: 100.0%;">istanbul Eğitim ve Araştırma Hastanesi Poliklinikleri</div>`)[0];
+                popup_f5b07789c7ba5da44424f17acbf211fd.setContent(html_554c6e378e223551ce2c2de659d05880);
+            
+        
+
+        marker_bf27b5a90ba16a21e1c6b85f68640ad8.bindPopup(popup_f5b07789c7ba5da44424f17acbf211fd)
+        ;
+
+        
+    
+    
+                marker_bf27b5a90ba16a21e1c6b85f68640ad8.setIcon(icon_a84d1f2c7218b5988e966b1dc512acc4);
+            
+    
+            var marker_95fe68d46a1f6446b7cc6dad3acdbb6b = L.marker(
+                [41.0091541, 28.9432435],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_27f7fdd028c03ac03dc3ac165ae180b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1cef7f1fa055ec3e1673214d801b25e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59b8b9a8ac6a6b68894722fc0d57745f = $(`<div id="html_59b8b9a8ac6a6b68894722fc0d57745f" style="width: 100.0%; height: 100.0%;">İstanbul Üniversitesi Kardiyoloji enistitusu</div>`)[0];
+                popup_e1cef7f1fa055ec3e1673214d801b25e.setContent(html_59b8b9a8ac6a6b68894722fc0d57745f);
+            
+        
+
+        marker_95fe68d46a1f6446b7cc6dad3acdbb6b.bindPopup(popup_e1cef7f1fa055ec3e1673214d801b25e)
+        ;
+
+        
+    
+    
+                marker_95fe68d46a1f6446b7cc6dad3acdbb6b.setIcon(icon_27f7fdd028c03ac03dc3ac165ae180b7);
+            
+    
+            var marker_aca736a3d013a32eab084186f511492d = L.marker(
+                [40.9939323, 28.9146943],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_f3400a5db8188cd8de148f5b9a0f4faf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_723b1d53d3f8bc230967332d9a860a5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b6ddc09129f7517cb6888ed6b527b13 = $(`<div id="html_5b6ddc09129f7517cb6888ed6b527b13" style="width: 100.0%; height: 100.0%;">Surp Pırgiç Ermeni Hastanesi</div>`)[0];
+                popup_723b1d53d3f8bc230967332d9a860a5c.setContent(html_5b6ddc09129f7517cb6888ed6b527b13);
+            
+        
+
+        marker_aca736a3d013a32eab084186f511492d.bindPopup(popup_723b1d53d3f8bc230967332d9a860a5c)
+        ;
+
+        
+    
+    
+                marker_aca736a3d013a32eab084186f511492d.setIcon(icon_f3400a5db8188cd8de148f5b9a0f4faf);
+            
+    
+            var marker_7e52aa087b10b72f11c5560f7ebdb127 = L.marker(
+                [41.0301322, 28.8712404],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_e9eae299ea1e60db5f9452acd8f1ee5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17d11598b2cd1b77422f6b24d4614f23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3b1bf5b45b47b1d6e1d899701d0a98d = $(`<div id="html_f3b1bf5b45b47b1d6e1d899701d0a98d" style="width: 100.0%; height: 100.0%;">Bağcılar Eğitim ve Araştırma Hastanesi</div>`)[0];
+                popup_17d11598b2cd1b77422f6b24d4614f23.setContent(html_f3b1bf5b45b47b1d6e1d899701d0a98d);
+            
+        
+
+        marker_7e52aa087b10b72f11c5560f7ebdb127.bindPopup(popup_17d11598b2cd1b77422f6b24d4614f23)
+        ;
+
+        
+    
+    
+                marker_7e52aa087b10b72f11c5560f7ebdb127.setIcon(icon_e9eae299ea1e60db5f9452acd8f1ee5c);
+            
+    
+            var marker_36f8bdb96847ed3521c47b974413b6a6 = L.marker(
+                [41.0656093, 28.8999746],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_1971d6360ff803e0a80081da13c1c10e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67f3ec1c883d4251e92c9b179b493302 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c696cf72db33acf88baf28ca4759317 = $(`<div id="html_3c696cf72db33acf88baf28ca4759317" style="width: 100.0%; height: 100.0%;">Özel İstanbul Şafak Hastahanesi</div>`)[0];
+                popup_67f3ec1c883d4251e92c9b179b493302.setContent(html_3c696cf72db33acf88baf28ca4759317);
+            
+        
+
+        marker_36f8bdb96847ed3521c47b974413b6a6.bindPopup(popup_67f3ec1c883d4251e92c9b179b493302)
+        ;
+
+        
+    
+    
+                marker_36f8bdb96847ed3521c47b974413b6a6.setIcon(icon_1971d6360ff803e0a80081da13c1c10e);
+            
+    
+            var marker_d5458a97b5de23f7d3e8c6a0a7265eb2 = L.marker(
+                [41.0994567, 28.8633202],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_1f3a8ada5238993ff99c79cbc8f01690 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d615db870ac41a113c03ee7554b18133 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f471a3dc09fd6389d84d59d51ce51cdc = $(`<div id="html_f471a3dc09fd6389d84d59d51ce51cdc" style="width: 100.0%; height: 100.0%;">Medigold Hastahanesi</div>`)[0];
+                popup_d615db870ac41a113c03ee7554b18133.setContent(html_f471a3dc09fd6389d84d59d51ce51cdc);
+            
+        
+
+        marker_d5458a97b5de23f7d3e8c6a0a7265eb2.bindPopup(popup_d615db870ac41a113c03ee7554b18133)
+        ;
+
+        
+    
+    
+                marker_d5458a97b5de23f7d3e8c6a0a7265eb2.setIcon(icon_1f3a8ada5238993ff99c79cbc8f01690);
+            
+    
+            var marker_ceaa7907db5fa75fc4602b8f3e8a6b70 = L.marker(
+                [41.1049081, 28.8645332],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_7cbf16571d704147896f852b45956814 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6655dbe249a2d109de571994bf65de59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f451531ccc3334a5c97ee2e8127335d0 = $(`<div id="html_f451531ccc3334a5c97ee2e8127335d0" style="width: 100.0%; height: 100.0%;">Özel gop Yaşam Diyaliz Merkezi</div>`)[0];
+                popup_6655dbe249a2d109de571994bf65de59.setContent(html_f451531ccc3334a5c97ee2e8127335d0);
+            
+        
+
+        marker_ceaa7907db5fa75fc4602b8f3e8a6b70.bindPopup(popup_6655dbe249a2d109de571994bf65de59)
+        ;
+
+        
+    
+    
+                marker_ceaa7907db5fa75fc4602b8f3e8a6b70.setIcon(icon_7cbf16571d704147896f852b45956814);
+            
+    
+            var marker_1ab034b80a090d75dcf574063dd5cb4b = L.marker(
+                [41.1034186, 28.8616773],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_ebf4846b0be970a8f721dfe4623a4238 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_004c3bb30b0e40ccaefe71654f741e5a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d491cc159a10d0100ea5f5a7377edb1a = $(`<div id="html_d491cc159a10d0100ea5f5a7377edb1a" style="width: 100.0%; height: 100.0%;">İstanbulum Tıp Merkezi</div>`)[0];
+                popup_004c3bb30b0e40ccaefe71654f741e5a.setContent(html_d491cc159a10d0100ea5f5a7377edb1a);
+            
+        
+
+        marker_1ab034b80a090d75dcf574063dd5cb4b.bindPopup(popup_004c3bb30b0e40ccaefe71654f741e5a)
+        ;
+
+        
+    
+    
+                marker_1ab034b80a090d75dcf574063dd5cb4b.setIcon(icon_ebf4846b0be970a8f721dfe4623a4238);
+            
+    
+            var marker_2a9de91351ccc6b147c1afbafc5817ad = L.marker(
+                [41.0589817, 29.0010012],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_57177d96c117692e12068d76d6025e9e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f63d75d46c0f7d2b8339afdee47726c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f66deecb16a519f33c4833c61304d1f1 = $(`<div id="html_f66deecb16a519f33c4833c61304d1f1" style="width: 100.0%; height: 100.0%;">Dora Hospital</div>`)[0];
+                popup_f63d75d46c0f7d2b8339afdee47726c3.setContent(html_f66deecb16a519f33c4833c61304d1f1);
+            
+        
+
+        marker_2a9de91351ccc6b147c1afbafc5817ad.bindPopup(popup_f63d75d46c0f7d2b8339afdee47726c3)
+        ;
+
+        
+    
+    
+                marker_2a9de91351ccc6b147c1afbafc5817ad.setIcon(icon_57177d96c117692e12068d76d6025e9e);
+            
+    
+            var marker_615f4381f6bd6aa974c4ca5e7b1b08ff = L.marker(
+                [40.969457, 29.257738],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_3f5be87e412cc0ca6188a2182b8a8be6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_248f46e58de0e6ac6ee3f0f7221cc5f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_244ade87f41c95a45a8d46a27db76892 = $(`<div id="html_244ade87f41c95a45a8d46a27db76892" style="width: 100.0%; height: 100.0%;">Saygı Hastanesi Ayak Sağlığı Birimi</div>`)[0];
+                popup_248f46e58de0e6ac6ee3f0f7221cc5f2.setContent(html_244ade87f41c95a45a8d46a27db76892);
+            
+        
+
+        marker_615f4381f6bd6aa974c4ca5e7b1b08ff.bindPopup(popup_248f46e58de0e6ac6ee3f0f7221cc5f2)
+        ;
+
+        
+    
+    
+                marker_615f4381f6bd6aa974c4ca5e7b1b08ff.setIcon(icon_3f5be87e412cc0ca6188a2182b8a8be6);
+            
+    
+            var marker_d5ef29387761a5f7ab666dc9afc35157 = L.marker(
+                [40.9697567, 29.2581715],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_f981d67fb58cded67500dafba745683f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_347a8fe7dc470d77f309d4e3d0b57a25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_143eac94611c5454ad4a03c7f1cfde7a = $(`<div id="html_143eac94611c5454ad4a03c7f1cfde7a" style="width: 100.0%; height: 100.0%;">Saygı Hastanesi</div>`)[0];
+                popup_347a8fe7dc470d77f309d4e3d0b57a25.setContent(html_143eac94611c5454ad4a03c7f1cfde7a);
+            
+        
+
+        marker_d5ef29387761a5f7ab666dc9afc35157.bindPopup(popup_347a8fe7dc470d77f309d4e3d0b57a25)
+        ;
+
+        
+    
+    
+                marker_d5ef29387761a5f7ab666dc9afc35157.setIcon(icon_f981d67fb58cded67500dafba745683f);
+            
+    
+            var marker_398c342a8199d9617e0e080c061563f6 = L.marker(
+                [40.9685018, 29.2534249],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_4f713f1ad9e4ccbeb9ecc88ad6d1a0b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9c098edcd7e3d409a090e7548f0af87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c5443583a116c9464fb4b93ea7dfad5 = $(`<div id="html_0c5443583a116c9464fb4b93ea7dfad5" style="width: 100.0%; height: 100.0%;">Sultanbeyli Dünyagöz Hastanesi</div>`)[0];
+                popup_e9c098edcd7e3d409a090e7548f0af87.setContent(html_0c5443583a116c9464fb4b93ea7dfad5);
+            
+        
+
+        marker_398c342a8199d9617e0e080c061563f6.bindPopup(popup_e9c098edcd7e3d409a090e7548f0af87)
+        ;
+
+        
+    
+    
+                marker_398c342a8199d9617e0e080c061563f6.setIcon(icon_4f713f1ad9e4ccbeb9ecc88ad6d1a0b7);
+            
+    
+            var marker_f976e260082526742575d2597127b8e9 = L.marker(
+                [41.0704006, 29.0200903],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_d8cc1738d419878eef897b19b73a701c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0921a95188e0bd7bcde9e596f4afbc7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79d35cc910fc0e318fab615061595e81 = $(`<div id="html_79d35cc910fc0e318fab615061595e81" style="width: 100.0%; height: 100.0%;">Neolife</div>`)[0];
+                popup_e0921a95188e0bd7bcde9e596f4afbc7.setContent(html_79d35cc910fc0e318fab615061595e81);
+            
+        
+
+        marker_f976e260082526742575d2597127b8e9.bindPopup(popup_e0921a95188e0bd7bcde9e596f4afbc7)
+        ;
+
+        
+    
+    
+                marker_f976e260082526742575d2597127b8e9.setIcon(icon_d8cc1738d419878eef897b19b73a701c);
+            
+    
+            var marker_9319c609ee1b3d7ce8fee4f5774bde88 = L.marker(
+                [40.9636827, 29.265783],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_05a72274a353780e9382305b94187e55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7bdbb2259d01af641d4c1829e406d5e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4d4ba3451f4686c65a08abac3072103 = $(`<div id="html_b4d4ba3451f4686c65a08abac3072103" style="width: 100.0%; height: 100.0%;">T.C. Sağlık Bakanlığı İstanbul Tacirler Eğitim Vakfı Sultanbeyli İlçe Devlet Hastanesi Merkez Polikliniği</div>`)[0];
+                popup_7bdbb2259d01af641d4c1829e406d5e2.setContent(html_b4d4ba3451f4686c65a08abac3072103);
+            
+        
+
+        marker_9319c609ee1b3d7ce8fee4f5774bde88.bindPopup(popup_7bdbb2259d01af641d4c1829e406d5e2)
+        ;
+
+        
+    
+    
+                marker_9319c609ee1b3d7ce8fee4f5774bde88.setIcon(icon_05a72274a353780e9382305b94187e55);
+            
+    
+            var marker_862f5b8a0438eb5baa299156c52483b6 = L.marker(
+                [40.966572, 29.2694043],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_dcbdfd10399b8c046b5722414621ecdb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b37a812d019ddfb1be6addafdfa6b798 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_628597431070876d19ff31a2a5e835d9 = $(`<div id="html_628597431070876d19ff31a2a5e835d9" style="width: 100.0%; height: 100.0%;">Ersoy Hastanesi</div>`)[0];
+                popup_b37a812d019ddfb1be6addafdfa6b798.setContent(html_628597431070876d19ff31a2a5e835d9);
+            
+        
+
+        marker_862f5b8a0438eb5baa299156c52483b6.bindPopup(popup_b37a812d019ddfb1be6addafdfa6b798)
+        ;
+
+        
+    
+    
+                marker_862f5b8a0438eb5baa299156c52483b6.setIcon(icon_dcbdfd10399b8c046b5722414621ecdb);
+            
+    
+            var marker_843120021ec2571728e4b7b67458d0da = L.marker(
+                [40.965177, 29.2659788],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_279bafa000b8fea6e382bc5e8c59f83c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91b3638bd5104a5789513f207b445eb1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dfef2fb6a4f6b2f3b80a328df49c82ba = $(`<div id="html_dfef2fb6a4f6b2f3b80a328df49c82ba" style="width: 100.0%; height: 100.0%;">İstanbul Tacirler Eğitim Vakfı T.E.V. Sultanbeyli İlçe Devlet Hastanesi</div>`)[0];
+                popup_91b3638bd5104a5789513f207b445eb1.setContent(html_dfef2fb6a4f6b2f3b80a328df49c82ba);
+            
+        
+
+        marker_843120021ec2571728e4b7b67458d0da.bindPopup(popup_91b3638bd5104a5789513f207b445eb1)
+        ;
+
+        
+    
+    
+                marker_843120021ec2571728e4b7b67458d0da.setIcon(icon_279bafa000b8fea6e382bc5e8c59f83c);
+            
+    
+            var marker_9b95a654daa587803381de78ebe43d60 = L.marker(
+                [40.9670638, 29.2612337],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_cf5bf2a466c0c43e052375edcedd031e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_771a9681b05c7b338f811093cc489e51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74f75a6644efb69666ab5af5f0de22b6 = $(`<div id="html_74f75a6644efb69666ab5af5f0de22b6" style="width: 100.0%; height: 100.0%;">Sultanbeyli Avrupa Göz Hastanesi</div>`)[0];
+                popup_771a9681b05c7b338f811093cc489e51.setContent(html_74f75a6644efb69666ab5af5f0de22b6);
+            
+        
+
+        marker_9b95a654daa587803381de78ebe43d60.bindPopup(popup_771a9681b05c7b338f811093cc489e51)
+        ;
+
+        
+    
+    
+                marker_9b95a654daa587803381de78ebe43d60.setIcon(icon_cf5bf2a466c0c43e052375edcedd031e);
+            
+    
+            var marker_d28140105285ffd5bc34e610e3f7b745 = L.marker(
+                [40.9996039, 28.9175398],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_545e150e04775086195ca8884a059ccf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b5184fa47cb67637c5eeb3c3a23381c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57dc8e2bbf20108f687b0406e88d180b = $(`<div id="html_57dc8e2bbf20108f687b0406e88d180b" style="width: 100.0%; height: 100.0%;">balıklı rum hastanesi vakfı</div>`)[0];
+                popup_5b5184fa47cb67637c5eeb3c3a23381c.setContent(html_57dc8e2bbf20108f687b0406e88d180b);
+            
+        
+
+        marker_d28140105285ffd5bc34e610e3f7b745.bindPopup(popup_5b5184fa47cb67637c5eeb3c3a23381c)
+        ;
+
+        
+    
+    
+                marker_d28140105285ffd5bc34e610e3f7b745.setIcon(icon_545e150e04775086195ca8884a059ccf);
+            
+    
+            var marker_a21237dfc730c5741ce66e77c400ca32 = L.marker(
+                [41.0021036, 28.9152374],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_3733a1e812e4ed8d8c90e8468b46711f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c2b8a62326b1324af9481e5a071e5e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4036df080fabbbc7ddc4cd0a655420d2 = $(`<div id="html_4036df080fabbbc7ddc4cd0a655420d2" style="width: 100.0%; height: 100.0%;">Yedikule Göğüş Hastalıkları Hastanesi</div>`)[0];
+                popup_3c2b8a62326b1324af9481e5a071e5e0.setContent(html_4036df080fabbbc7ddc4cd0a655420d2);
+            
+        
+
+        marker_a21237dfc730c5741ce66e77c400ca32.bindPopup(popup_3c2b8a62326b1324af9481e5a071e5e0)
+        ;
+
+        
+    
+    
+                marker_a21237dfc730c5741ce66e77c400ca32.setIcon(icon_3733a1e812e4ed8d8c90e8468b46711f);
+            
+    
+            var marker_add3e97e9907ca9264ff11b9df192345 = L.marker(
+                [40.9938689, 28.9152516],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_de74aa2740d0f97347390f580c79c88f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_451daa15b06c9369f591d28167ae38ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea69db3e06a468120f5efd0353c0b291 = $(`<div id="html_ea69db3e06a468120f5efd0353c0b291" style="width: 100.0%; height: 100.0%;">Yedikule Surp PIRGIÇ ERMENI Hastanesi</div>`)[0];
+                popup_451daa15b06c9369f591d28167ae38ac.setContent(html_ea69db3e06a468120f5efd0353c0b291);
+            
+        
+
+        marker_add3e97e9907ca9264ff11b9df192345.bindPopup(popup_451daa15b06c9369f591d28167ae38ac)
+        ;
+
+        
+    
+    
+                marker_add3e97e9907ca9264ff11b9df192345.setIcon(icon_de74aa2740d0f97347390f580c79c88f);
+            
+    
+            var marker_4084ecb4c6810d93bf30bc166a1248c5 = L.marker(
+                [40.9956164, 28.9148279],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_188520ebbfa9d9df79b7354dc9214ac8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_985dd45a109f1cca36fbc84cca874fd6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_218c6f18791be45d57c80de3e641faf3 = $(`<div id="html_218c6f18791be45d57c80de3e641faf3" style="width: 100.0%; height: 100.0%;">SÜLEYMANİYE KADIN DOĞUM VE ÇOCUK HASTANESİ</div>`)[0];
+                popup_985dd45a109f1cca36fbc84cca874fd6.setContent(html_218c6f18791be45d57c80de3e641faf3);
+            
+        
+
+        marker_4084ecb4c6810d93bf30bc166a1248c5.bindPopup(popup_985dd45a109f1cca36fbc84cca874fd6)
+        ;
+
+        
+    
+    
+                marker_4084ecb4c6810d93bf30bc166a1248c5.setIcon(icon_188520ebbfa9d9df79b7354dc9214ac8);
+            
+    
+            var marker_55cb19396d11954ccd9b869511a50984 = L.marker(
+                [41.048796, 28.8595084],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_9f088e805f87f6e9c87f1139c9305d48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4bfae9acccac210dda7f2ceb44b8156 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ee90554dcb5c17b24a6114dcd564972 = $(`<div id="html_9ee90554dcb5c17b24a6114dcd564972" style="width: 100.0%; height: 100.0%;">MEDILIFE HASTANESİ</div>`)[0];
+                popup_b4bfae9acccac210dda7f2ceb44b8156.setContent(html_9ee90554dcb5c17b24a6114dcd564972);
+            
+        
+
+        marker_55cb19396d11954ccd9b869511a50984.bindPopup(popup_b4bfae9acccac210dda7f2ceb44b8156)
+        ;
+
+        
+    
+    
+                marker_55cb19396d11954ccd9b869511a50984.setIcon(icon_9f088e805f87f6e9c87f1139c9305d48);
+            
+    
+            var marker_714767b8594f246ccbfe7e4c88744bf2 = L.marker(
+                [41.0314854, 28.826181],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_70611b60294e42d93c7b05dc06d825b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4800d8bc6c7aed3f7d1f3a8062293405 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93e5b04c91b5a6e4e7e30c236facd106 = $(`<div id="html_93e5b04c91b5a6e4e7e30c236facd106" style="width: 100.0%; height: 100.0%;">Aksa</div>`)[0];
+                popup_4800d8bc6c7aed3f7d1f3a8062293405.setContent(html_93e5b04c91b5a6e4e7e30c236facd106);
+            
+        
+
+        marker_714767b8594f246ccbfe7e4c88744bf2.bindPopup(popup_4800d8bc6c7aed3f7d1f3a8062293405)
+        ;
+
+        
+    
+    
+                marker_714767b8594f246ccbfe7e4c88744bf2.setIcon(icon_70611b60294e42d93c7b05dc06d825b2);
+            
+    
+            var marker_e6db788d3c3b171cb9f49ef60b76c857 = L.marker(
+                [41.0345832, 28.8550884],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_8c4b48fb4321a1f117aa412ee11dc95b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2791036ca8f6920338739a99bbea87e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_936bfebb7956f867f769e65cd192e550 = $(`<div id="html_936bfebb7956f867f769e65cd192e550" style="width: 100.0%; height: 100.0%;">Özel Hospitalist Hastanesi</div>`)[0];
+                popup_2791036ca8f6920338739a99bbea87e3.setContent(html_936bfebb7956f867f769e65cd192e550);
+            
+        
+
+        marker_e6db788d3c3b171cb9f49ef60b76c857.bindPopup(popup_2791036ca8f6920338739a99bbea87e3)
+        ;
+
+        
+    
+    
+                marker_e6db788d3c3b171cb9f49ef60b76c857.setIcon(icon_8c4b48fb4321a1f117aa412ee11dc95b);
+            
+    
+            var marker_033e007988032f4171312ed0fafef7e9 = L.marker(
+                [40.9920204, 28.8813608],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_77a44f493e67c097a23e827acb8e4815 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9a69b2af6867a7a70e2dc222b4b9563 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa42b15edab6af845e02726c54c3e111 = $(`<div id="html_aa42b15edab6af845e02726c54c3e111" style="width: 100.0%; height: 100.0%;">İstanbul Eğitim ve Araştırma Hastanesi Osmaniye Semt Poliklinği</div>`)[0];
+                popup_c9a69b2af6867a7a70e2dc222b4b9563.setContent(html_aa42b15edab6af845e02726c54c3e111);
+            
+        
+
+        marker_033e007988032f4171312ed0fafef7e9.bindPopup(popup_c9a69b2af6867a7a70e2dc222b4b9563)
+        ;
+
+        
+    
+    
+                marker_033e007988032f4171312ed0fafef7e9.setIcon(icon_77a44f493e67c097a23e827acb8e4815);
+            
+    
+            var marker_e80e348fc031e8748b113837352bc224 = L.marker(
+                [41.0797533, 28.9066811],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_aa3a46518c9bb321f6fa5703e85b4f23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bed50ba574f9696c52af344c9561a21e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b0363f482a22ef86d043b7b493b6dd7 = $(`<div id="html_3b0363f482a22ef86d043b7b493b6dd7" style="width: 100.0%; height: 100.0%;">Gaziosmanpaşa Özel Başarı Hastanesi</div>`)[0];
+                popup_bed50ba574f9696c52af344c9561a21e.setContent(html_3b0363f482a22ef86d043b7b493b6dd7);
+            
+        
+
+        marker_e80e348fc031e8748b113837352bc224.bindPopup(popup_bed50ba574f9696c52af344c9561a21e)
+        ;
+
+        
+    
+    
+                marker_e80e348fc031e8748b113837352bc224.setIcon(icon_aa3a46518c9bb321f6fa5703e85b4f23);
+            
+    
+            var marker_31448dd20ce32c0634cf6bc6fd78fcbc = L.marker(
+                [41.0633215, 28.746725],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_f25dc5508d5e0f194f8bdf23a512864d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1a12ae250357fc9be6e40840274b7ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4127a6434b7d5edcdbc5afa19450eda8 = $(`<div id="html_4127a6434b7d5edcdbc5afa19450eda8" style="width: 100.0%; height: 100.0%;">Dayıoğlu Tıp Merkezi</div>`)[0];
+                popup_d1a12ae250357fc9be6e40840274b7ee.setContent(html_4127a6434b7d5edcdbc5afa19450eda8);
+            
+        
+
+        marker_31448dd20ce32c0634cf6bc6fd78fcbc.bindPopup(popup_d1a12ae250357fc9be6e40840274b7ee)
+        ;
+
+        
+    
+    
+                marker_31448dd20ce32c0634cf6bc6fd78fcbc.setIcon(icon_f25dc5508d5e0f194f8bdf23a512864d);
+            
+    
+            var marker_b65fb83d5175017d47a319bfa30fd0ac = L.marker(
+                [41.0043457, 29.0257508],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_d6864acffd35490fb90a45dd479f892a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_645f80ec52e6d0e5212f734ca0b8c3ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fb4e8d44b0dfebc8f81cd706bb81805 = $(`<div id="html_0fb4e8d44b0dfebc8f81cd706bb81805" style="width: 100.0%; height: 100.0%;">Haydarpaşa Numune Eğitim ve Araştırma Hastanesi Tıbbiye Binası</div>`)[0];
+                popup_645f80ec52e6d0e5212f734ca0b8c3ca.setContent(html_0fb4e8d44b0dfebc8f81cd706bb81805);
+            
+        
+
+        marker_b65fb83d5175017d47a319bfa30fd0ac.bindPopup(popup_645f80ec52e6d0e5212f734ca0b8c3ca)
+        ;
+
+        
+    
+    
+                marker_b65fb83d5175017d47a319bfa30fd0ac.setIcon(icon_d6864acffd35490fb90a45dd479f892a);
+            
+    
+            var marker_a278b10844dc12142afe93d0d983b95b = L.marker(
+                [41.0648209, 28.9803363],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_d3b90e68b21ed982f73c79e9657c2b5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa453556acb5d0391a4a88fdcbdf3488 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa211ae05f9b84bee6ea0699029f0edf = $(`<div id="html_fa211ae05f9b84bee6ea0699029f0edf" style="width: 100.0%; height: 100.0%;">Bilinmeyen Hastane</div>`)[0];
+                popup_aa453556acb5d0391a4a88fdcbdf3488.setContent(html_fa211ae05f9b84bee6ea0699029f0edf);
+            
+        
+
+        marker_a278b10844dc12142afe93d0d983b95b.bindPopup(popup_aa453556acb5d0391a4a88fdcbdf3488)
+        ;
+
+        
+    
+    
+                marker_a278b10844dc12142afe93d0d983b95b.setIcon(icon_d3b90e68b21ed982f73c79e9657c2b5b);
+            
+    
+            var marker_a0eca8a456780eea8985878c0299124d = L.marker(
+                [40.88302, 29.2361908],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_dd22ac88ec526bdfee3ede7a2b9398ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e8e1393f603626447d529da9cd8c213 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92bba699563fffecf43ae41231657a18 = $(`<div id="html_92bba699563fffecf43ae41231657a18" style="width: 100.0%; height: 100.0%;">Özel Pendik Şifa Hastanesi</div>`)[0];
+                popup_6e8e1393f603626447d529da9cd8c213.setContent(html_92bba699563fffecf43ae41231657a18);
+            
+        
+
+        marker_a0eca8a456780eea8985878c0299124d.bindPopup(popup_6e8e1393f603626447d529da9cd8c213)
+        ;
+
+        
+    
+    
+                marker_a0eca8a456780eea8985878c0299124d.setIcon(icon_dd22ac88ec526bdfee3ede7a2b9398ca);
+            
+    
+            var marker_4348c1e3bcf3ef00ee91f0a4e42290c4 = L.marker(
+                [40.8788795, 29.2362412],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_43220f1177fde1dcaa0c364f61019961 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c19daea0d5969205166358dc8055a8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d2e364c5e8a224380b1a1835260c429 = $(`<div id="html_7d2e364c5e8a224380b1a1835260c429" style="width: 100.0%; height: 100.0%;">Dünya Göz Hastanesi</div>`)[0];
+                popup_7c19daea0d5969205166358dc8055a8d.setContent(html_7d2e364c5e8a224380b1a1835260c429);
+            
+        
+
+        marker_4348c1e3bcf3ef00ee91f0a4e42290c4.bindPopup(popup_7c19daea0d5969205166358dc8055a8d)
+        ;
+
+        
+    
+    
+                marker_4348c1e3bcf3ef00ee91f0a4e42290c4.setIcon(icon_43220f1177fde1dcaa0c364f61019961);
+            
+    
+            var marker_896043fe4f33b6c7c584ed70eda5c783 = L.marker(
+                [41.0044482, 29.0227593],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_59e3c818390c5414a743ed8835f3ffaf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9bbe17b1ced569f5f46f6007358bccb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56cc982890ce3175c45a913c3075f5eb = $(`<div id="html_56cc982890ce3175c45a913c3075f5eb" style="width: 100.0%; height: 100.0%;">Haydarpaşa Numune Hastanesi</div>`)[0];
+                popup_9bbe17b1ced569f5f46f6007358bccb6.setContent(html_56cc982890ce3175c45a913c3075f5eb);
+            
+        
+
+        marker_896043fe4f33b6c7c584ed70eda5c783.bindPopup(popup_9bbe17b1ced569f5f46f6007358bccb6)
+        ;
+
+        
+    
+    
+                marker_896043fe4f33b6c7c584ed70eda5c783.setIcon(icon_59e3c818390c5414a743ed8835f3ffaf);
+            
+    
+            var marker_ba0d7943c6061f85720a32885c909639 = L.marker(
+                [41.0270348, 29.0929142],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_fb72f3d7540b3ec42fd3dcb9ec5916ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db48bc3eb891e8cb752a0ad3bcc9d9a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b01fd60d36a15726d21bc42196a0a5c9 = $(`<div id="html_b01fd60d36a15726d21bc42196a0a5c9" style="width: 100.0%; height: 100.0%;">Tempo OSGB - İşe Giriş Sağlık Raporu</div>`)[0];
+                popup_db48bc3eb891e8cb752a0ad3bcc9d9a9.setContent(html_b01fd60d36a15726d21bc42196a0a5c9);
+            
+        
+
+        marker_ba0d7943c6061f85720a32885c909639.bindPopup(popup_db48bc3eb891e8cb752a0ad3bcc9d9a9)
+        ;
+
+        
+    
+    
+                marker_ba0d7943c6061f85720a32885c909639.setIcon(icon_fb72f3d7540b3ec42fd3dcb9ec5916ed);
+            
+    
+            var marker_f26de0add7d781ec99735955328737e8 = L.marker(
+                [41.0800511, 28.8059014],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_c62c4c72f2b2ec02323a7e1b0cf8e5f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_012810ede71da856cc6c832f00b92eae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c92a5c15d510b6d456f3cf62bca3ffd8 = $(`<div id="html_c92a5c15d510b6d456f3cf62bca3ffd8" style="width: 100.0%; height: 100.0%;">İstanbullu OSGB</div>`)[0];
+                popup_012810ede71da856cc6c832f00b92eae.setContent(html_c92a5c15d510b6d456f3cf62bca3ffd8);
+            
+        
+
+        marker_f26de0add7d781ec99735955328737e8.bindPopup(popup_012810ede71da856cc6c832f00b92eae)
+        ;
+
+        
+    
+    
+                marker_f26de0add7d781ec99735955328737e8.setIcon(icon_c62c4c72f2b2ec02323a7e1b0cf8e5f9);
+            
+    
+            var marker_96ee426a216b878e0ec3b9f7ea03bb4b = L.marker(
+                [41.0214296, 29.0158947],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_3d86c7f087cce7b991b0c8a1dad39cbe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_519294a93e90bf230228b0201338b99c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_803fa5abb5035f965052b8644649bbe9 = $(`<div id="html_803fa5abb5035f965052b8644649bbe9" style="width: 100.0%; height: 100.0%;">Özel Üsküdar Anadolu Hastanesi</div>`)[0];
+                popup_519294a93e90bf230228b0201338b99c.setContent(html_803fa5abb5035f965052b8644649bbe9);
+            
+        
+
+        marker_96ee426a216b878e0ec3b9f7ea03bb4b.bindPopup(popup_519294a93e90bf230228b0201338b99c)
+        ;
+
+        
+    
+    
+                marker_96ee426a216b878e0ec3b9f7ea03bb4b.setIcon(icon_3d86c7f087cce7b991b0c8a1dad39cbe);
+            
+    
+            var marker_d59f79c8d8332b9af092b832efa7c92d = L.marker(
+                [41.0624452, 28.9864126],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_1712551a631b11eac3d2e060fe6e9a01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6f0d1d596212a357e36fcf86b78c1ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a6f13aeb1b1bd769b8ad694d2b3e13a = $(`<div id="html_9a6f13aeb1b1bd769b8ad694d2b3e13a" style="width: 100.0%; height: 100.0%;">Doktor Levent Polikliniği</div>`)[0];
+                popup_f6f0d1d596212a357e36fcf86b78c1ea.setContent(html_9a6f13aeb1b1bd769b8ad694d2b3e13a);
+            
+        
+
+        marker_d59f79c8d8332b9af092b832efa7c92d.bindPopup(popup_f6f0d1d596212a357e36fcf86b78c1ea)
+        ;
+
+        
+    
+    
+                marker_d59f79c8d8332b9af092b832efa7c92d.setIcon(icon_1712551a631b11eac3d2e060fe6e9a01);
+            
+    
+            var marker_af98b72051c130aa976ebff0ae537582 = L.marker(
+                [41.0205828, 28.5809717],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_0c6457e2575cde1e75905383f9e10493 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ae58593c4c5710de0185d3cc866e407 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d66cde95e1eecb4b290dbeb21c563b03 = $(`<div id="html_d66cde95e1eecb4b290dbeb21c563b03" style="width: 100.0%; height: 100.0%;">Özel 2000 Tıp Merkezi</div>`)[0];
+                popup_3ae58593c4c5710de0185d3cc866e407.setContent(html_d66cde95e1eecb4b290dbeb21c563b03);
+            
+        
+
+        marker_af98b72051c130aa976ebff0ae537582.bindPopup(popup_3ae58593c4c5710de0185d3cc866e407)
+        ;
+
+        
+    
+    
+                marker_af98b72051c130aa976ebff0ae537582.setIcon(icon_0c6457e2575cde1e75905383f9e10493);
+            
+    
+            var marker_b614f08ff1dd27a690218ac584e2b992 = L.marker(
+                [41.0603661, 28.6760478],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_d02e121b1fb921c8cb65ce55af44beee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73f81dc6bb0258230085fe788a6f9ca5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e28087abf680a0c5f72da6e87453f8f = $(`<div id="html_3e28087abf680a0c5f72da6e87453f8f" style="width: 100.0%; height: 100.0%;">Özel Elitium</div>`)[0];
+                popup_73f81dc6bb0258230085fe788a6f9ca5.setContent(html_3e28087abf680a0c5f72da6e87453f8f);
+            
+        
+
+        marker_b614f08ff1dd27a690218ac584e2b992.bindPopup(popup_73f81dc6bb0258230085fe788a6f9ca5)
+        ;
+
+        
+    
+    
+                marker_b614f08ff1dd27a690218ac584e2b992.setIcon(icon_d02e121b1fb921c8cb65ce55af44beee);
+            
+    
+            var marker_852a155b5e64883823104acb15da67d4 = L.marker(
+                [41.0600854, 28.7739432],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_7765ee62ed0ce209ab9b97de45969f73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6dd9368c699616057655de50b4149e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_773b516a97ac6ab72121e517e23ca5db = $(`<div id="html_773b516a97ac6ab72121e517e23ca5db" style="width: 100.0%; height: 100.0%;">İstanbul Tema Hastanesi</div>`)[0];
+                popup_d6dd9368c699616057655de50b4149e1.setContent(html_773b516a97ac6ab72121e517e23ca5db);
+            
+        
+
+        marker_852a155b5e64883823104acb15da67d4.bindPopup(popup_d6dd9368c699616057655de50b4149e1)
+        ;
+
+        
+    
+    
+                marker_852a155b5e64883823104acb15da67d4.setIcon(icon_7765ee62ed0ce209ab9b97de45969f73);
+            
+    
+            var marker_2c91abe251a7dd525ac33361b0831f71 = L.marker(
+                [41.0303249, 28.9070788],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_990ed3319e0dee8a701e634851e5d4e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c98fa6ef7d24a0dda6c916e4ebca0304 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b93492c3b457492f3cbf65833bef2779 = $(`<div id="html_b93492c3b457492f3cbf65833bef2779" style="width: 100.0%; height: 100.0%;">Bayrampaşa 1 Nolu Yabancı Uyruklular Polikliniği</div>`)[0];
+                popup_c98fa6ef7d24a0dda6c916e4ebca0304.setContent(html_b93492c3b457492f3cbf65833bef2779);
+            
+        
+
+        marker_2c91abe251a7dd525ac33361b0831f71.bindPopup(popup_c98fa6ef7d24a0dda6c916e4ebca0304)
+        ;
+
+        
+    
+    
+                marker_2c91abe251a7dd525ac33361b0831f71.setIcon(icon_990ed3319e0dee8a701e634851e5d4e2);
+            
+    
+            var marker_0231c359c76866e829efdd0f3f5e6a86 = L.marker(
+                [41.0431277, 28.8201612],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_ab5904e32f0c2a64c037af544193a283 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae0e1dc7c8ed1a1b1e0145076dedc1bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a170a240f06038f0133279104421b76 = $(`<div id="html_9a170a240f06038f0133279104421b76" style="width: 100.0%; height: 100.0%;">Bağcılar 28 Nolu Aile Sağlığı Merkezi</div>`)[0];
+                popup_ae0e1dc7c8ed1a1b1e0145076dedc1bb.setContent(html_9a170a240f06038f0133279104421b76);
+            
+        
+
+        marker_0231c359c76866e829efdd0f3f5e6a86.bindPopup(popup_ae0e1dc7c8ed1a1b1e0145076dedc1bb)
+        ;
+
+        
+    
+    
+                marker_0231c359c76866e829efdd0f3f5e6a86.setIcon(icon_ab5904e32f0c2a64c037af544193a283);
+            
+    
+            var marker_18a53cdabc8d9d7d01258235c062dbc1 = L.marker(
+                [41.0028506, 28.9370757],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_04a1bd75f7be764f270506a22dbc6bde = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77d9fcd16ef4960dd92d4c371c6565dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0312d74ce0c831b3da3603432bf07feb = $(`<div id="html_0312d74ce0c831b3da3603432bf07feb" style="width: 100.0%; height: 100.0%;">Acil Tıp Kliniği</div>`)[0];
+                popup_77d9fcd16ef4960dd92d4c371c6565dc.setContent(html_0312d74ce0c831b3da3603432bf07feb);
+            
+        
+
+        marker_18a53cdabc8d9d7d01258235c062dbc1.bindPopup(popup_77d9fcd16ef4960dd92d4c371c6565dc)
+        ;
+
+        
+    
+    
+                marker_18a53cdabc8d9d7d01258235c062dbc1.setIcon(icon_04a1bd75f7be764f270506a22dbc6bde);
+            
+    
+            var marker_68dea3a814497f969be7d6f1fd5bb55b = L.marker(
+                [41.0613263, 28.992022],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_3f9fe24aff29da77fc0965049c4cc523 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08d02a2b1902acf9d2b962dde80cd713 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a4c48a4444663879a52437b89f1febe = $(`<div id="html_0a4c48a4444663879a52437b89f1febe" style="width: 100.0%; height: 100.0%;">Alpha Hair Central</div>`)[0];
+                popup_08d02a2b1902acf9d2b962dde80cd713.setContent(html_0a4c48a4444663879a52437b89f1febe);
+            
+        
+
+        marker_68dea3a814497f969be7d6f1fd5bb55b.bindPopup(popup_08d02a2b1902acf9d2b962dde80cd713)
+        ;
+
+        
+    
+    
+                marker_68dea3a814497f969be7d6f1fd5bb55b.setIcon(icon_3f9fe24aff29da77fc0965049c4cc523);
+            
+    
+            var marker_38a0281dddc171c65bc1ffde02230007 = L.marker(
+                [41.0199922, 28.9348553],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_76a17cd785e18d00979a50d145bb8f09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8e3253150301aa758fe24b8e3e95dea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d82a1959aeffb5b10831e91cc7a8fd5c = $(`<div id="html_d82a1959aeffb5b10831e91cc7a8fd5c" style="width: 100.0%; height: 100.0%;">Bezmialem Vakıf Üniversitesi Tıp Fakültesi Acil Tıp</div>`)[0];
+                popup_f8e3253150301aa758fe24b8e3e95dea.setContent(html_d82a1959aeffb5b10831e91cc7a8fd5c);
+            
+        
+
+        marker_38a0281dddc171c65bc1ffde02230007.bindPopup(popup_f8e3253150301aa758fe24b8e3e95dea)
+        ;
+
+        
+    
+    
+                marker_38a0281dddc171c65bc1ffde02230007.setIcon(icon_76a17cd785e18d00979a50d145bb8f09);
+            
+    
+            var marker_8631b275b339945b4098d9db53e811eb = L.marker(
+                [40.9306407, 29.1349981],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_4ed8f84b9d71d7762e00c0d8131b7131 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c9b3ee9f6dd2394e7d746e6bfb17ff5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87f0bf4d2e4d3bad8a0ee63d6375c0b3 = $(`<div id="html_87f0bf4d2e4d3bad8a0ee63d6375c0b3" style="width: 100.0%; height: 100.0%;">Merkez Aile Sağlık Merkezi</div>`)[0];
+                popup_5c9b3ee9f6dd2394e7d746e6bfb17ff5.setContent(html_87f0bf4d2e4d3bad8a0ee63d6375c0b3);
+            
+        
+
+        marker_8631b275b339945b4098d9db53e811eb.bindPopup(popup_5c9b3ee9f6dd2394e7d746e6bfb17ff5)
+        ;
+
+        
+    
+    
+                marker_8631b275b339945b4098d9db53e811eb.setIcon(icon_4ed8f84b9d71d7762e00c0d8131b7131);
+            
+    
+            var marker_5dd22d03621d63b945029d92a6790033 = L.marker(
+                [41.0375948, 28.9900446],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_8c1289f824c418d7218a9a326678bea7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15e305dc81fcb9cf257ad4242a970a19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3758e4049b39bf8db3249a5de1acb53 = $(`<div id="html_c3758e4049b39bf8db3249a5de1acb53" style="width: 100.0%; height: 100.0%;">Şişli Hamidiye Etfal Eğitim ve Araştırma Hastanesi Gümüşsuyu Binası</div>`)[0];
+                popup_15e305dc81fcb9cf257ad4242a970a19.setContent(html_c3758e4049b39bf8db3249a5de1acb53);
+            
+        
+
+        marker_5dd22d03621d63b945029d92a6790033.bindPopup(popup_15e305dc81fcb9cf257ad4242a970a19)
+        ;
+
+        
+    
+    
+                marker_5dd22d03621d63b945029d92a6790033.setIcon(icon_8c1289f824c418d7218a9a326678bea7);
+            
+    
+            var marker_0afb422e2c9329621113f35db9e2a34f = L.marker(
+                [40.8903861, 29.2153963],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_ad24279a4a9db0511d45182acb3a925b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70311f5c1a8ff00fa617983e84128046 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0eb9b8565984d7a780eb84443460d75 = $(`<div id="html_d0eb9b8565984d7a780eb84443460d75" style="width: 100.0%; height: 100.0%;">Kartal 10 Nolu Aile Sağlığı Merkezi</div>`)[0];
+                popup_70311f5c1a8ff00fa617983e84128046.setContent(html_d0eb9b8565984d7a780eb84443460d75);
+            
+        
+
+        marker_0afb422e2c9329621113f35db9e2a34f.bindPopup(popup_70311f5c1a8ff00fa617983e84128046)
+        ;
+
+        
+    
+    
+                marker_0afb422e2c9329621113f35db9e2a34f.setIcon(icon_ad24279a4a9db0511d45182acb3a925b);
+            
+    
+            var marker_0c7e5f445f09c85714eabd732cf45275 = L.marker(
+                [40.9973977, 29.0428574],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_dac94c9ba4edcf87ddb5bb376e46506f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e136438939c3d3d25693dd8a87e5545a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27046a205bba3e7e5743bc74e6a1115a = $(`<div id="html_27046a205bba3e7e5743bc74e6a1115a" style="width: 100.0%; height: 100.0%;">Hasanpaşa Aile Sağlığı Merkezi</div>`)[0];
+                popup_e136438939c3d3d25693dd8a87e5545a.setContent(html_27046a205bba3e7e5743bc74e6a1115a);
+            
+        
+
+        marker_0c7e5f445f09c85714eabd732cf45275.bindPopup(popup_e136438939c3d3d25693dd8a87e5545a)
+        ;
+
+        
+    
+    
+                marker_0c7e5f445f09c85714eabd732cf45275.setIcon(icon_dac94c9ba4edcf87ddb5bb376e46506f);
+            
+    
+            var marker_4adc0a311bcada48b282068a73f97e2f = L.marker(
+                [40.9785089, 28.8718638],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_db3925ca828ff62fdd0b696ec2c930d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b13000e006ba010ebe4365021afdc56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ecdabf6b92125f8e95fb89168aacdba = $(`<div id="html_2ecdabf6b92125f8e95fb89168aacdba" style="width: 100.0%; height: 100.0%;">Bakırköy 4 Nolu Aile Sağlığı Merkezi</div>`)[0];
+                popup_0b13000e006ba010ebe4365021afdc56.setContent(html_2ecdabf6b92125f8e95fb89168aacdba);
+            
+        
+
+        marker_4adc0a311bcada48b282068a73f97e2f.bindPopup(popup_0b13000e006ba010ebe4365021afdc56)
+        ;
+
+        
+    
+    
+                marker_4adc0a311bcada48b282068a73f97e2f.setIcon(icon_db3925ca828ff62fdd0b696ec2c930d5);
+            
+    
+            var marker_1057abb30b3cb279f82876dd497b7347 = L.marker(
+                [40.9332716, 29.1239632],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_5534c501f02162569038d665b8aaa21d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98c3f4183a1ee733d27f14200c9f8811 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ba134085a95280db56a5556bff15ac5 = $(`<div id="html_5ba134085a95280db56a5556bff15ac5" style="width: 100.0%; height: 100.0%;">Kartal Dr. Lütfi Kırdar Eğitim ve Araştırma Hastanesi KADİR REZZAN HAS ADATEPE POLİKLİNİĞİ</div>`)[0];
+                popup_98c3f4183a1ee733d27f14200c9f8811.setContent(html_5ba134085a95280db56a5556bff15ac5);
+            
+        
+
+        marker_1057abb30b3cb279f82876dd497b7347.bindPopup(popup_98c3f4183a1ee733d27f14200c9f8811)
+        ;
+
+        
+    
+    
+                marker_1057abb30b3cb279f82876dd497b7347.setIcon(icon_5534c501f02162569038d665b8aaa21d);
+            
+    
+            var marker_322daeea85a3c8ab9b9f2f229d99dbc7 = L.marker(
+                [41.0229665, 29.218531],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_7538ed6e19f9cabb5302133afe451dc8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42e8b05544408965d1e2b4ab7c085e1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bfc7d22f8bffdc223c1cb2e4f4853ab1 = $(`<div id="html_bfc7d22f8bffdc223c1cb2e4f4853ab1" style="width: 100.0%; height: 100.0%;">fsm tıp merkezi</div>`)[0];
+                popup_42e8b05544408965d1e2b4ab7c085e1d.setContent(html_bfc7d22f8bffdc223c1cb2e4f4853ab1);
+            
+        
+
+        marker_322daeea85a3c8ab9b9f2f229d99dbc7.bindPopup(popup_42e8b05544408965d1e2b4ab7c085e1d)
+        ;
+
+        
+    
+    
+                marker_322daeea85a3c8ab9b9f2f229d99dbc7.setIcon(icon_7538ed6e19f9cabb5302133afe451dc8);
+            
+    
+            var marker_74be541730749fbbf497652fbe7c5a61 = L.marker(
+                [41.0516267, 28.9910859],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_64a4e8fc939694b25775b5758371f832 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8f3fa871f572df4eed9ab4a939f0fa5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc8162516f44796f3cf24a2ebaedd451 = $(`<div id="html_cc8162516f44796f3cf24a2ebaedd451" style="width: 100.0%; height: 100.0%;">Op.Dr.Alper Tuncel</div>`)[0];
+                popup_b8f3fa871f572df4eed9ab4a939f0fa5.setContent(html_cc8162516f44796f3cf24a2ebaedd451);
+            
+        
+
+        marker_74be541730749fbbf497652fbe7c5a61.bindPopup(popup_b8f3fa871f572df4eed9ab4a939f0fa5)
+        ;
+
+        
+    
+    
+                marker_74be541730749fbbf497652fbe7c5a61.setIcon(icon_64a4e8fc939694b25775b5758371f832);
+            
+    
+            var marker_6428fa00009e9e2123f0c3699a0f948b = L.marker(
+                [40.9826542, 29.0927912],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_50f007bb9a6c2732e421397e8780dbc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02fa1eb11aea47ebb9288b7c64c5dbcf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6db64c3e99ab0867e75aec35a81a0c80 = $(`<div id="html_6db64c3e99ab0867e75aec35a81a0c80" style="width: 100.0%; height: 100.0%;">Medient</div>`)[0];
+                popup_02fa1eb11aea47ebb9288b7c64c5dbcf.setContent(html_6db64c3e99ab0867e75aec35a81a0c80);
+            
+        
+
+        marker_6428fa00009e9e2123f0c3699a0f948b.bindPopup(popup_02fa1eb11aea47ebb9288b7c64c5dbcf)
+        ;
+
+        
+    
+    
+                marker_6428fa00009e9e2123f0c3699a0f948b.setIcon(icon_50f007bb9a6c2732e421397e8780dbc0);
+            
+    
+            var marker_158e0f580cbd2d26b8febf5379fd5d6a = L.marker(
+                [41.0203306, 28.5786177],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_cd61779fd5c7b7b5664b5116a77c6d09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6132fb3b96127d0765fdeb4d89e9d4d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f06945f1c6e8a2f239c120a278929d96 = $(`<div id="html_f06945f1c6e8a2f239c120a278929d96" style="width: 100.0%; height: 100.0%;">Büyükçekmece Aile Sağlığı Merkezi</div>`)[0];
+                popup_6132fb3b96127d0765fdeb4d89e9d4d3.setContent(html_f06945f1c6e8a2f239c120a278929d96);
+            
+        
+
+        marker_158e0f580cbd2d26b8febf5379fd5d6a.bindPopup(popup_6132fb3b96127d0765fdeb4d89e9d4d3)
+        ;
+
+        
+    
+    
+                marker_158e0f580cbd2d26b8febf5379fd5d6a.setIcon(icon_cd61779fd5c7b7b5664b5116a77c6d09);
+            
+    
+            var marker_eedb278132854cb387447c175ef3eed1 = L.marker(
+                [41.0168104, 28.6041953],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_5feca05b9d949cd2f7e2915a6f8c755b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5cb979ae42646b48723bf94c8ab782b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a4282adb2e696264b7684ec52281b80 = $(`<div id="html_2a4282adb2e696264b7684ec52281b80" style="width: 100.0%; height: 100.0%;">Sağlık Ocağı</div>`)[0];
+                popup_5cb979ae42646b48723bf94c8ab782b9.setContent(html_2a4282adb2e696264b7684ec52281b80);
+            
+        
+
+        marker_eedb278132854cb387447c175ef3eed1.bindPopup(popup_5cb979ae42646b48723bf94c8ab782b9)
+        ;
+
+        
+    
+    
+                marker_eedb278132854cb387447c175ef3eed1.setIcon(icon_5feca05b9d949cd2f7e2915a6f8c755b);
+            
+    
+            var marker_50f3c9d8155e6299db6d5d1a4b660929 = L.marker(
+                [41.0221279, 29.0418888],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_497bc3b43829e4d266a57e31941f322f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2958ffd71752f480fd979a5096f19b44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9080704f8d74d9c6df60e5db0355f975 = $(`<div id="html_9080704f8d74d9c6df60e5db0355f975" style="width: 100.0%; height: 100.0%;">Bahceci</div>`)[0];
+                popup_2958ffd71752f480fd979a5096f19b44.setContent(html_9080704f8d74d9c6df60e5db0355f975);
+            
+        
+
+        marker_50f3c9d8155e6299db6d5d1a4b660929.bindPopup(popup_2958ffd71752f480fd979a5096f19b44)
+        ;
+
+        
+    
+    
+                marker_50f3c9d8155e6299db6d5d1a4b660929.setIcon(icon_497bc3b43829e4d266a57e31941f322f);
+            
+    
+            var marker_16eab99cface03a9058d1ff871f7040c = L.marker(
+                [41.0168625, 28.9339596],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_0cdb2c2b77a75c722b6a138d5f931804 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4280bed4d0bc3e67037e9ca4028c67e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ed43fa7a2499922fb685c2e467c7def = $(`<div id="html_8ed43fa7a2499922fb685c2e467c7def" style="width: 100.0%; height: 100.0%;">İstanbul Üniversitesi Tıp Fakültesi Hastanesi</div>`)[0];
+                popup_4280bed4d0bc3e67037e9ca4028c67e6.setContent(html_8ed43fa7a2499922fb685c2e467c7def);
+            
+        
+
+        marker_16eab99cface03a9058d1ff871f7040c.bindPopup(popup_4280bed4d0bc3e67037e9ca4028c67e6)
+        ;
+
+        
+    
+    
+                marker_16eab99cface03a9058d1ff871f7040c.setIcon(icon_0cdb2c2b77a75c722b6a138d5f931804);
+            
+    
+            var marker_0f3e0a7bc8ebe1b7eccbaf05701f43b4 = L.marker(
+                [41.0242924, 28.9743145],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_eea0107064950213142a1fe954bd335d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_233a1f59f433b1eca41760e0bd089981 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5175bfe171b5c140eb8536c62fe9c608 = $(`<div id="html_5175bfe171b5c140eb8536c62fe9c608" style="width: 100.0%; height: 100.0%;">Özel Avusturya Sen Jorj Hastanesi</div>`)[0];
+                popup_233a1f59f433b1eca41760e0bd089981.setContent(html_5175bfe171b5c140eb8536c62fe9c608);
+            
+        
+
+        marker_0f3e0a7bc8ebe1b7eccbaf05701f43b4.bindPopup(popup_233a1f59f433b1eca41760e0bd089981)
+        ;
+
+        
+    
+    
+                marker_0f3e0a7bc8ebe1b7eccbaf05701f43b4.setIcon(icon_eea0107064950213142a1fe954bd335d);
+            
+    
+            var marker_3c2ecebaee37b37c7a466c40dc5ea242 = L.marker(
+                [41.0133418, 28.6568742],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_467d81e3a72316961b8376768b0e1a71 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec9d90ff5f3aa41105a7a61626c75186 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c75f0aff69ac933b8aa625561c5b460a = $(`<div id="html_c75f0aff69ac933b8aa625561c5b460a" style="width: 100.0%; height: 100.0%;">Medihaus</div>`)[0];
+                popup_ec9d90ff5f3aa41105a7a61626c75186.setContent(html_c75f0aff69ac933b8aa625561c5b460a);
+            
+        
+
+        marker_3c2ecebaee37b37c7a466c40dc5ea242.bindPopup(popup_ec9d90ff5f3aa41105a7a61626c75186)
+        ;
+
+        
+    
+    
+                marker_3c2ecebaee37b37c7a466c40dc5ea242.setIcon(icon_467d81e3a72316961b8376768b0e1a71);
+            
+    
+            var marker_302f03222bb462e81a9c7709c93966f9 = L.marker(
+                [40.9410585, 29.1167634],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_8cd053b805cbb61e7f22e337a9cd5ec8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f95bdde3183ed16a0c4dcffdd9e205b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_634ce8ef504de103998a5c242c715e1a = $(`<div id="html_634ce8ef504de103998a5c242c715e1a" style="width: 100.0%; height: 100.0%;">Maltepe 4 Nolu Aile Hekimliği</div>`)[0];
+                popup_f95bdde3183ed16a0c4dcffdd9e205b4.setContent(html_634ce8ef504de103998a5c242c715e1a);
+            
+        
+
+        marker_302f03222bb462e81a9c7709c93966f9.bindPopup(popup_f95bdde3183ed16a0c4dcffdd9e205b4)
+        ;
+
+        
+    
+    
+                marker_302f03222bb462e81a9c7709c93966f9.setIcon(icon_8cd053b805cbb61e7f22e337a9cd5ec8);
+            
+    
+            var marker_7274737113d07d196255d764e2c111a6 = L.marker(
+                [40.9227011, 29.133854],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_d79fda7888597e2fa11803bb8bae5f43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef005834c6877f5a2ca10345cd1adb4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aeb3bf92193034ce16cbfd87b6888114 = $(`<div id="html_aeb3bf92193034ce16cbfd87b6888114" style="width: 100.0%; height: 100.0%;">ARES Psikolojik Danışmanlık Merkezi</div>`)[0];
+                popup_ef005834c6877f5a2ca10345cd1adb4d.setContent(html_aeb3bf92193034ce16cbfd87b6888114);
+            
+        
+
+        marker_7274737113d07d196255d764e2c111a6.bindPopup(popup_ef005834c6877f5a2ca10345cd1adb4d)
+        ;
+
+        
+    
+    
+                marker_7274737113d07d196255d764e2c111a6.setIcon(icon_d79fda7888597e2fa11803bb8bae5f43);
+            
+    
+            var marker_2ec6c7f6a8e0fd501e23c52d8bd63b62 = L.marker(
+                [41.073873, 28.9038241],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_7b9e820afdb886669f7db5a526cf607d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75df4bf0a195d208fd7b66298670354d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_011e5a96b6e2cff8a988e1cdf71f454e = $(`<div id="html_011e5a96b6e2cff8a988e1cdf71f454e" style="width: 100.0%; height: 100.0%;">Özel Asya Hastanesi</div>`)[0];
+                popup_75df4bf0a195d208fd7b66298670354d.setContent(html_011e5a96b6e2cff8a988e1cdf71f454e);
+            
+        
+
+        marker_2ec6c7f6a8e0fd501e23c52d8bd63b62.bindPopup(popup_75df4bf0a195d208fd7b66298670354d)
+        ;
+
+        
+    
+    
+                marker_2ec6c7f6a8e0fd501e23c52d8bd63b62.setIcon(icon_7b9e820afdb886669f7db5a526cf607d);
+            
+    
+            var marker_248e38a78ed7109096828c3658d6eff5 = L.marker(
+                [41.0695422, 28.9073845],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_558799a0d71c1a51600790611fb2377e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38a5a3123139bb82be5cc61d5a27ce7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43400a86be56e167b6196079f33e54d9 = $(`<div id="html_43400a86be56e167b6196079f33e54d9" style="width: 100.0%; height: 100.0%;">Özel Bilge Hastanesi</div>`)[0];
+                popup_38a5a3123139bb82be5cc61d5a27ce7c.setContent(html_43400a86be56e167b6196079f33e54d9);
+            
+        
+
+        marker_248e38a78ed7109096828c3658d6eff5.bindPopup(popup_38a5a3123139bb82be5cc61d5a27ce7c)
+        ;
+
+        
+    
+    
+                marker_248e38a78ed7109096828c3658d6eff5.setIcon(icon_558799a0d71c1a51600790611fb2377e);
+            
+    
+            var marker_c73ab5267838b7819b0ddefc94740929 = L.marker(
+                [41.0596967, 28.9123842],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_1c53858e9097773da84bd25750120671 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17a8ba0dc64c41af9c82acedbb7a2b7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69a108a846e93af67f0096ca7afb49d8 = $(`<div id="html_69a108a846e93af67f0096ca7afb49d8" style="width: 100.0%; height: 100.0%;">Avrupa Özel Şafak Hastanesi</div>`)[0];
+                popup_17a8ba0dc64c41af9c82acedbb7a2b7a.setContent(html_69a108a846e93af67f0096ca7afb49d8);
+            
+        
+
+        marker_c73ab5267838b7819b0ddefc94740929.bindPopup(popup_17a8ba0dc64c41af9c82acedbb7a2b7a)
+        ;
+
+        
+    
+    
+                marker_c73ab5267838b7819b0ddefc94740929.setIcon(icon_1c53858e9097773da84bd25750120671);
+            
+    
+            var marker_065e1bf1d50807bd9b95846a000369a8 = L.marker(
+                [40.9804944, 29.1255715],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_81eeca7cac78744ec041d1854ca5a54b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8ee7ec4be04bb79d32c29acbff0fc02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6006e00e55b0908367e863b0ba7aab50 = $(`<div id="html_6006e00e55b0908367e863b0ba7aab50" style="width: 100.0%; height: 100.0%;">Küçükbakkalköy Aile Sağlığı Merkezi</div>`)[0];
+                popup_f8ee7ec4be04bb79d32c29acbff0fc02.setContent(html_6006e00e55b0908367e863b0ba7aab50);
+            
+        
+
+        marker_065e1bf1d50807bd9b95846a000369a8.bindPopup(popup_f8ee7ec4be04bb79d32c29acbff0fc02)
+        ;
+
+        
+    
+    
+                marker_065e1bf1d50807bd9b95846a000369a8.setIcon(icon_81eeca7cac78744ec041d1854ca5a54b);
+            
+    
+            var marker_e4ac18f923b24d5254e50659b0d98184 = L.marker(
+                [41.0026384, 28.6261883],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_a65d4765e4e0c6df1b58d5b4bd786ef9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f3eaf4f756b5a8e2dda9698cb556926 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d78be317070095c681327755716e8847 = $(`<div id="html_d78be317070095c681327755716e8847" style="width: 100.0%; height: 100.0%;">Diş Hekimi Aygul Abubekerova</div>`)[0];
+                popup_9f3eaf4f756b5a8e2dda9698cb556926.setContent(html_d78be317070095c681327755716e8847);
+            
+        
+
+        marker_e4ac18f923b24d5254e50659b0d98184.bindPopup(popup_9f3eaf4f756b5a8e2dda9698cb556926)
+        ;
+
+        
+    
+    
+                marker_e4ac18f923b24d5254e50659b0d98184.setIcon(icon_a65d4765e4e0c6df1b58d5b4bd786ef9);
+            
+    
+            var marker_bf3876359715f81c5b21e47b5c01f59c = L.marker(
+                [41.0025741, 28.6261789],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_ee7fbef1b5000c20b802e0643ad1d9b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_705909707fb23448e07a91ab45290dc5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c5d68014f438b165e45e6c20a5619b3 = $(`<div id="html_9c5d68014f438b165e45e6c20a5619b3" style="width: 100.0%; height: 100.0%;">NGY Med Dental Clinic</div>`)[0];
+                popup_705909707fb23448e07a91ab45290dc5.setContent(html_9c5d68014f438b165e45e6c20a5619b3);
+            
+        
+
+        marker_bf3876359715f81c5b21e47b5c01f59c.bindPopup(popup_705909707fb23448e07a91ab45290dc5)
+        ;
+
+        
+    
+    
+                marker_bf3876359715f81c5b21e47b5c01f59c.setIcon(icon_ee7fbef1b5000c20b802e0643ad1d9b0);
+            
+    
+            var marker_fb6a15c28c2f9d93714778a1dd63b9aa = L.marker(
+                [41.0517202, 28.9910831],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_ca58b6eb1f772cb422ad023de90472e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a43d106d20179e35ade034e85101b41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b59e6403a95843a439dd00f67e38f51 = $(`<div id="html_8b59e6403a95843a439dd00f67e38f51" style="width: 100.0%; height: 100.0%;">Op.Dr.Alper TUNCEL</div>`)[0];
+                popup_9a43d106d20179e35ade034e85101b41.setContent(html_8b59e6403a95843a439dd00f67e38f51);
+            
+        
+
+        marker_fb6a15c28c2f9d93714778a1dd63b9aa.bindPopup(popup_9a43d106d20179e35ade034e85101b41)
+        ;
+
+        
+    
+    
+                marker_fb6a15c28c2f9d93714778a1dd63b9aa.setIcon(icon_ca58b6eb1f772cb422ad023de90472e1);
+            
+    
+            var marker_fcbc6967e5463f98e1140700124e604c = L.marker(
+                [41.0276144, 29.1157001],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_3d99da7e7f97f97b9d92397018963470 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d793cf842d4f29700e592b04c95b0e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30a6c5814826da88b017be4e079e13f3 = $(`<div id="html_30a6c5814826da88b017be4e079e13f3" style="width: 100.0%; height: 100.0%;">Üsküdar Üniversitesi Diş Hastanesi</div>`)[0];
+                popup_5d793cf842d4f29700e592b04c95b0e4.setContent(html_30a6c5814826da88b017be4e079e13f3);
+            
+        
+
+        marker_fcbc6967e5463f98e1140700124e604c.bindPopup(popup_5d793cf842d4f29700e592b04c95b0e4)
+        ;
+
+        
+    
+    
+                marker_fcbc6967e5463f98e1140700124e604c.setIcon(icon_3d99da7e7f97f97b9d92397018963470);
+            
+    
+            var marker_e01a9d081a209f0e244ed20efb4aab81 = L.marker(
+                [40.9823877, 29.0713318],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_a6e61dc0c5bf742542f882d894ee798c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b5e7684ba4a353e26edd31af51f75c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c1233bf58b92b9e90f0a0022f6628ec = $(`<div id="html_6c1233bf58b92b9e90f0a0022f6628ec" style="width: 100.0%; height: 100.0%;">Özel Medipoint Tıp Merkezi</div>`)[0];
+                popup_4b5e7684ba4a353e26edd31af51f75c8.setContent(html_6c1233bf58b92b9e90f0a0022f6628ec);
+            
+        
+
+        marker_e01a9d081a209f0e244ed20efb4aab81.bindPopup(popup_4b5e7684ba4a353e26edd31af51f75c8)
+        ;
+
+        
+    
+    
+                marker_e01a9d081a209f0e244ed20efb4aab81.setIcon(icon_a6e61dc0c5bf742542f882d894ee798c);
+            
+    
+            var marker_7c29e278f31827a98fadc7076e307e64 = L.marker(
+                [41.0492903, 28.9909873],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_d0bb2adef68026d011accdf47db2a234 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60631a26d8754060976c8e7afca30860 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fffac8c55a589a087deba487eeac70b = $(`<div id="html_5fffac8c55a589a087deba487eeac70b" style="width: 100.0%; height: 100.0%;">Dr Ezgi Özkur</div>`)[0];
+                popup_60631a26d8754060976c8e7afca30860.setContent(html_5fffac8c55a589a087deba487eeac70b);
+            
+        
+
+        marker_7c29e278f31827a98fadc7076e307e64.bindPopup(popup_60631a26d8754060976c8e7afca30860)
+        ;
+
+        
+    
+    
+                marker_7c29e278f31827a98fadc7076e307e64.setIcon(icon_d0bb2adef68026d011accdf47db2a234);
+            
+    
+            var marker_5d7c11e13b450749d992c41d3f9a0064 = L.marker(
+                [41.1797497, 28.8860229],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_be41018991802628faf4d0c1b4265312 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2515accc2345f9fb25ad51cd56425585 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f0230bb40094ffe944718c0e4740548 = $(`<div id="html_2f0230bb40094ffe944718c0e4740548" style="width: 100.0%; height: 100.0%;">Acıbadem</div>`)[0];
+                popup_2515accc2345f9fb25ad51cd56425585.setContent(html_2f0230bb40094ffe944718c0e4740548);
+            
+        
+
+        marker_5d7c11e13b450749d992c41d3f9a0064.bindPopup(popup_2515accc2345f9fb25ad51cd56425585)
+        ;
+
+        
+    
+    
+                marker_5d7c11e13b450749d992c41d3f9a0064.setIcon(icon_be41018991802628faf4d0c1b4265312);
+            
+    
+            var marker_169b140221143fb0339be083dccb907f = L.marker(
+                [40.8829325, 29.2367531],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_4d749084b31041b3bcbb3a2cf37d3733 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55b000154ffe08c1d07917d8e958f7c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13eeb5536d9f09ca7646bf0f8ca476a7 = $(`<div id="html_13eeb5536d9f09ca7646bf0f8ca476a7" style="width: 100.0%; height: 100.0%;">Özel Baydent Ağız ve Diş Sağlığı Polikliniği</div>`)[0];
+                popup_55b000154ffe08c1d07917d8e958f7c2.setContent(html_13eeb5536d9f09ca7646bf0f8ca476a7);
+            
+        
+
+        marker_169b140221143fb0339be083dccb907f.bindPopup(popup_55b000154ffe08c1d07917d8e958f7c2)
+        ;
+
+        
+    
+    
+                marker_169b140221143fb0339be083dccb907f.setIcon(icon_4d749084b31041b3bcbb3a2cf37d3733);
+            
+    
+            var marker_4fab0e52cb46cb6dbd0e42c791bf9de1 = L.marker(
+                [41.0730408, 29.0179686],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_8b076f0ee68402b667a500347022450a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c8d35e63107f18300c37de0d5d94a62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_128be8a4a3899f0b1e81c2494508b815 = $(`<div id="html_128be8a4a3899f0b1e81c2494508b815" style="width: 100.0%; height: 100.0%;">Bayındır Levent Tıp Merkezi</div>`)[0];
+                popup_4c8d35e63107f18300c37de0d5d94a62.setContent(html_128be8a4a3899f0b1e81c2494508b815);
+            
+        
+
+        marker_4fab0e52cb46cb6dbd0e42c791bf9de1.bindPopup(popup_4c8d35e63107f18300c37de0d5d94a62)
+        ;
+
+        
+    
+    
+                marker_4fab0e52cb46cb6dbd0e42c791bf9de1.setIcon(icon_8b076f0ee68402b667a500347022450a);
+            
+    
+            var marker_da23a1c703b2f0266c57e4d7875a2c4b = L.marker(
+                [41.0726109, 29.0183816],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_71b0071519afbf8e48c7058c58a63a5f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a19804f5ee8eb6281e93ac5164b554c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a14d157b47752493d7dfce25d58d051 = $(`<div id="html_9a14d157b47752493d7dfce25d58d051" style="width: 100.0%; height: 100.0%;">Özel Etiler Hastanesi</div>`)[0];
+                popup_a19804f5ee8eb6281e93ac5164b554c0.setContent(html_9a14d157b47752493d7dfce25d58d051);
+            
+        
+
+        marker_da23a1c703b2f0266c57e4d7875a2c4b.bindPopup(popup_a19804f5ee8eb6281e93ac5164b554c0)
+        ;
+
+        
+    
+    
+                marker_da23a1c703b2f0266c57e4d7875a2c4b.setIcon(icon_71b0071519afbf8e48c7058c58a63a5f);
+            
+    
+            var marker_4392d3eeeaa2670ba34c2b7b6f340594 = L.marker(
+                [40.9307338, 29.1444794],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_af716b7ebc050c5c8f1fd4e377da7218 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf38067b58ca6947a6082c8b901772de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_110d837a9f6db56828ef1fadb4e17b83 = $(`<div id="html_110d837a9f6db56828ef1fadb4e17b83" style="width: 100.0%; height: 100.0%;">Marmara Mobil Sağlık</div>`)[0];
+                popup_bf38067b58ca6947a6082c8b901772de.setContent(html_110d837a9f6db56828ef1fadb4e17b83);
+            
+        
+
+        marker_4392d3eeeaa2670ba34c2b7b6f340594.bindPopup(popup_bf38067b58ca6947a6082c8b901772de)
+        ;
+
+        
+    
+    
+                marker_4392d3eeeaa2670ba34c2b7b6f340594.setIcon(icon_af716b7ebc050c5c8f1fd4e377da7218);
+            
+    
+            var marker_210c80646848c8af74962482bcac0655 = L.marker(
+                [41.003674, 28.9383347],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_1ae06b4db14d7b2d56b9fde110b0acc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d92616740e2f8c141e3618fb07a5d367 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6271a8ad574eb53f85799f9b92e0a868 = $(`<div id="html_6271a8ad574eb53f85799f9b92e0a868" style="width: 100.0%; height: 100.0%;">Patológia</div>`)[0];
+                popup_d92616740e2f8c141e3618fb07a5d367.setContent(html_6271a8ad574eb53f85799f9b92e0a868);
+            
+        
+
+        marker_210c80646848c8af74962482bcac0655.bindPopup(popup_d92616740e2f8c141e3618fb07a5d367)
+        ;
+
+        
+    
+    
+                marker_210c80646848c8af74962482bcac0655.setIcon(icon_1ae06b4db14d7b2d56b9fde110b0acc0);
+            
+    
+            var marker_4acc48635224f4ede8703cf70cc9d229 = L.marker(
+                [41.0230164, 29.0174216],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_9dd245638a0460ca47757729a47887d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c775a4530e438d76dce5436ec2424510 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c7f3994d23fcc994b170e934e81c02a = $(`<div id="html_0c7f3994d23fcc994b170e934e81c02a" style="width: 100.0%; height: 100.0%;">Aktif International Hospital</div>`)[0];
+                popup_c775a4530e438d76dce5436ec2424510.setContent(html_0c7f3994d23fcc994b170e934e81c02a);
+            
+        
+
+        marker_4acc48635224f4ede8703cf70cc9d229.bindPopup(popup_c775a4530e438d76dce5436ec2424510)
+        ;
+
+        
+    
+    
+                marker_4acc48635224f4ede8703cf70cc9d229.setIcon(icon_9dd245638a0460ca47757729a47887d2);
+            
+    
+            var marker_fd3a310b698a85031e586ab6421feed4 = L.marker(
+                [40.9840765, 29.0584553],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_075f66ca6cfc8834393f8f59e974eb1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88e8081f55101bde00b35e14e94ad715 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3383efe367a640f7ad794f92ea059d3a = $(`<div id="html_3383efe367a640f7ad794f92ea059d3a" style="width: 100.0%; height: 100.0%;">Marmara Tıp Merkezi</div>`)[0];
+                popup_88e8081f55101bde00b35e14e94ad715.setContent(html_3383efe367a640f7ad794f92ea059d3a);
+            
+        
+
+        marker_fd3a310b698a85031e586ab6421feed4.bindPopup(popup_88e8081f55101bde00b35e14e94ad715)
+        ;
+
+        
+    
+    
+                marker_fd3a310b698a85031e586ab6421feed4.setIcon(icon_075f66ca6cfc8834393f8f59e974eb1c);
+            
+    
+            var marker_1af49dbfdb5cb96850572aa5c44ea2c6 = L.marker(
+                [41.0554262, 28.3671171],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_b0201779c484e54182505ba4305d0739 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_959f16e8840c2154b4b55311df3b9bf5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0af785a5679b0e3d47fd214a96511916 = $(`<div id="html_0af785a5679b0e3d47fd214a96511916" style="width: 100.0%; height: 100.0%;">Selimpaşa Aile Sağlığı Merkezi</div>`)[0];
+                popup_959f16e8840c2154b4b55311df3b9bf5.setContent(html_0af785a5679b0e3d47fd214a96511916);
+            
+        
+
+        marker_1af49dbfdb5cb96850572aa5c44ea2c6.bindPopup(popup_959f16e8840c2154b4b55311df3b9bf5)
+        ;
+
+        
+    
+    
+                marker_1af49dbfdb5cb96850572aa5c44ea2c6.setIcon(icon_b0201779c484e54182505ba4305d0739);
+            
+    
+            var marker_307de990192ed5b3a1ca953a78ccf9d9 = L.marker(
+                [40.9759692, 28.8550292],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_93eda3fef978784e82dcbb187d11d4e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb4418b336f8685177fb371b61c36221 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d7d4bb0cee3d2754d4758682fb02729 = $(`<div id="html_5d7d4bb0cee3d2754d4758682fb02729" style="width: 100.0%; height: 100.0%;">Medicana 2</div>`)[0];
+                popup_eb4418b336f8685177fb371b61c36221.setContent(html_5d7d4bb0cee3d2754d4758682fb02729);
+            
+        
+
+        marker_307de990192ed5b3a1ca953a78ccf9d9.bindPopup(popup_eb4418b336f8685177fb371b61c36221)
+        ;
+
+        
+    
+    
+                marker_307de990192ed5b3a1ca953a78ccf9d9.setIcon(icon_93eda3fef978784e82dcbb187d11d4e3);
+            
+    
+            var marker_8948334bc72d7c481b2a63bca0ecf77c = L.marker(
+                [41.0714522, 29.0151774],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_f5a89d1b6a3eab1e16b9db1c3e3c21a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56371433ad3589da89da59c677c34f07 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7373e5c7bd67a63e4d330dcf86defe07 = $(`<div id="html_7373e5c7bd67a63e4d330dcf86defe07" style="width: 100.0%; height: 100.0%;">Medicana Zincirlikuyu Hastanesi</div>`)[0];
+                popup_56371433ad3589da89da59c677c34f07.setContent(html_7373e5c7bd67a63e4d330dcf86defe07);
+            
+        
+
+        marker_8948334bc72d7c481b2a63bca0ecf77c.bindPopup(popup_56371433ad3589da89da59c677c34f07)
+        ;
+
+        
+    
+    
+                marker_8948334bc72d7c481b2a63bca0ecf77c.setIcon(icon_f5a89d1b6a3eab1e16b9db1c3e3c21a0);
+            
+    
+            var marker_036fddffa229b5d4d7e4fa1dfece0bce = L.marker(
+                [41.021568, 29.1198759],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_cc2e921258792114d8faaec432d8052c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9806153b187ee53b05cf08fb2cc0332 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b5ea19cc488c268ea4b9f587ec09e91 = $(`<div id="html_7b5ea19cc488c268ea4b9f587ec09e91" style="width: 100.0%; height: 100.0%;">Erdem Hastanesi</div>`)[0];
+                popup_d9806153b187ee53b05cf08fb2cc0332.setContent(html_7b5ea19cc488c268ea4b9f587ec09e91);
+            
+        
+
+        marker_036fddffa229b5d4d7e4fa1dfece0bce.bindPopup(popup_d9806153b187ee53b05cf08fb2cc0332)
+        ;
+
+        
+    
+    
+                marker_036fddffa229b5d4d7e4fa1dfece0bce.setIcon(icon_cc2e921258792114d8faaec432d8052c);
+            
+    
+            var marker_247a0e21aabb6183f7167d582f0bc6b4 = L.marker(
+                [41.159064, 28.91162],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_fe0c8a6ef768b52b76096702beb2e289 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_baa1d093432968108408e7ab386bb6f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8898f561b9af915e75bd6575d67e9923 = $(`<div id="html_8898f561b9af915e75bd6575d67e9923" style="width: 100.0%; height: 100.0%;">Eyüp Kemerburgaz Aile Sağlığı Merkezi</div>`)[0];
+                popup_baa1d093432968108408e7ab386bb6f4.setContent(html_8898f561b9af915e75bd6575d67e9923);
+            
+        
+
+        marker_247a0e21aabb6183f7167d582f0bc6b4.bindPopup(popup_baa1d093432968108408e7ab386bb6f4)
+        ;
+
+        
+    
+    
+                marker_247a0e21aabb6183f7167d582f0bc6b4.setIcon(icon_fe0c8a6ef768b52b76096702beb2e289);
+            
+    
+            var marker_f00135dfb12e03d24cf36d57a76352a2 = L.marker(
+                [41.0254232, 28.8487524],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_663783587caac1e1bc5693afc6e72f40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69c105987e53bc9a6031b27f39dc196a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_caab434988b4e957d331511521dd352d = $(`<div id="html_caab434988b4e957d331511521dd352d" style="width: 100.0%; height: 100.0%;">Bağcılar İşitme Engelli Rehabilitasyon Merkezi</div>`)[0];
+                popup_69c105987e53bc9a6031b27f39dc196a.setContent(html_caab434988b4e957d331511521dd352d);
+            
+        
+
+        marker_f00135dfb12e03d24cf36d57a76352a2.bindPopup(popup_69c105987e53bc9a6031b27f39dc196a)
+        ;
+
+        
+    
+    
+                marker_f00135dfb12e03d24cf36d57a76352a2.setIcon(icon_663783587caac1e1bc5693afc6e72f40);
+            
+    
+            var marker_b5e9b59089f6d563fa8510683861e30b = L.marker(
+                [41.0373376, 29.2352315],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_b71466d465df4cc016476857019dce74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a88ed79a17d2278e7a1dc39682cad31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_612336a28814096406669b8071bfd085 = $(`<div id="html_612336a28814096406669b8071bfd085" style="width: 100.0%; height: 100.0%;">Çekmeköy Devlet Hastanesi</div>`)[0];
+                popup_5a88ed79a17d2278e7a1dc39682cad31.setContent(html_612336a28814096406669b8071bfd085);
+            
+        
+
+        marker_b5e9b59089f6d563fa8510683861e30b.bindPopup(popup_5a88ed79a17d2278e7a1dc39682cad31)
+        ;
+
+        
+    
+    
+                marker_b5e9b59089f6d563fa8510683861e30b.setIcon(icon_b71466d465df4cc016476857019dce74);
+            
+    
+            var marker_5af9fda6cc0a1e6ee45ad17195b994e7 = L.marker(
+                [41.0378066, 29.2351897],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_fc2622dcec1851f94b5a2fe3bb7aed78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df9971367c8bcc7b430b31ffd19a75fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83c2352759c11b3ae60c5432d9ed0645 = $(`<div id="html_83c2352759c11b3ae60c5432d9ed0645" style="width: 100.0%; height: 100.0%;">Şehit Prof. İlhan Varank Eğitim ve Araştırma Hastanesi - Çekmeköy Ek Hizmet Binası</div>`)[0];
+                popup_df9971367c8bcc7b430b31ffd19a75fc.setContent(html_83c2352759c11b3ae60c5432d9ed0645);
+            
+        
+
+        marker_5af9fda6cc0a1e6ee45ad17195b994e7.bindPopup(popup_df9971367c8bcc7b430b31ffd19a75fc)
+        ;
+
+        
+    
+    
+                marker_5af9fda6cc0a1e6ee45ad17195b994e7.setIcon(icon_fc2622dcec1851f94b5a2fe3bb7aed78);
+            
+    
+            var marker_b50ef6d4be017ffbf1ba71118a9ef480 = L.marker(
+                [41.0252986, 28.845519],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_e7a9fb66347f20db589dc41b4af75bd0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ff4dcbb7893d34acf0b580fa3182747 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6905d27992a03e30634652e5acdb5fb0 = $(`<div id="html_6905d27992a03e30634652e5acdb5fb0" style="width: 100.0%; height: 100.0%;">Aile Sağlığı Merkezi</div>`)[0];
+                popup_3ff4dcbb7893d34acf0b580fa3182747.setContent(html_6905d27992a03e30634652e5acdb5fb0);
+            
+        
+
+        marker_b50ef6d4be017ffbf1ba71118a9ef480.bindPopup(popup_3ff4dcbb7893d34acf0b580fa3182747)
+        ;
+
+        
+    
+    
+                marker_b50ef6d4be017ffbf1ba71118a9ef480.setIcon(icon_e7a9fb66347f20db589dc41b4af75bd0);
+            
+    
+            var marker_25c4201faa5e218e5b4c91fb418d11aa = L.marker(
+                [41.0567006, 28.9153423],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_f83e02614dc2f2ae386d52449ba7569b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25869075132be22997369e47d93f8ea7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cea285d3f3f5c188e9abbf16472e5626 = $(`<div id="html_cea285d3f3f5c188e9abbf16472e5626" style="width: 100.0%; height: 100.0%;">Özel Belde Tıp Merkezi</div>`)[0];
+                popup_25869075132be22997369e47d93f8ea7.setContent(html_cea285d3f3f5c188e9abbf16472e5626);
+            
+        
+
+        marker_25c4201faa5e218e5b4c91fb418d11aa.bindPopup(popup_25869075132be22997369e47d93f8ea7)
+        ;
+
+        
+    
+    
+                marker_25c4201faa5e218e5b4c91fb418d11aa.setIcon(icon_f83e02614dc2f2ae386d52449ba7569b);
+            
+    
+            var marker_29f2ec1880e0341d6dc6d8cb1b8af436 = L.marker(
+                [41.0525054, 28.959974],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_384d06ec54c2cfc5f457706202a2ce3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21996b3876c1ea0ab9f2d23ee1715453 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df3b013894e6b3071c45149c7f2cffb2 = $(`<div id="html_df3b013894e6b3071c45149c7f2cffb2" style="width: 100.0%; height: 100.0%;">Özel Okmeydanı hastanesi</div>`)[0];
+                popup_21996b3876c1ea0ab9f2d23ee1715453.setContent(html_df3b013894e6b3071c45149c7f2cffb2);
+            
+        
+
+        marker_29f2ec1880e0341d6dc6d8cb1b8af436.bindPopup(popup_21996b3876c1ea0ab9f2d23ee1715453)
+        ;
+
+        
+    
+    
+                marker_29f2ec1880e0341d6dc6d8cb1b8af436.setIcon(icon_384d06ec54c2cfc5f457706202a2ce3c);
+            
+    
+            var marker_a603c16be98dabcefb666ae5c69ce3f5 = L.marker(
+                [41.0550656, 28.9852615],
+                {
+}
+            ).addTo(map_c608f60ba9931bd3a7df95b4359bc54c);
+        
+    
+            var icon_a8da66a1ac01c9107be81ce7ee2a0b63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a04ac17bf8a0d697c507bc0a8d9a1678 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_688ebeb496f72adab6209745eedcb27f = $(`<div id="html_688ebeb496f72adab6209745eedcb27f" style="width: 100.0%; height: 100.0%;">ENT Clinic-Dr. Selcuk Guney</div>`)[0];
+                popup_a04ac17bf8a0d697c507bc0a8d9a1678.setContent(html_688ebeb496f72adab6209745eedcb27f);
+            
+        
+
+        marker_a603c16be98dabcefb666ae5c69ce3f5.bindPopup(popup_a04ac17bf8a0d697c507bc0a8d9a1678)
+        ;
+
+        
+    
+    
+                marker_a603c16be98dabcefb666ae5c69ce3f5.setIcon(icon_a8da66a1ac01c9107be81ce7ee2a0b63);
+            
+</script>
+</html>
