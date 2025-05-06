@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_95d4ecd032ba8aa6971054f2460ea41a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_95d4ecd032ba8aa6971054f2460ea41a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_95d4ecd032ba8aa6971054f2460ea41a = L.map(
+                "map_95d4ecd032ba8aa6971054f2460ea41a",
+                {
+                    center: [41.0369, 28.985],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5dbc568005857dcd005cf7daadf52433 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5dbc568005857dcd005cf7daadf52433.addTo(map_95d4ecd032ba8aa6971054f2460ea41a);
+        
+    
+            var marker_670b8a25319e57d55f964fdeee7e73d7 = L.marker(
+                [41.0369, 28.985],
+                {
+}
+            ).addTo(map_95d4ecd032ba8aa6971054f2460ea41a);
+        
+    
+            var icon_7bc7c7f978fdfded7fe9a4b03f87a012 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ab07b60d9b582c5e82f98757eb61a15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f49ffe05711c0bf3578422a162e40ca = $(`<div id="html_2f49ffe05711c0bf3578422a162e40ca" style="width: 100.0%; height: 100.0%;">Kullanıcı Konumu</div>`)[0];
+                popup_2ab07b60d9b582c5e82f98757eb61a15.setContent(html_2f49ffe05711c0bf3578422a162e40ca);
+            
+        
+
+        marker_670b8a25319e57d55f964fdeee7e73d7.bindPopup(popup_2ab07b60d9b582c5e82f98757eb61a15)
+        ;
+
+        
+    
+    
+                marker_670b8a25319e57d55f964fdeee7e73d7.setIcon(icon_7bc7c7f978fdfded7fe9a4b03f87a012);
+            
+    
+            var marker_b7c610fcc70cd2835cee987cf5923ac4 = L.marker(
+                [41.04156691, 28.97933781],
+                {
+}
+            ).addTo(map_95d4ecd032ba8aa6971054f2460ea41a);
+        
+    
+            var icon_0406a93804ff3d3c1fc2572f6508c581 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdef1e1bf42f4ea072579ec05cec05ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2fff8ec4261ae48fbe6031ad749dd38 = $(`<div id="html_b2fff8ec4261ae48fbe6031ad749dd38" style="width: 100.0%; height: 100.0%;">YAŞAR İNŞAAT PETROL VE PET.ÜRÜN.SAN.VE TİC.A.Ş. - 703 m</div>`)[0];
+                popup_fdef1e1bf42f4ea072579ec05cec05ed.setContent(html_b2fff8ec4261ae48fbe6031ad749dd38);
+            
+        
+
+        marker_b7c610fcc70cd2835cee987cf5923ac4.bindPopup(popup_fdef1e1bf42f4ea072579ec05cec05ed)
+        ;
+
+        
+    
+    
+                marker_b7c610fcc70cd2835cee987cf5923ac4.setIcon(icon_0406a93804ff3d3c1fc2572f6508c581);
+            
+    
+            var marker_fa4db9dd264ae0441c06244b6e7e0b27 = L.marker(
+                [41.03986787, 28.97751708],
+                {
+}
+            ).addTo(map_95d4ecd032ba8aa6971054f2460ea41a);
+        
+    
+            var icon_40dba474736bd59f0a611a3837b51659 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a1bfdafa88609b087c23df75f5a5742 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f8ac3f9b4e66d5ad2c7f0b1414b5d11 = $(`<div id="html_2f8ac3f9b4e66d5ad2c7f0b1414b5d11" style="width: 100.0%; height: 100.0%;">DOCO PETROL VE DANIŞMANLIK A.Ş. - 710 m</div>`)[0];
+                popup_2a1bfdafa88609b087c23df75f5a5742.setContent(html_2f8ac3f9b4e66d5ad2c7f0b1414b5d11);
+            
+        
+
+        marker_fa4db9dd264ae0441c06244b6e7e0b27.bindPopup(popup_2a1bfdafa88609b087c23df75f5a5742)
+        ;
+
+        
+    
+    
+                marker_fa4db9dd264ae0441c06244b6e7e0b27.setIcon(icon_40dba474736bd59f0a611a3837b51659);
+            
+    
+            var marker_0128994e063595f9d12055505987d6dc = L.marker(
+                [41.03532153, 28.99380776],
+                {
+}
+            ).addTo(map_95d4ecd032ba8aa6971054f2460ea41a);
+        
+    
+            var icon_a94792e3712e92c4d14bd707d1b2aa50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_385cbc9ec84af7173830997d7fcbfeab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c600aea1404b3df0013e37d90e542944 = $(`<div id="html_c600aea1404b3df0013e37d90e542944" style="width: 100.0%; height: 100.0%;">TAM PETROL PETROL ÜRÜN. ALIM SATIM LTD.ŞTİ. - 761 m</div>`)[0];
+                popup_385cbc9ec84af7173830997d7fcbfeab.setContent(html_c600aea1404b3df0013e37d90e542944);
+            
+        
+
+        marker_0128994e063595f9d12055505987d6dc.bindPopup(popup_385cbc9ec84af7173830997d7fcbfeab)
+        ;
+
+        
+    
+    
+                marker_0128994e063595f9d12055505987d6dc.setIcon(icon_a94792e3712e92c4d14bd707d1b2aa50);
+            
+    
+            var marker_dfd33bbb51c7e4f3cc6aefa5924ba0b5 = L.marker(
+                [41.03845927, 28.97348141],
+                {
+}
+            ).addTo(map_95d4ecd032ba8aa6971054f2460ea41a);
+        
+    
+            var icon_83ca1113edc2d403a1610ea219dc7a45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55a23dc53498129f88b80da9681d8840 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_533f7ac45b92f481a608240c9aa7eb5a = $(`<div id="html_533f7ac45b92f481a608240c9aa7eb5a" style="width: 100.0%; height: 100.0%;">TP İSTASYON İŞLETMELERİ ANONİM ŞİRKETİ - 983 m</div>`)[0];
+                popup_55a23dc53498129f88b80da9681d8840.setContent(html_533f7ac45b92f481a608240c9aa7eb5a);
+            
+        
+
+        marker_dfd33bbb51c7e4f3cc6aefa5924ba0b5.bindPopup(popup_55a23dc53498129f88b80da9681d8840)
+        ;
+
+        
+    
+    
+                marker_dfd33bbb51c7e4f3cc6aefa5924ba0b5.setIcon(icon_83ca1113edc2d403a1610ea219dc7a45);
+            
+    
+            var marker_967458bc43355a88e1f1735ed224d697 = L.marker(
+                [41.04468951, 28.97831723],
+                {
+}
+            ).addTo(map_95d4ecd032ba8aa6971054f2460ea41a);
+        
+    
+            var icon_3471d708a1267c988a5772d1024ae91e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72ae178dd4ff5fcce35b5f4908443cce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b6a19e9ed5c48f08a8e237612d01f22 = $(`<div id="html_8b6a19e9ed5c48f08a8e237612d01f22" style="width: 100.0%; height: 100.0%;">SADIKOĞLU PETROL PAZOTOMO.TURİZM MARKETİŞLT.SAN.TİC.LTD.ŞTİ - 1031 m</div>`)[0];
+                popup_72ae178dd4ff5fcce35b5f4908443cce.setContent(html_8b6a19e9ed5c48f08a8e237612d01f22);
+            
+        
+
+        marker_967458bc43355a88e1f1735ed224d697.bindPopup(popup_72ae178dd4ff5fcce35b5f4908443cce)
+        ;
+
+        
+    
+    
+                marker_967458bc43355a88e1f1735ed224d697.setIcon(icon_3471d708a1267c988a5772d1024ae91e);
+            
+    
+            var marker_888d5bb7e21294a6f8740c11ca2204cc = L.marker(
+                [41.03880903, 28.97264845],
+                {
+}
+            ).addTo(map_95d4ecd032ba8aa6971054f2460ea41a);
+        
+    
+            var icon_bce288001f131655ad6c9acee1a4558a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f79afe792678fa79a6336595a84e410 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_801dc195d504911edbe7e1024857b648 = $(`<div id="html_801dc195d504911edbe7e1024857b648" style="width: 100.0%; height: 100.0%;">NERGİS BENZİN İSTASYON İŞLETMECİLİĞİ ANONİM ŞİRKETİ - 1060 m</div>`)[0];
+                popup_7f79afe792678fa79a6336595a84e410.setContent(html_801dc195d504911edbe7e1024857b648);
+            
+        
+
+        marker_888d5bb7e21294a6f8740c11ca2204cc.bindPopup(popup_7f79afe792678fa79a6336595a84e410)
+        ;
+
+        
+    
+    
+                marker_888d5bb7e21294a6f8740c11ca2204cc.setIcon(icon_bce288001f131655ad6c9acee1a4558a);
+            
+    
+            var marker_d2a91071735773a82b8a1f2e3c4c0f0a = L.marker(
+                [41.04841645, 28.98502515],
+                {
+}
+            ).addTo(map_95d4ecd032ba8aa6971054f2460ea41a);
+        
+    
+            var icon_adb1ffbe1a82aa7c0c96c8516d1e9a67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4216a4a232297aa29fe2cb3c318a6146 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_628cd6196e8433b1693cd0caa0c5d90e = $(`<div id="html_628cd6196e8433b1693cd0caa0c5d90e" style="width: 100.0%; height: 100.0%;">GÜRCAN PETROLCÜLÜK A.Ş. - 1278 m</div>`)[0];
+                popup_4216a4a232297aa29fe2cb3c318a6146.setContent(html_628cd6196e8433b1693cd0caa0c5d90e);
+            
+        
+
+        marker_d2a91071735773a82b8a1f2e3c4c0f0a.bindPopup(popup_4216a4a232297aa29fe2cb3c318a6146)
+        ;
+
+        
+    
+    
+                marker_d2a91071735773a82b8a1f2e3c4c0f0a.setIcon(icon_adb1ffbe1a82aa7c0c96c8516d1e9a67);
+            
+    
+            var marker_5ffd0bef0fe1f37a756bf2854e33aadc = L.marker(
+                [41.02601545, 28.97975053],
+                {
+}
+            ).addTo(map_95d4ecd032ba8aa6971054f2460ea41a);
+        
+    
+            var icon_2b8772dd66cf4b95146c6df7a297b4e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7e004e077ae6b6aa00d215c62de53fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e910f80959cc63eac36cf205de0c603 = $(`<div id="html_4e910f80959cc63eac36cf205de0c603" style="width: 100.0%; height: 100.0%;">COB PETROL İNŞAAT TURİZM SANAYİ VE TİCARET LİMİTED ŞİRKETİ - 1286 m</div>`)[0];
+                popup_a7e004e077ae6b6aa00d215c62de53fe.setContent(html_4e910f80959cc63eac36cf205de0c603);
+            
+        
+
+        marker_5ffd0bef0fe1f37a756bf2854e33aadc.bindPopup(popup_a7e004e077ae6b6aa00d215c62de53fe)
+        ;
+
+        
+    
+    
+                marker_5ffd0bef0fe1f37a756bf2854e33aadc.setIcon(icon_2b8772dd66cf4b95146c6df7a297b4e0);
+            
+    
+            var marker_78742a7f78bed36ec8884f770fc98491 = L.marker(
+                [41.04063261, 28.96738729],
+                {
+}
+            ).addTo(map_95d4ecd032ba8aa6971054f2460ea41a);
+        
+    
+            var icon_0592cbb8ca136b99e4f696a082fa89eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f982d8ae7b869459383a614fc2cef40d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef892df8bb999476d1f0eb963bab9d50 = $(`<div id="html_ef892df8bb999476d1f0eb963bab9d50" style="width: 100.0%; height: 100.0%;">CAN PETROL SAN.VE TİC.AŞ. - 1537 m</div>`)[0];
+                popup_f982d8ae7b869459383a614fc2cef40d.setContent(html_ef892df8bb999476d1f0eb963bab9d50);
+            
+        
+
+        marker_78742a7f78bed36ec8884f770fc98491.bindPopup(popup_f982d8ae7b869459383a614fc2cef40d)
+        ;
+
+        
+    
+    
+                marker_78742a7f78bed36ec8884f770fc98491.setIcon(icon_0592cbb8ca136b99e4f696a082fa89eb);
+            
+    
+            var marker_ebf00cdea1b1e1c9362157ad48ce79b3 = L.marker(
+                [41.04123713, 28.96729852],
+                {
+}
+            ).addTo(map_95d4ecd032ba8aa6971054f2460ea41a);
+        
+    
+            var icon_459bd0a8914f09557e6ca47ebfa28e08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b930dbcf344785c4b839d0be09faa76c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0015d69bb41be6fabc0f9824114faef1 = $(`<div id="html_0015d69bb41be6fabc0f9824114faef1" style="width: 100.0%; height: 100.0%;">PIRIL PETROL SER.HİZ.NAK.VE TİC.AŞ. - 1564 m</div>`)[0];
+                popup_b930dbcf344785c4b839d0be09faa76c.setContent(html_0015d69bb41be6fabc0f9824114faef1);
+            
+        
+
+        marker_ebf00cdea1b1e1c9362157ad48ce79b3.bindPopup(popup_b930dbcf344785c4b839d0be09faa76c)
+        ;
+
+        
+    
+    
+                marker_ebf00cdea1b1e1c9362157ad48ce79b3.setIcon(icon_459bd0a8914f09557e6ca47ebfa28e08);
+            
+</script>
+</html>

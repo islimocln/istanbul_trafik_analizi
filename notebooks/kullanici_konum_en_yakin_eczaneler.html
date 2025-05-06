@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8aca6871616c2397b3781471af05ea82 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8aca6871616c2397b3781471af05ea82" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8aca6871616c2397b3781471af05ea82 = L.map(
+                "map_8aca6871616c2397b3781471af05ea82",
+                {
+                    center: [41.0369, 28.985],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3b9c24d8c0625740ed28220d05e47123 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3b9c24d8c0625740ed28220d05e47123.addTo(map_8aca6871616c2397b3781471af05ea82);
+        
+    
+            var marker_e4ea1e2a9be84e3537c5f2965f3ebe73 = L.marker(
+                [41.0369, 28.985],
+                {
+}
+            ).addTo(map_8aca6871616c2397b3781471af05ea82);
+        
+    
+            var icon_ca1232cbef38ae7f4b6ff0acacfe1fac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae9cf2ecdf59794829a669f98873ed5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4c66dc3dec69feefbcb962ca282f80f = $(`<div id="html_c4c66dc3dec69feefbcb962ca282f80f" style="width: 100.0%; height: 100.0%;">Kullanıcı Konumu</div>`)[0];
+                popup_ae9cf2ecdf59794829a669f98873ed5d.setContent(html_c4c66dc3dec69feefbcb962ca282f80f);
+            
+        
+
+        marker_e4ea1e2a9be84e3537c5f2965f3ebe73.bindPopup(popup_ae9cf2ecdf59794829a669f98873ed5d)
+        ;
+
+        
+    
+    
+                marker_e4ea1e2a9be84e3537c5f2965f3ebe73.setIcon(icon_ca1232cbef38ae7f4b6ff0acacfe1fac);
+            
+    
+            var marker_90d0e5c239172057cc28addae117b4ab = L.marker(
+                [41.0363034, 28.9851031],
+                {
+}
+            ).addTo(map_8aca6871616c2397b3781471af05ea82);
+        
+    
+            var icon_f66c7cdda6e8c892393ac8919cad314d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7e9715609bce197da4eeefb957fa857 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_199388799b1a577e018755db98d98d36 = $(`<div id="html_199388799b1a577e018755db98d98d36" style="width: 100.0%; height: 100.0%;">Itır Eczanesi - 66 metre</div>`)[0];
+                popup_c7e9715609bce197da4eeefb957fa857.setContent(html_199388799b1a577e018755db98d98d36);
+            
+        
+
+        marker_90d0e5c239172057cc28addae117b4ab.bindPopup(popup_c7e9715609bce197da4eeefb957fa857)
+        ;
+
+        
+    
+    
+                marker_90d0e5c239172057cc28addae117b4ab.setIcon(icon_f66c7cdda6e8c892393ac8919cad314d);
+            
+    
+            var marker_844259e26822a04346bffd4ca46cf288 = L.marker(
+                [41.0377775, 28.9840098],
+                {
+}
+            ).addTo(map_8aca6871616c2397b3781471af05ea82);
+        
+    
+            var icon_07e81b5307ceac4b8cef5eb37ed11b39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae90361537837b0a8dd7fc5e721c53c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d57a85849fd18052cc9e94394eed6fca = $(`<div id="html_d57a85849fd18052cc9e94394eed6fca" style="width: 100.0%; height: 100.0%;">Taksim Meydan Eczanesi - 128 metre</div>`)[0];
+                popup_ae90361537837b0a8dd7fc5e721c53c0.setContent(html_d57a85849fd18052cc9e94394eed6fca);
+            
+        
+
+        marker_844259e26822a04346bffd4ca46cf288.bindPopup(popup_ae90361537837b0a8dd7fc5e721c53c0)
+        ;
+
+        
+    
+    
+                marker_844259e26822a04346bffd4ca46cf288.setIcon(icon_07e81b5307ceac4b8cef5eb37ed11b39);
+            
+    
+            var marker_6d2ec1dc5f95adff44eaa8d1596b4b42 = L.marker(
+                [41.0379814, 28.9841038],
+                {
+}
+            ).addTo(map_8aca6871616c2397b3781471af05ea82);
+        
+    
+            var icon_cb1157a36335dbca18fe09d2b6933a53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f5c903bab20ebdc7b163e2197ea17a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83bcf655889c14bdbab993bd5fe7fe29 = $(`<div id="html_83bcf655889c14bdbab993bd5fe7fe29" style="width: 100.0%; height: 100.0%;">Eylül Eczanesi - 141 metre</div>`)[0];
+                popup_8f5c903bab20ebdc7b163e2197ea17a0.setContent(html_83bcf655889c14bdbab993bd5fe7fe29);
+            
+        
+
+        marker_6d2ec1dc5f95adff44eaa8d1596b4b42.bindPopup(popup_8f5c903bab20ebdc7b163e2197ea17a0)
+        ;
+
+        
+    
+    
+                marker_6d2ec1dc5f95adff44eaa8d1596b4b42.setIcon(icon_cb1157a36335dbca18fe09d2b6933a53);
+            
+    
+            var marker_7b79fdd1e39f6db406857bce85c09f21 = L.marker(
+                [41.0383344, 28.9848863],
+                {
+}
+            ).addTo(map_8aca6871616c2397b3781471af05ea82);
+        
+    
+            var icon_1c3faccd374c571cb093b24df5983167 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ae2676b847e0dd5aed4870889c3c9a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43579bd0947344c379c3ab6c0ff95021 = $(`<div id="html_43579bd0947344c379c3ab6c0ff95021" style="width: 100.0%; height: 100.0%;">Esra Eczanesi - 159 metre</div>`)[0];
+                popup_3ae2676b847e0dd5aed4870889c3c9a8.setContent(html_43579bd0947344c379c3ab6c0ff95021);
+            
+        
+
+        marker_7b79fdd1e39f6db406857bce85c09f21.bindPopup(popup_3ae2676b847e0dd5aed4870889c3c9a8)
+        ;
+
+        
+    
+    
+                marker_7b79fdd1e39f6db406857bce85c09f21.setIcon(icon_1c3faccd374c571cb093b24df5983167);
+            
+    
+            var marker_99a39230e388c6fe2a9e60e92334bb19 = L.marker(
+                [41.035808, 28.9834717],
+                {
+}
+            ).addTo(map_8aca6871616c2397b3781471af05ea82);
+        
+    
+            var icon_f1978232635008989d6f98087621a029 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94f03c2c1665c76dc2eee6029c43a96d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0232ea75d550b9ef8e63317f42446b7b = $(`<div id="html_0232ea75d550b9ef8e63317f42446b7b" style="width: 100.0%; height: 100.0%;">Rebul 1895 Eczanesi - 176 metre</div>`)[0];
+                popup_94f03c2c1665c76dc2eee6029c43a96d.setContent(html_0232ea75d550b9ef8e63317f42446b7b);
+            
+        
+
+        marker_99a39230e388c6fe2a9e60e92334bb19.bindPopup(popup_94f03c2c1665c76dc2eee6029c43a96d)
+        ;
+
+        
+    
+    
+                marker_99a39230e388c6fe2a9e60e92334bb19.setIcon(icon_f1978232635008989d6f98087621a029);
+            
+    
+            var marker_4c2b74c51b54dc479681f32ccad74550 = L.marker(
+                [41.0357482, 28.9826614],
+                {
+}
+            ).addTo(map_8aca6871616c2397b3781471af05ea82);
+        
+    
+            var icon_b59b740b072352599f6785886c0a88c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f75923b62a902b8290ec7ec0e25621d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4fb6cf4642933017fc64dbe84877efc = $(`<div id="html_e4fb6cf4642933017fc64dbe84877efc" style="width: 100.0%; height: 100.0%;">İsimsiz Eczane - 234 metre</div>`)[0];
+                popup_6f75923b62a902b8290ec7ec0e25621d.setContent(html_e4fb6cf4642933017fc64dbe84877efc);
+            
+        
+
+        marker_4c2b74c51b54dc479681f32ccad74550.bindPopup(popup_6f75923b62a902b8290ec7ec0e25621d)
+        ;
+
+        
+    
+    
+                marker_4c2b74c51b54dc479681f32ccad74550.setIcon(icon_b59b740b072352599f6785886c0a88c0);
+            
+    
+            var marker_4e4b340637273cfc1262c5a03fc91118 = L.marker(
+                [41.0378314, 28.9823886],
+                {
+}
+            ).addTo(map_8aca6871616c2397b3781471af05ea82);
+        
+    
+            var icon_4d56e868db890dc3fb12203bcef49a86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a60facf32e3494c13a526e48fb25bac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_733f624592cc462b33eed7e94cfc304b = $(`<div id="html_733f624592cc462b33eed7e94cfc304b" style="width: 100.0%; height: 100.0%;">Şifa Eczanesi - 242 metre</div>`)[0];
+                popup_5a60facf32e3494c13a526e48fb25bac.setContent(html_733f624592cc462b33eed7e94cfc304b);
+            
+        
+
+        marker_4e4b340637273cfc1262c5a03fc91118.bindPopup(popup_5a60facf32e3494c13a526e48fb25bac)
+        ;
+
+        
+    
+    
+                marker_4e4b340637273cfc1262c5a03fc91118.setIcon(icon_4d56e868db890dc3fb12203bcef49a86);
+            
+    
+            var marker_499832ad60c884c9894d2e3da4cd7282 = L.marker(
+                [41.0370094, 28.9821048],
+                {
+}
+            ).addTo(map_8aca6871616c2397b3781471af05ea82);
+        
+    
+            var icon_8fc6f34b49873071268400f266b111ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00379d43c327d9469426b6bcd8eed165 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42d9570aac03d224ac0541280a1334a9 = $(`<div id="html_42d9570aac03d224ac0541280a1334a9" style="width: 100.0%; height: 100.0%;">Karaköy Eczanesi - 243 metre</div>`)[0];
+                popup_00379d43c327d9469426b6bcd8eed165.setContent(html_42d9570aac03d224ac0541280a1334a9);
+            
+        
+
+        marker_499832ad60c884c9894d2e3da4cd7282.bindPopup(popup_00379d43c327d9469426b6bcd8eed165)
+        ;
+
+        
+    
+    
+                marker_499832ad60c884c9894d2e3da4cd7282.setIcon(icon_8fc6f34b49873071268400f266b111ce);
+            
+    
+            var marker_63dca701a73e1898724a6b19d139ab85 = L.marker(
+                [41.0392571, 28.9848818],
+                {
+}
+            ).addTo(map_8aca6871616c2397b3781471af05ea82);
+        
+    
+            var icon_85f47146a36cd1e7fdfbc054ed0e4210 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd1894ceb033083e70f14083b790d0d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0be3ba78d038d030163a24c9fa55899d = $(`<div id="html_0be3ba78d038d030163a24c9fa55899d" style="width: 100.0%; height: 100.0%;">Eczane Taksim Lamartin - 261 metre</div>`)[0];
+                popup_bd1894ceb033083e70f14083b790d0d2.setContent(html_0be3ba78d038d030163a24c9fa55899d);
+            
+        
+
+        marker_63dca701a73e1898724a6b19d139ab85.bindPopup(popup_bd1894ceb033083e70f14083b790d0d2)
+        ;
+
+        
+    
+    
+                marker_63dca701a73e1898724a6b19d139ab85.setIcon(icon_85f47146a36cd1e7fdfbc054ed0e4210);
+            
+    
+            var marker_b8f35a60601dbe1c5fb8eed3a6caca72 = L.marker(
+                [41.039255, 28.984327],
+                {
+}
+            ).addTo(map_8aca6871616c2397b3781471af05ea82);
+        
+    
+            var icon_c33ad134e248da0279edcdef4dbf8c24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99f8a178a24b5e5d05efaeb84cc2feb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_155584e86fa824e7f66df074136b8243 = $(`<div id="html_155584e86fa824e7f66df074136b8243" style="width: 100.0%; height: 100.0%;">Özgecan Eczanesi - 267 metre</div>`)[0];
+                popup_99f8a178a24b5e5d05efaeb84cc2feb4.setContent(html_155584e86fa824e7f66df074136b8243);
+            
+        
+
+        marker_b8f35a60601dbe1c5fb8eed3a6caca72.bindPopup(popup_99f8a178a24b5e5d05efaeb84cc2feb4)
+        ;
+
+        
+    
+    
+                marker_b8f35a60601dbe1c5fb8eed3a6caca72.setIcon(icon_c33ad134e248da0279edcdef4dbf8c24);
+            
+</script>
+</html>

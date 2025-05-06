@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İstanbul Rehberi - Oteller</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+        }
+
+        .hotel-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .hotel-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .hotel-image {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .hotel-info {
+            padding: 1.5rem;
+        }
+
+        .rating {
+            color: #ffc107;
+        }
+
+        .filter-section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .price-range {
+            width: 100%;
+        }
+
+        .review-section {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+
+        .review {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .review:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-map-marked-alt"></i> İstanbul Rehberi
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="map.html"><i class="fas fa-map"></i> Harita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-hotel"></i> Oteller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> Hakkında</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Filters -->
+            <div class="col-md-3">
+                <div class="filter-section">
+                    <h5>Filtreler</h5>
+                    <div class="mb-3">
+                        <label class="form-label">Yıldız Sayısı</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="star5">
+                            <label class="form-check-label" for="star5">
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="star4">
+                            <label class="form-check-label" for="star4">
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Fiyat Aralığı</label>
+                        <input type="range" class="form-range price-range" min="0" max="1000" step="100">
+                        <div class="d-flex justify-content-between">
+                            <span>0₺</span>
+                            <span>1000₺</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Bölge</label>
+                        <select class="form-select">
+                            <option selected>Tümü</option>
+                            <option>Taksim</option>
+                            <option>Sultanahmet</option>
+                            <option>Kadıköy</option>
+                            <option>Beşiktaş</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel List -->
+            <div class="col-md-9">
+                <!-- Hotel Card 1 -->
+                <div class="hotel-card">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="hotel-image" alt="Hotel">
+                    <div class="hotel-info">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h4>Grand Hotel İstanbul</h4>
+                                <p class="text-muted">Taksim, İstanbul</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="text-dark">(4.8)</span>
+                            </div>
+                        </div>
+                        <p>Lüks ve konforlu bir konaklama deneyimi için ideal seçim. Şehir merkezine yakın konumu ve muhteşem manzarasıyla öne çıkar.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">₺800/gece</span>
+                            <button class="btn btn-primary">Detayları Gör</button>
+                        </div>
+                        <div class="review-section">
+                            <h6>Son Yorumlar</h6>
+                            <div class="review">
+                                <div class="d-flex justify-content-between">
+                                    <strong>Ahmet Y.</strong>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-0">Harika bir konaklama deneyimi. Personel çok ilgili ve odalar çok temiz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 2 -->
+                <div class="hotel-card">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="hotel-image" alt="Hotel">
+                    <div class="hotel-info">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h4>Blue Palace Hotel</h4>
+                                <p class="text-muted">Sultanahmet, İstanbul</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="text-dark">(4.2)</span>
+                            </div>
+                        </div>
+                        <p>Tarihi yarımadada konumlanan bu otel, tarihi dokuyu modern konforla birleştiriyor.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">₺600/gece</span>
+                            <button class="btn btn-primary">Detayları Gör</button>
+                        </div>
+                        <div class="review-section">
+                            <h6>Son Yorumlar</h6>
+                            <div class="review">
+                                <div class="d-flex justify-content-between">
+                                    <strong>Ayşe K.</strong>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-0">Konumu çok iyi, tarihi yerler yürüme mesafesinde.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="chatbot.js"></script>
+    <script>
+        // Helper to render stars
+        function renderStars(count, max = 5) {
+            let html = '';
+            for (let i = 1; i <= max; i++) {
+                html += `<i class="fas fa-star${i > count ? ' far' : ''} rating"></i>`;
+            }
+            return html;
+        }
+
+        // Fetch and render hotels
+        async function loadHotels() {
+            const res = await fetch('hotels.json');
+            const hotels = await res.json();
+            window.allHotels = hotels; // for filtering
+            renderHotelList(hotels);
+        }
+
+        function renderHotelList(hotels) {
+            const list = document.getElementById('hotel-list');
+            list.innerHTML = '';
+            hotels.forEach(hotel => {
+                const card = document.createElement('div');
+                card.className = 'hotel-card';
+                card.innerHTML = `
+                    <img src="${hotel.image}" class="hotel-image" alt="Hotel">
+                    <div class="hotel-info">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h4>${hotel.name}</h4>
+                                <p class="text-muted">${hotel.location}</p>
+                            </div>
+                            <div class="rating">
+                                ${renderStars(hotel.stars)}
+                                <span class="text-dark">(${hotel.rating})</span>
+                            </div>
+                        </div>
+                        <p>${hotel.description || ''}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">₺${hotel.price}/gece</span>
+                            <button class="btn btn-primary">Detayları Gör</button>
+                        </div>
+                        <div class="review-section">
+                            <h6>Son Yorumlar</h6>
+                            ${hotel.reviews.map(r => `
+                                <div class="review">
+                                    <div class="d-flex justify-content-between">
+                                        <strong>${r.user}</strong>
+                                        <div class="rating">${renderStars(r.stars)}</div>
+                                    </div>
+                                    <p class="mb-0">${r.comment}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+                list.appendChild(card);
+            });
+        }
+
+        // Filter logic
+        function applyFilters() {
+            let hotels = window.allHotels || [];
+            // Yıldız filtresi
+            const star5 = document.getElementById('star5').checked;
+            const star4 = document.getElementById('star4').checked;
+            hotels = hotels.filter(h => (star5 && h.stars === 5) || (star4 && h.stars === 4));
+            // Fiyat filtresi
+            const price = document.getElementById('price-range').value;
+            hotels = hotels.filter(h => h.price <= price);
+            // Bölge filtresi
+            const region = document.getElementById('region-select').value;
+            if (region !== 'Tümü') {
+                hotels = hotels.filter(h => h.location.includes(region));
+            }
+            renderHotelList(hotels);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add hotel list container id
+            const hotelList = document.querySelector('.col-md-9');
+            hotelList.id = 'hotel-list';
+            // Add id to price range and region select
+            document.querySelector('.price-range').id = 'price-range';
+            document.querySelector('.form-select').id = 'region-select';
+            // Filter events
+            document.getElementById('star5').addEventListener('change', applyFilters);
+            document.getElementById('star4').addEventListener('change', applyFilters);
+            document.getElementById('price-range').addEventListener('input', applyFilters);
+            document.getElementById('region-select').addEventListener('change', applyFilters);
+            loadHotels();
+        });
+    </script>
+</body>
+</html> 

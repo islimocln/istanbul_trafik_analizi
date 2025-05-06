@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İstanbul Rehberi - Harita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+        }
+
+        #map-container {
+            height: calc(100vh - 56px);
+            position: relative;
+        }
+
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+
+        .sidebar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            background-color: white;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+            padding: 1rem;
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .filter-section {
+            background-color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .location-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .location-item {
+            padding: 0.5rem;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+        }
+
+        .location-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .btn-custom {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #c0392b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-map-marked-alt"></i> İstanbul Rehberi
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-map"></i> Harita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-hotel"></i> Oteller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> Hakkında</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Map Container -->
+    <div id="map-container">
+        <div id="map"></div>
+        <div class="sidebar">
+            <div class="filter-section">
+                <h5>Filtreler</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="pharmacy">
+                    <label class="form-check-label" for="pharmacy">
+                        Eczaneler <span class="badge bg-light text-dark" id="count-eczane"></span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gas-station">
+                    <label class="form-check-label" for="gas-station">
+                        Benzin İstasyonları <span class="badge bg-light text-dark" id="count-benzin"></span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="hotels">
+                    <label class="form-check-label" for="hotels">
+                        Oteller <span class="badge bg-light text-dark" id="count-otel"></span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="restaurants">
+                    <label class="form-check-label" for="restaurants">
+                        Restoranlar <span class="badge bg-light text-dark" id="count-restoran"></span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="hospitals">
+                    <label class="form-check-label" for="hospitals">
+                        Hastaneler <span class="badge bg-light text-dark" id="count-hastane"></span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="malls">
+                    <label class="form-check-label" for="malls">
+                        AVM <span class="badge bg-light text-dark" id="count-avm"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h5>En Yakın Yerler</h5>
+                <ul class="location-list" id="location-list">
+                    <!-- Dinamik olarak doldurulacak -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="chatbot.js"></script>
+    <script>
+        // Marker data (örnek)
+        const locations = [
+            { type: 'eczane', name: 'Itır Eczanesi', coords: [41.0363034, 28.9851031], distance: 66 },
+            { type: 'eczane', name: 'Taksim Meydan Eczanesi', coords: [41.0377775, 28.9840098], distance: 128 },
+            { type: 'benzin', name: 'YAŞAR İNŞAAT PETROL', coords: [41.04156691, 28.97933781], distance: 703 },
+            { type: 'benzin', name: 'DOCO PETROL', coords: [41.03986787, 28.97751708], distance: 710 },
+            { type: 'otel', name: 'Grand Hotel', coords: [41.0375, 28.9855], distance: 450 },
+            { type: 'otel', name: 'Blue Palace Hotel', coords: [41.038, 28.984], distance: 600 },
+            { type: 'restoran', name: 'Meşhur Kebapçı', coords: [41.036, 28.986], distance: 300 },
+            { type: 'restoran', name: 'Balıkçı Ali', coords: [41.035, 28.984], distance: 350 },
+            { type: 'hastane', name: 'Şişli Etfal Hastanesi', coords: [41.039, 28.983], distance: 800 },
+            { type: 'hastane', name: 'Taksim İlkyardım', coords: [41.037, 28.982], distance: 900 },
+            { type: 'avm', name: 'Cevahir AVM', coords: [41.066, 28.987], distance: 2000 },
+            { type: 'avm', name: 'Forum İstanbul', coords: [41.048, 28.895], distance: 5000 },
+        ];
+
+        // Marker icons
+        const icons = {
+            eczane: L.AwesomeMarkers && L.AwesomeMarkers.icon ? L.AwesomeMarkers.icon({
+                icon: 'plus-sign',
+                prefix: 'glyphicon',
+                markerColor: 'green',
+                iconColor: 'white'
+            }) : undefined,
+            benzin: L.AwesomeMarkers && L.AwesomeMarkers.icon ? L.AwesomeMarkers.icon({
+                icon: 'gas-pump',
+                prefix: 'fa',
+                markerColor: 'red',
+                iconColor: 'white'
+            }) : undefined,
+            otel: L.AwesomeMarkers && L.AwesomeMarkers.icon ? L.AwesomeMarkers.icon({
+                icon: 'hotel',
+                prefix: 'fa',
+                markerColor: 'blue',
+                iconColor: 'white'
+            }) : undefined,
+            restoran: L.AwesomeMarkers && L.AwesomeMarkers.icon ? L.AwesomeMarkers.icon({
+                icon: 'utensils',
+                prefix: 'fa',
+                markerColor: 'purple',
+                iconColor: 'white'
+            }) : undefined,
+            hastane: L.AwesomeMarkers && L.AwesomeMarkers.icon ? L.AwesomeMarkers.icon({
+                icon: 'hospital',
+                prefix: 'fa',
+                markerColor: 'orange',
+                iconColor: 'white'
+            }) : undefined,
+            avm: L.AwesomeMarkers && L.AwesomeMarkers.icon ? L.AwesomeMarkers.icon({
+                icon: 'store',
+                prefix: 'fa',
+                markerColor: 'darkred',
+                iconColor: 'white'
+            }) : undefined,
+        };
+
+        // Initialize map
+        var map = L.map('map').setView([41.0369, 28.985], 14);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Store marker references
+        const markerGroups = { eczane: [], benzin: [], otel: [], restoran: [], hastane: [], avm: [] };
+
+        // Add markers
+        locations.forEach(loc => {
+            const marker = L.marker(loc.coords, icons[loc.type] ? { icon: icons[loc.type] } : undefined)
+                .addTo(map)
+                .bindPopup(`<b>${loc.name}</b>`);
+            markerGroups[loc.type].push(marker);
+        });
+
+        // Filtre kutularındaki sayıların güncellenmesi
+        function updateCounts() {
+            document.getElementById('count-eczane').textContent = locations.filter(l => l.type === 'eczane').length;
+            document.getElementById('count-benzin').textContent = locations.filter(l => l.type === 'benzin').length;
+            document.getElementById('count-otel').textContent = locations.filter(l => l.type === 'otel').length;
+            document.getElementById('count-restoran').textContent = locations.filter(l => l.type === 'restoran').length;
+            document.getElementById('count-hastane').textContent = locations.filter(l => l.type === 'hastane').length;
+            document.getElementById('count-avm').textContent = locations.filter(l => l.type === 'avm').length;
+        }
+
+        // Filter logic
+        function updateMarkers() {
+            const showEczane = document.getElementById('pharmacy').checked;
+            const showBenzin = document.getElementById('gas-station').checked;
+            const showOtel = document.getElementById('hotels').checked;
+            const showRestoran = document.getElementById('restaurants').checked;
+            const showHastane = document.getElementById('hospitals').checked;
+            const showAVM = document.getElementById('malls').checked;
+            markerGroups.eczane.forEach(m => showEczane ? map.addLayer(m) : map.removeLayer(m));
+            markerGroups.benzin.forEach(m => showBenzin ? map.addLayer(m) : map.removeLayer(m));
+            markerGroups.otel.forEach(m => showOtel ? map.addLayer(m) : map.removeLayer(m));
+            markerGroups.restoran.forEach(m => showRestoran ? map.addLayer(m) : map.removeLayer(m));
+            markerGroups.hastane.forEach(m => showHastane ? map.addLayer(m) : map.removeLayer(m));
+            markerGroups.avm.forEach(m => showAVM ? map.addLayer(m) : map.removeLayer(m));
+            updateLocationList();
+        }
+        document.getElementById('pharmacy').addEventListener('change', updateMarkers);
+        document.getElementById('gas-station').addEventListener('change', updateMarkers);
+        document.getElementById('hotels').addEventListener('change', updateMarkers);
+        document.getElementById('restaurants').addEventListener('change', updateMarkers);
+        document.getElementById('hospitals').addEventListener('change', updateMarkers);
+        document.getElementById('malls').addEventListener('change', updateMarkers);
+
+        // Dinamik en yakın yerler listesi
+        function updateLocationList() {
+            const list = document.getElementById('location-list');
+            list.innerHTML = '';
+            const checkedTypes = [];
+            if(document.getElementById('pharmacy').checked) checkedTypes.push('eczane');
+            if(document.getElementById('gas-station').checked) checkedTypes.push('benzin');
+            if(document.getElementById('hotels').checked) checkedTypes.push('otel');
+            if(document.getElementById('restaurants').checked) checkedTypes.push('restoran');
+            if(document.getElementById('hospitals').checked) checkedTypes.push('hastane');
+            if(document.getElementById('malls').checked) checkedTypes.push('avm');
+            // Sadece seçili türlerden, mesafeye göre sırala ve ilk 10'u göster
+            locations.filter(l => checkedTypes.includes(l.type))
+                .sort((a, b) => a.distance - b.distance)
+                .slice(0, 10)
+                .forEach(loc => {
+                    let icon = '';
+                    switch(loc.type) {
+                        case 'eczane': icon = '<i class="fas fa-clinic-medical text-success"></i>'; break;
+                        case 'benzin': icon = '<i class="fas fa-gas-pump text-danger"></i>'; break;
+                        case 'otel': icon = '<i class="fas fa-hotel text-primary"></i>'; break;
+                        case 'restoran': icon = '<i class="fas fa-utensils text-warning"></i>'; break;
+                        case 'hastane': icon = '<i class="fas fa-hospital text-danger"></i>'; break;
+                        case 'avm': icon = '<i class="fas fa-store text-info"></i>'; break;
+                    }
+                    list.innerHTML += `<li class="location-item">${icon} ${loc.name} - ${loc.distance} m</li>`;
+                });
+        }
+        updateCounts();
+        updateMarkers();
+    </script>
+</body>
+</html> 

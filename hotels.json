@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Grand Hotel İstanbul",
+    "location": "Taksim, İstanbul",
+    "stars": 5,
+    "rating": 4.8,
+    "price": 800,
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    "reviews": [
+      {
+        "user": "Ahmet Y.",
+        "stars": 5,
+        "comment": "Harika bir konaklama deneyimi. Personel çok ilgili ve odalar çok temiz."
+      }
+    ]
+  },
+  {
+    "name": "Blue Palace Hotel",
+    "location": "Sultanahmet, İstanbul",
+    "stars": 4,
+    "rating": 4.2,
+    "price": 600,
+    "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    "reviews": [
+      {
+        "user": "Ayşe K.",
+        "stars": 4,
+        "comment": "Konumu çok iyi, tarihi yerler yürüme mesafesinde."
+      }
+    ]
+  }
+] 

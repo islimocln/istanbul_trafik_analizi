@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İstanbul Rehberi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: rgba(44, 62, 80, 0.9);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1050;
+        }
+        .navbar + * {
+            margin-top: 70px !important;
+        }
+
+        .hero-section {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-bg-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .hero-bg-slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s;
+            pointer-events: none;
+        }
+        .hero-bg-slider img.active {
+            opacity: 1;
+            z-index: 1;
+            pointer-events: auto;
+        }
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(44,62,80,0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            font-size: 2rem;
+            z-index: 3;
+            cursor: pointer;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .slider-arrow.left { left: 24px; }
+        .slider-arrow.right { right: 24px; }
+        .hero-content {
+            background-color: rgba(44, 62, 80, 0.8);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            position: relative;
+            z-index: 2;
+        }
+
+        .feature-card {
+            background-color: rgba(44, 62, 80, 0.8);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn-custom {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #c0392b;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            padding: 1rem;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-map-marked-alt"></i> İstanbul Rehberi
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-map"></i> Harita</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="mekanlarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-building"></i> Mekanlar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="mekanlarDropdown">
+                            <li><a class="dropdown-item" href="hotels.html"><i class="fas fa-hotel"></i> Oteller</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-utensils"></i> Restoranlar</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-clinic-medical"></i> Eczaneler</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-hospital"></i> Hastaneler</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-store"></i> AVM</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-gas-pump"></i> Benzin İstasyonları</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> Hakkında</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="display-4 mb-4">İstanbul'u Keşfedin</h1>
+                <p class="lead mb-4">En yakın eczaneler, benzin istasyonları, oteller ve daha fazlası...</p>
+                <button class="btn btn-custom btn-lg" onclick="window.location.href='map.html'">
+                    <i class="fas fa-map-marker-alt"></i> Haritayı Aç
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-clinic-medical fa-2x mb-3"></i>
+                    <h3>Eczaneler</h3>
+                    <p>Size en yakın eczaneleri bulun ve yol tarifi alın.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-gas-pump fa-2x mb-3"></i>
+                    <h3>Benzin İstasyonları</h3>
+                    <p>En yakın benzin istasyonlarını görüntüleyin.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-hotel fa-2x mb-3"></i>
+                    <h3>Oteller</h3>
+                    <p>En iyi otelleri keşfedin ve değerlendirmeleri inceleyin.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-utensils fa-2x mb-3"></i>
+                    <h3>Restoranlar</h3>
+                    <p>En iyi restoranları keşfedin ve yorumları inceleyin.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-hospital fa-2x mb-3"></i>
+                    <h3>Hastaneler</h3>
+                    <p>Size en yakın hastaneleri bulun ve yol tarifi alın.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-store fa-2x mb-3"></i>
+                    <h3>AVM</h3>
+                    <p>En yakın alışveriş merkezlerini keşfedin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <i class="fas fa-robot fa-2x"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html> 

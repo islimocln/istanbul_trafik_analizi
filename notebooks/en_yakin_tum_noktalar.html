@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a825d40ea63a355db40abaa08edf9d3c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a825d40ea63a355db40abaa08edf9d3c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a825d40ea63a355db40abaa08edf9d3c = L.map(
+                "map_a825d40ea63a355db40abaa08edf9d3c",
+                {
+                    center: [41.0369, 28.985],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bded7e93acdec3cb224c78699762928b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bded7e93acdec3cb224c78699762928b.addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var marker_d8c654639d9293634a166f703d72eaf9 = L.marker(
+                [41.0369, 28.985],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_c96241f614b1821a9c701d0a3694561c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f5dd4c7b915f4036ffc825b66b14dbb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58992dc02c6dc0b59c1d21495882db09 = $(`<div id="html_58992dc02c6dc0b59c1d21495882db09" style="width: 100.0%; height: 100.0%;">Kullanıcı Konumu</div>`)[0];
+                popup_0f5dd4c7b915f4036ffc825b66b14dbb.setContent(html_58992dc02c6dc0b59c1d21495882db09);
+            
+        
+
+        marker_d8c654639d9293634a166f703d72eaf9.bindPopup(popup_0f5dd4c7b915f4036ffc825b66b14dbb)
+        ;
+
+        
+    
+    
+                marker_d8c654639d9293634a166f703d72eaf9.setIcon(icon_c96241f614b1821a9c701d0a3694561c);
+            
+    
+            var marker_1cdd3e7d7a3fd9ca07fe53ec8cba7ab6 = L.marker(
+                [41.0363034, 28.9851031],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_6bfbfc257842afce9ce5ecf31be3ffd1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cba41f833912b8455dd844ca6b9672e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e2b2be25834589f8f67ea2acd991cba = $(`<div id="html_1e2b2be25834589f8f67ea2acd991cba" style="width: 100.0%; height: 100.0%;">Itır Eczanesi - 66 m</div>`)[0];
+                popup_cba41f833912b8455dd844ca6b9672e9.setContent(html_1e2b2be25834589f8f67ea2acd991cba);
+            
+        
+
+        marker_1cdd3e7d7a3fd9ca07fe53ec8cba7ab6.bindPopup(popup_cba41f833912b8455dd844ca6b9672e9)
+        ;
+
+        
+    
+    
+                marker_1cdd3e7d7a3fd9ca07fe53ec8cba7ab6.setIcon(icon_6bfbfc257842afce9ce5ecf31be3ffd1);
+            
+    
+            var marker_06c3c6275c3b19fc4d203fe34d067d95 = L.marker(
+                [41.0377775, 28.9840098],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_a28a0e5700cd89b46978853b71c33a47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5eb57c94412f3f2f8f6daad85a4fb37b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fe3a5506da155eb9ce9b52de3eb468e = $(`<div id="html_7fe3a5506da155eb9ce9b52de3eb468e" style="width: 100.0%; height: 100.0%;">Taksim Meydan Eczanesi - 128 m</div>`)[0];
+                popup_5eb57c94412f3f2f8f6daad85a4fb37b.setContent(html_7fe3a5506da155eb9ce9b52de3eb468e);
+            
+        
+
+        marker_06c3c6275c3b19fc4d203fe34d067d95.bindPopup(popup_5eb57c94412f3f2f8f6daad85a4fb37b)
+        ;
+
+        
+    
+    
+                marker_06c3c6275c3b19fc4d203fe34d067d95.setIcon(icon_a28a0e5700cd89b46978853b71c33a47);
+            
+    
+            var marker_d3d73000ab814a9f3762699e606406b2 = L.marker(
+                [41.0379814, 28.9841038],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_3ea6c2994cdd3aff5dc57cb4985ec4ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01d126728e1e1e40dc824fcac6eab10c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ff878e6795dc2051bb0a6a2c581f85a = $(`<div id="html_8ff878e6795dc2051bb0a6a2c581f85a" style="width: 100.0%; height: 100.0%;">Eylül Eczanesi - 141 m</div>`)[0];
+                popup_01d126728e1e1e40dc824fcac6eab10c.setContent(html_8ff878e6795dc2051bb0a6a2c581f85a);
+            
+        
+
+        marker_d3d73000ab814a9f3762699e606406b2.bindPopup(popup_01d126728e1e1e40dc824fcac6eab10c)
+        ;
+
+        
+    
+    
+                marker_d3d73000ab814a9f3762699e606406b2.setIcon(icon_3ea6c2994cdd3aff5dc57cb4985ec4ff);
+            
+    
+            var marker_341b59f7bb516aab89db952725aa586a = L.marker(
+                [41.0383344, 28.9848863],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_de4f0d4c63587452a1f2fb0f78513abc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f23b765230337c18c0869c63f10f5cd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_712d378ddef8ab767bb67e8e6ff8e400 = $(`<div id="html_712d378ddef8ab767bb67e8e6ff8e400" style="width: 100.0%; height: 100.0%;">Esra Eczanesi - 159 m</div>`)[0];
+                popup_f23b765230337c18c0869c63f10f5cd7.setContent(html_712d378ddef8ab767bb67e8e6ff8e400);
+            
+        
+
+        marker_341b59f7bb516aab89db952725aa586a.bindPopup(popup_f23b765230337c18c0869c63f10f5cd7)
+        ;
+
+        
+    
+    
+                marker_341b59f7bb516aab89db952725aa586a.setIcon(icon_de4f0d4c63587452a1f2fb0f78513abc);
+            
+    
+            var marker_46cf29254a3618d97ed7045d2e3fe4fb = L.marker(
+                [41.035808, 28.9834717],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_2f5257434c177354d871f65e76aadfce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cda34d79563ab908b5f121f292b7e016 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dcbb758c6f018c029deebc3936b75292 = $(`<div id="html_dcbb758c6f018c029deebc3936b75292" style="width: 100.0%; height: 100.0%;">Rebul 1895 Eczanesi - 176 m</div>`)[0];
+                popup_cda34d79563ab908b5f121f292b7e016.setContent(html_dcbb758c6f018c029deebc3936b75292);
+            
+        
+
+        marker_46cf29254a3618d97ed7045d2e3fe4fb.bindPopup(popup_cda34d79563ab908b5f121f292b7e016)
+        ;
+
+        
+    
+    
+                marker_46cf29254a3618d97ed7045d2e3fe4fb.setIcon(icon_2f5257434c177354d871f65e76aadfce);
+            
+    
+            var marker_78d42be47088699aecb9b538f776d6d3 = L.marker(
+                [41.0357482, 28.9826614],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_9457021589457f471607f603e16a578f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e408bd726e5dd7ae1727c91c7ba2ca2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8803d179114e78465539d6ac35f5f683 = $(`<div id="html_8803d179114e78465539d6ac35f5f683" style="width: 100.0%; height: 100.0%;">İsimsiz Eczane - 234 m</div>`)[0];
+                popup_5e408bd726e5dd7ae1727c91c7ba2ca2.setContent(html_8803d179114e78465539d6ac35f5f683);
+            
+        
+
+        marker_78d42be47088699aecb9b538f776d6d3.bindPopup(popup_5e408bd726e5dd7ae1727c91c7ba2ca2)
+        ;
+
+        
+    
+    
+                marker_78d42be47088699aecb9b538f776d6d3.setIcon(icon_9457021589457f471607f603e16a578f);
+            
+    
+            var marker_d004e6ae3c47479f557b097f98eeee0a = L.marker(
+                [41.0378314, 28.9823886],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_22328c0b4c5f5fdc46478c86c458f2bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c19dc81c95ddc9da3f7e1cc87c7427cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d6620f4af741c0326b673eed2b8586d = $(`<div id="html_3d6620f4af741c0326b673eed2b8586d" style="width: 100.0%; height: 100.0%;">Şifa Eczanesi - 242 m</div>`)[0];
+                popup_c19dc81c95ddc9da3f7e1cc87c7427cb.setContent(html_3d6620f4af741c0326b673eed2b8586d);
+            
+        
+
+        marker_d004e6ae3c47479f557b097f98eeee0a.bindPopup(popup_c19dc81c95ddc9da3f7e1cc87c7427cb)
+        ;
+
+        
+    
+    
+                marker_d004e6ae3c47479f557b097f98eeee0a.setIcon(icon_22328c0b4c5f5fdc46478c86c458f2bc);
+            
+    
+            var marker_9391fa670321f7bcf418b9b7d9d3d14a = L.marker(
+                [41.0370094, 28.9821048],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_b8c7dd8011977e10342310ca8ac543fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92263aa1b31bca72cdfd3e37c32fa0c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cce5982338c66b257424b33e0f96c910 = $(`<div id="html_cce5982338c66b257424b33e0f96c910" style="width: 100.0%; height: 100.0%;">Karaköy Eczanesi - 243 m</div>`)[0];
+                popup_92263aa1b31bca72cdfd3e37c32fa0c5.setContent(html_cce5982338c66b257424b33e0f96c910);
+            
+        
+
+        marker_9391fa670321f7bcf418b9b7d9d3d14a.bindPopup(popup_92263aa1b31bca72cdfd3e37c32fa0c5)
+        ;
+
+        
+    
+    
+                marker_9391fa670321f7bcf418b9b7d9d3d14a.setIcon(icon_b8c7dd8011977e10342310ca8ac543fb);
+            
+    
+            var marker_96f1d187eb9478bfdfc10d03180184f9 = L.marker(
+                [41.0392571, 28.9848818],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_52994ebfce3c339fb2ee66f03babc49e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ffcbf284247da7c6e1bc512edac8df16 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_278cc04586828a162011d14a0d304aea = $(`<div id="html_278cc04586828a162011d14a0d304aea" style="width: 100.0%; height: 100.0%;">Eczane Taksim Lamartin - 261 m</div>`)[0];
+                popup_ffcbf284247da7c6e1bc512edac8df16.setContent(html_278cc04586828a162011d14a0d304aea);
+            
+        
+
+        marker_96f1d187eb9478bfdfc10d03180184f9.bindPopup(popup_ffcbf284247da7c6e1bc512edac8df16)
+        ;
+
+        
+    
+    
+                marker_96f1d187eb9478bfdfc10d03180184f9.setIcon(icon_52994ebfce3c339fb2ee66f03babc49e);
+            
+    
+            var marker_a345ef14de24b80be18a353f29d1e79e = L.marker(
+                [41.039255, 28.984327],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_51e5c10681e58d00f573ad75fc212a4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c06208ad404ea83c754cb33fcdd679b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_806dea895e7ac6d8312c9289d548ac6d = $(`<div id="html_806dea895e7ac6d8312c9289d548ac6d" style="width: 100.0%; height: 100.0%;">Özgecan Eczanesi - 267 m</div>`)[0];
+                popup_2c06208ad404ea83c754cb33fcdd679b.setContent(html_806dea895e7ac6d8312c9289d548ac6d);
+            
+        
+
+        marker_a345ef14de24b80be18a353f29d1e79e.bindPopup(popup_2c06208ad404ea83c754cb33fcdd679b)
+        ;
+
+        
+    
+    
+                marker_a345ef14de24b80be18a353f29d1e79e.setIcon(icon_51e5c10681e58d00f573ad75fc212a4f);
+            
+    
+            var marker_ee2f811bca9afff47f74e50f548eba95 = L.marker(
+                [41.04156691, 28.97933781],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_f78f07cbbee294f2d1e9c41399a01768 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c5bb4eca5b3d3fa47c90fb9de071405 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c56b796b8fe6b9518a8d45666d44728 = $(`<div id="html_3c56b796b8fe6b9518a8d45666d44728" style="width: 100.0%; height: 100.0%;">YAŞAR İNŞAAT PETROL VE PET.ÜRÜN.SAN.VE TİC.A.Ş. - 703 m</div>`)[0];
+                popup_7c5bb4eca5b3d3fa47c90fb9de071405.setContent(html_3c56b796b8fe6b9518a8d45666d44728);
+            
+        
+
+        marker_ee2f811bca9afff47f74e50f548eba95.bindPopup(popup_7c5bb4eca5b3d3fa47c90fb9de071405)
+        ;
+
+        
+    
+    
+                marker_ee2f811bca9afff47f74e50f548eba95.setIcon(icon_f78f07cbbee294f2d1e9c41399a01768);
+            
+    
+            var marker_f23ae724a76b924b3c79a2e3ab12f51a = L.marker(
+                [41.03986787, 28.97751708],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_783332fa6f3f6a29740c7ed29c8e45c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a03d4df5c2b6bfecd86f00c81a8e1103 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c665597774ab78aac017a64b4e68e79e = $(`<div id="html_c665597774ab78aac017a64b4e68e79e" style="width: 100.0%; height: 100.0%;">DOCO PETROL VE DANIŞMANLIK A.Ş. - 710 m</div>`)[0];
+                popup_a03d4df5c2b6bfecd86f00c81a8e1103.setContent(html_c665597774ab78aac017a64b4e68e79e);
+            
+        
+
+        marker_f23ae724a76b924b3c79a2e3ab12f51a.bindPopup(popup_a03d4df5c2b6bfecd86f00c81a8e1103)
+        ;
+
+        
+    
+    
+                marker_f23ae724a76b924b3c79a2e3ab12f51a.setIcon(icon_783332fa6f3f6a29740c7ed29c8e45c4);
+            
+    
+            var marker_3ebbe024bcd2303a9950d5cd316ce3b8 = L.marker(
+                [41.03532153, 28.99380776],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_0ef856ba6a3df6925f5f8dfaee65ee65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6469b8efcd07ba06d5ed68cc3802d36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e41e7c77a0a80946042cf6cfeeb4ac46 = $(`<div id="html_e41e7c77a0a80946042cf6cfeeb4ac46" style="width: 100.0%; height: 100.0%;">TAM PETROL PETROL ÜRÜN. ALIM SATIM LTD.ŞTİ. - 761 m</div>`)[0];
+                popup_f6469b8efcd07ba06d5ed68cc3802d36.setContent(html_e41e7c77a0a80946042cf6cfeeb4ac46);
+            
+        
+
+        marker_3ebbe024bcd2303a9950d5cd316ce3b8.bindPopup(popup_f6469b8efcd07ba06d5ed68cc3802d36)
+        ;
+
+        
+    
+    
+                marker_3ebbe024bcd2303a9950d5cd316ce3b8.setIcon(icon_0ef856ba6a3df6925f5f8dfaee65ee65);
+            
+    
+            var marker_adc820fcd995113c5dcf694b867fe11f = L.marker(
+                [41.03845927, 28.97348141],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_60fb4b270819071a87f6dfff68bb31d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f878ef2021ab62c50e232b139b30476 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e726cc4ee8c915bccd872bfd245fbb6 = $(`<div id="html_3e726cc4ee8c915bccd872bfd245fbb6" style="width: 100.0%; height: 100.0%;">TP İSTASYON İŞLETMELERİ ANONİM ŞİRKETİ - 983 m</div>`)[0];
+                popup_8f878ef2021ab62c50e232b139b30476.setContent(html_3e726cc4ee8c915bccd872bfd245fbb6);
+            
+        
+
+        marker_adc820fcd995113c5dcf694b867fe11f.bindPopup(popup_8f878ef2021ab62c50e232b139b30476)
+        ;
+
+        
+    
+    
+                marker_adc820fcd995113c5dcf694b867fe11f.setIcon(icon_60fb4b270819071a87f6dfff68bb31d5);
+            
+    
+            var marker_0312bfae21299590344521d8366c79e2 = L.marker(
+                [41.04468951, 28.97831723],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_5a9f12fd5bd874bba036ec07d4bb1417 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c48cf77119d5ffdf34e9d1b6b552f33f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_297a521e528943c7ec118f5c67842851 = $(`<div id="html_297a521e528943c7ec118f5c67842851" style="width: 100.0%; height: 100.0%;">SADIKOĞLU PETROL PAZOTOMO.TURİZM MARKETİŞLT.SAN.TİC.LTD.ŞTİ - 1031 m</div>`)[0];
+                popup_c48cf77119d5ffdf34e9d1b6b552f33f.setContent(html_297a521e528943c7ec118f5c67842851);
+            
+        
+
+        marker_0312bfae21299590344521d8366c79e2.bindPopup(popup_c48cf77119d5ffdf34e9d1b6b552f33f)
+        ;
+
+        
+    
+    
+                marker_0312bfae21299590344521d8366c79e2.setIcon(icon_5a9f12fd5bd874bba036ec07d4bb1417);
+            
+    
+            var marker_9c33b5bbe9e522ec418568fa33f2c122 = L.marker(
+                [41.03880903, 28.97264845],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_03c1a62d6815c99663c53e50bd2cddc9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff6e872854755cade6cd01aa38327fde = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1286ba64bc82eb84b3d80085da281b6 = $(`<div id="html_f1286ba64bc82eb84b3d80085da281b6" style="width: 100.0%; height: 100.0%;">NERGİS BENZİN İSTASYON İŞLETMECİLİĞİ ANONİM ŞİRKETİ - 1060 m</div>`)[0];
+                popup_ff6e872854755cade6cd01aa38327fde.setContent(html_f1286ba64bc82eb84b3d80085da281b6);
+            
+        
+
+        marker_9c33b5bbe9e522ec418568fa33f2c122.bindPopup(popup_ff6e872854755cade6cd01aa38327fde)
+        ;
+
+        
+    
+    
+                marker_9c33b5bbe9e522ec418568fa33f2c122.setIcon(icon_03c1a62d6815c99663c53e50bd2cddc9);
+            
+    
+            var marker_7643d9f26845f8c34deca857fa18db5f = L.marker(
+                [41.04841645, 28.98502515],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_2fe19f2a908bfb394e698be24dc7871b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4841fbf9b28d70e3a9b70bb6c08ec0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ab67e0f69836f19ea8c4e85bfba55ea = $(`<div id="html_6ab67e0f69836f19ea8c4e85bfba55ea" style="width: 100.0%; height: 100.0%;">GÜRCAN PETROLCÜLÜK A.Ş. - 1278 m</div>`)[0];
+                popup_b4841fbf9b28d70e3a9b70bb6c08ec0c.setContent(html_6ab67e0f69836f19ea8c4e85bfba55ea);
+            
+        
+
+        marker_7643d9f26845f8c34deca857fa18db5f.bindPopup(popup_b4841fbf9b28d70e3a9b70bb6c08ec0c)
+        ;
+
+        
+    
+    
+                marker_7643d9f26845f8c34deca857fa18db5f.setIcon(icon_2fe19f2a908bfb394e698be24dc7871b);
+            
+    
+            var marker_da582480bc23b7773074db5dcab93af2 = L.marker(
+                [41.02601545, 28.97975053],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_e7ce8f929a5b18f0c3d4b9144e77d398 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5dd2384072f9cc399161fcf95e2a383 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b970b14e8bd4fc15427d25ae15f3d7bd = $(`<div id="html_b970b14e8bd4fc15427d25ae15f3d7bd" style="width: 100.0%; height: 100.0%;">COB PETROL İNŞAAT TURİZM SANAYİ VE TİCARET LİMİTED ŞİRKETİ - 1286 m</div>`)[0];
+                popup_b5dd2384072f9cc399161fcf95e2a383.setContent(html_b970b14e8bd4fc15427d25ae15f3d7bd);
+            
+        
+
+        marker_da582480bc23b7773074db5dcab93af2.bindPopup(popup_b5dd2384072f9cc399161fcf95e2a383)
+        ;
+
+        
+    
+    
+                marker_da582480bc23b7773074db5dcab93af2.setIcon(icon_e7ce8f929a5b18f0c3d4b9144e77d398);
+            
+    
+            var marker_1e6674093f86c8a99288cb1ef3f18136 = L.marker(
+                [41.04063261, 28.96738729],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_137a5eb9c4e4d1abad16dc16ddd45a22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d36bba9527965bc0600567168bcf3bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cce2c0acdabc7998888a9b5421e90c35 = $(`<div id="html_cce2c0acdabc7998888a9b5421e90c35" style="width: 100.0%; height: 100.0%;">CAN PETROL SAN.VE TİC.AŞ. - 1537 m</div>`)[0];
+                popup_1d36bba9527965bc0600567168bcf3bd.setContent(html_cce2c0acdabc7998888a9b5421e90c35);
+            
+        
+
+        marker_1e6674093f86c8a99288cb1ef3f18136.bindPopup(popup_1d36bba9527965bc0600567168bcf3bd)
+        ;
+
+        
+    
+    
+                marker_1e6674093f86c8a99288cb1ef3f18136.setIcon(icon_137a5eb9c4e4d1abad16dc16ddd45a22);
+            
+    
+            var marker_585f70f864b9276952ee7ec0de583b1d = L.marker(
+                [41.04123713, 28.96729852],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_b6287e54f7b29a9af9877987eabeef6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28cbddeec0bbb31ba45b83b1c973f4a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_960442b722ebfe5fe70772a550627119 = $(`<div id="html_960442b722ebfe5fe70772a550627119" style="width: 100.0%; height: 100.0%;">PIRIL PETROL SER.HİZ.NAK.VE TİC.AŞ. - 1564 m</div>`)[0];
+                popup_28cbddeec0bbb31ba45b83b1c973f4a5.setContent(html_960442b722ebfe5fe70772a550627119);
+            
+        
+
+        marker_585f70f864b9276952ee7ec0de583b1d.bindPopup(popup_28cbddeec0bbb31ba45b83b1c973f4a5)
+        ;
+
+        
+    
+    
+                marker_585f70f864b9276952ee7ec0de583b1d.setIcon(icon_b6287e54f7b29a9af9877987eabeef6c);
+            
+    
+            var marker_e2ebe41073ceb3c7d375ced360df2198 = L.marker(
+                [41.0345008, 28.9790916],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_60d83778924fb13a9e71a804c4b706c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bfcfe3dc8b7643823cb60b57f6aa6648 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b729b8d0942dccf952f1b4bdd91f06b = $(`<div id="html_2b729b8d0942dccf952f1b4bdd91f06b" style="width: 100.0%; height: 100.0%;">Halep Pasajı - 563 m</div>`)[0];
+                popup_bfcfe3dc8b7643823cb60b57f6aa6648.setContent(html_2b729b8d0942dccf952f1b4bdd91f06b);
+            
+        
+
+        marker_e2ebe41073ceb3c7d375ced360df2198.bindPopup(popup_bfcfe3dc8b7643823cb60b57f6aa6648)
+        ;
+
+        
+    
+    
+                marker_e2ebe41073ceb3c7d375ced360df2198.setIcon(icon_60d83778924fb13a9e71a804c4b706c7);
+            
+    
+            var marker_cc08d3d677007cec6706d7b13bcc9bf2 = L.marker(
+                [41.0341134, 28.9792135],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_137ccbbe1be2ee3a594fee03b25fa953 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f79b84787038d60011a9c24e8e3f7548 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85fac21e55fbe8168361f285c693ded1 = $(`<div id="html_85fac21e55fbe8168361f285c693ded1" style="width: 100.0%; height: 100.0%;">Atlas Pasajı - 576 m</div>`)[0];
+                popup_f79b84787038d60011a9c24e8e3f7548.setContent(html_85fac21e55fbe8168361f285c693ded1);
+            
+        
+
+        marker_cc08d3d677007cec6706d7b13bcc9bf2.bindPopup(popup_f79b84787038d60011a9c24e8e3f7548)
+        ;
+
+        
+    
+    
+                marker_cc08d3d677007cec6706d7b13bcc9bf2.setIcon(icon_137ccbbe1be2ee3a594fee03b25fa953);
+            
+    
+            var marker_0e242cb4e09e9a11260401d367b6af03 = L.marker(
+                [41.0337869, 28.9781982],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_23bd430a13fd6129aea74d917599892a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cfebf7493c2dcb24fa9555f54ff8a802 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd484bbb39d70d5aaa5b1e2f46bd11bd = $(`<div id="html_dd484bbb39d70d5aaa5b1e2f46bd11bd" style="width: 100.0%; height: 100.0%;">Ors Turistik is merkezi - 668 m</div>`)[0];
+                popup_cfebf7493c2dcb24fa9555f54ff8a802.setContent(html_dd484bbb39d70d5aaa5b1e2f46bd11bd);
+            
+        
+
+        marker_0e242cb4e09e9a11260401d367b6af03.bindPopup(popup_cfebf7493c2dcb24fa9555f54ff8a802)
+        ;
+
+        
+    
+    
+                marker_0e242cb4e09e9a11260401d367b6af03.setIcon(icon_23bd430a13fd6129aea74d917599892a);
+            
+    
+            var marker_33d36912eb575494808e5866d6417b48 = L.marker(
+                [41.031056, 28.9755901],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_948ace04ae1fcffd69d38f17cedc206a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7840ae2bd345717cb6f2b25da0f738dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77ed0cd567d6f5e9ae3f1dc0c1bf047b = $(`<div id="html_77ed0cd567d6f5e9ae3f1dc0c1bf047b" style="width: 100.0%; height: 100.0%;">Terkos Pasajı - 1023 m</div>`)[0];
+                popup_7840ae2bd345717cb6f2b25da0f738dd.setContent(html_77ed0cd567d6f5e9ae3f1dc0c1bf047b);
+            
+        
+
+        marker_33d36912eb575494808e5866d6417b48.bindPopup(popup_7840ae2bd345717cb6f2b25da0f738dd)
+        ;
+
+        
+    
+    
+                marker_33d36912eb575494808e5866d6417b48.setIcon(icon_948ace04ae1fcffd69d38f17cedc206a);
+            
+    
+            var marker_a65efa0443f5eb00052dc14eb23ee57e = L.marker(
+                [41.0292548, 28.9747296],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_34da4a069225acbda9cb24cb353eaf07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25e463ec86cb6e09ee1f314f7b1f4a2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_313f910318167e6f0e64e5378a8ec98b = $(`<div id="html_313f910318167e6f0e64e5378a8ec98b" style="width: 100.0%; height: 100.0%;">Unknown - 1211 m</div>`)[0];
+                popup_25e463ec86cb6e09ee1f314f7b1f4a2e.setContent(html_313f910318167e6f0e64e5378a8ec98b);
+            
+        
+
+        marker_a65efa0443f5eb00052dc14eb23ee57e.bindPopup(popup_25e463ec86cb6e09ee1f314f7b1f4a2e)
+        ;
+
+        
+    
+    
+                marker_a65efa0443f5eb00052dc14eb23ee57e.setIcon(icon_34da4a069225acbda9cb24cb353eaf07);
+            
+    
+            var marker_35f97cef9bdce1026ae373e7abec6fe3 = L.marker(
+                [41.0375948, 28.9900446],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_eb5b6c4b7405bd98db51c76c6013b467 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3afd6f0b9a36537d27093b4a868e4f2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13b6d1c560989f498e87ecadcebcff05 = $(`<div id="html_13b6d1c560989f498e87ecadcebcff05" style="width: 100.0%; height: 100.0%;">Şişli Hamidiye Etfal Eğitim ve Araştırma Hastanesi Gümüşsuyu Binası - 431 m</div>`)[0];
+                popup_3afd6f0b9a36537d27093b4a868e4f2c.setContent(html_13b6d1c560989f498e87ecadcebcff05);
+            
+        
+
+        marker_35f97cef9bdce1026ae373e7abec6fe3.bindPopup(popup_3afd6f0b9a36537d27093b4a868e4f2c)
+        ;
+
+        
+    
+    
+                marker_35f97cef9bdce1026ae373e7abec6fe3.setIcon(icon_eb5b6c4b7405bd98db51c76c6013b467);
+            
+    
+            var marker_ccd699f1d2b5536c7457b97ada8077e3 = L.marker(
+                [41.0412184, 28.9820377],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_05f9fd7a1973f2f17487c5d9bdc39b00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46ff03042811e59ada7d19c2a8870d14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_013f8d17d4131c37c948bad54a2436de = $(`<div id="html_013f8d17d4131c37c948bad54a2436de" style="width: 100.0%; height: 100.0%;">Bilinmeyen Hastane - 540 m</div>`)[0];
+                popup_46ff03042811e59ada7d19c2a8870d14.setContent(html_013f8d17d4131c37c948bad54a2436de);
+            
+        
+
+        marker_ccd699f1d2b5536c7457b97ada8077e3.bindPopup(popup_46ff03042811e59ada7d19c2a8870d14)
+        ;
+
+        
+    
+    
+                marker_ccd699f1d2b5536c7457b97ada8077e3.setIcon(icon_05f9fd7a1973f2f17487c5d9bdc39b00);
+            
+    
+            var marker_1186c757d736fb79f79ae281eba5644b = L.marker(
+                [41.0314549, 28.974911],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_b71f98bee8e2ea5ee91a2c27411359ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08b1184ff0e8f86163c2f8bf02ee78d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32cf0130070bdfcc31a8ad33a85b2389 = $(`<div id="html_32cf0130070bdfcc31a8ad33a85b2389" style="width: 100.0%; height: 100.0%;">Beyoglu - 1041 m</div>`)[0];
+                popup_08b1184ff0e8f86163c2f8bf02ee78d0.setContent(html_32cf0130070bdfcc31a8ad33a85b2389);
+            
+        
+
+        marker_1186c757d736fb79f79ae281eba5644b.bindPopup(popup_08b1184ff0e8f86163c2f8bf02ee78d0)
+        ;
+
+        
+    
+    
+                marker_1186c757d736fb79f79ae281eba5644b.setIcon(icon_b71f98bee8e2ea5ee91a2c27411359ac);
+            
+    
+            var marker_5674cc80512c10e502e927975d906fb5 = L.marker(
+                [41.0492903, 28.9909873],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_4dab185f7493e4b9e7636d2a13bf96c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12d380dbcba73d47bb4e38a58f7e4dfd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0688b1146e767de528cc1f27a6a24694 = $(`<div id="html_0688b1146e767de528cc1f27a6a24694" style="width: 100.0%; height: 100.0%;">Dr Ezgi Özkur - 1465 m</div>`)[0];
+                popup_12d380dbcba73d47bb4e38a58f7e4dfd.setContent(html_0688b1146e767de528cc1f27a6a24694);
+            
+        
+
+        marker_5674cc80512c10e502e927975d906fb5.bindPopup(popup_12d380dbcba73d47bb4e38a58f7e4dfd)
+        ;
+
+        
+    
+    
+                marker_5674cc80512c10e502e927975d906fb5.setIcon(icon_4dab185f7493e4b9e7636d2a13bf96c5);
+            
+    
+            var marker_622c66d60507ac29ef55865a8ac8783e = L.marker(
+                [41.0245743, 28.9742012],
+                {
+}
+            ).addTo(map_a825d40ea63a355db40abaa08edf9d3c);
+        
+    
+            var icon_4d0a1821bced657c6c876bf66bbe563c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_623d93e2f3c0b5ad0e22d7d114dd9b7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a309acabb1182b88feac645cc77410ba = $(`<div id="html_a309acabb1182b88feac645cc77410ba" style="width: 100.0%; height: 100.0%;">Beyoğlu Göz Hastanesi - 1642 m</div>`)[0];
+                popup_623d93e2f3c0b5ad0e22d7d114dd9b7d.setContent(html_a309acabb1182b88feac645cc77410ba);
+            
+        
+
+        marker_622c66d60507ac29ef55865a8ac8783e.bindPopup(popup_623d93e2f3c0b5ad0e22d7d114dd9b7d)
+        ;
+
+        
+    
+    
+                marker_622c66d60507ac29ef55865a8ac8783e.setIcon(icon_4d0a1821bced657c6c876bf66bbe563c);
+            
+</script>
+</html>
