@@ -1,0 +1,126 @@
+{
+    "project_name": "İstanbul Trafik Analizi",
+    "description": "İstanbul'daki trafik durumunu analiz eden ve kullanıcılara yardımcı olan bir web uygulaması",
+    "features": [
+        {
+            "name": "Eczaneler",
+            "description": "En yakın eczaneleri bulma ve yol tarifi alma özelliği",
+            "icon": "fa-clinic-medical"
+        },
+        {
+            "name": "Benzin İstasyonları",
+            "description": "En yakın benzin istasyonlarını görüntüleme özelliği",
+            "icon": "fa-gas-pump"
+        },
+        {
+            "name": "Oteller",
+            "description": "En iyi otelleri keşfetme ve değerlendirme özelliği",
+            "icon": "fa-hotel"
+        },
+        {
+            "name": "Restoranlar",
+            "description": "En iyi restoranları keşfetme ve yorumları inceleme özelliği",
+            "icon": "fa-utensils"
+        },
+        {
+            "name": "Hastaneler",
+            "description": "En yakın hastaneleri bulma ve yol tarifi alma özelliği",
+            "icon": "fa-hospital"
+        },
+        {
+            "name": "AVM",
+            "description": "En yakın alışveriş merkezlerini keşfetme özelliği",
+            "icon": "fa-store"
+        }
+    ],
+    "pages": [
+        {
+            "name": "Ana Sayfa",
+            "url": "index.html",
+            "description": "Projenin ana sayfası"
+        },
+        {
+            "name": "Harita",
+            "url": "map.html",
+            "description": "İstanbul haritası ve konum bilgileri"
+        },
+        {
+            "name": "Oteller",
+            "url": "hotels.html",
+            "description": "Otel listesi ve detayları"
+        },
+        {
+            "name": "Restoranlar",
+            "url": "restaurants.html",
+            "description": "Restoran listesi ve detayları"
+        }
+    ],
+    "map_data": {
+        "locations": {
+            "eczaneler": {
+                "type": "pharmacy",
+                "description": "İstanbul'daki eczaneler",
+                "data_source": "data/istanbul_eczaneler.csv",
+                "features": ["konum", "isim", "adres", "telefon"],
+                "total_count": 3995,
+                "visualization": "notebook/istanbul_eczaneler.html"
+            },
+            "benzin_istasyonlari": {
+                "type": "gas_station",
+                "description": "İstanbul'daki benzin istasyonları",
+                "data_source": "data/fuel_station.csv",
+                "features": ["konum", "marka", "adres"],
+                "total_count": 722,
+                "visualization": "notebook/benzin_istasyonlari_yenii.html"
+            },
+            "oteller": {
+                "type": "hotel",
+                "description": "İstanbul'daki oteller",
+                "data_source": "data/hotels.json",
+                "features": ["konum", "isim", "adres", "değerlendirme"],
+                "visualization": "notebook/istanbul_hotels_map.html"
+            },
+            "restoranlar": {
+                "type": "restaurant",
+                "description": "İstanbul'daki restoranlar",
+                "data_source": "data/restaurants.json",
+                "features": ["konum", "isim", "adres", "mutfak_türü"],
+                "visualization": "notebook/istanbul_restaurants_map.html"
+            },
+            "hastaneler": {
+                "type": "hospital",
+                "description": "İstanbul'daki hastaneler",
+                "data_source": "data/hospitals_osm.csv",
+                "features": ["konum", "isim", "adres"],
+                "total_count": 131,
+                "visualization": "notebook/istanbul_hastaneler.html"
+            },
+            "avm": {
+                "type": "mall",
+                "description": "İstanbul'daki alışveriş merkezleri",
+                "data_source": "data/istanbul_avmler.csv",
+                "features": ["konum", "isim", "adres"],
+                "total_count": 139,
+                "visualization": "notebook/istanbul_avm.html"
+            }
+        },
+        "traffic_data": {
+            "yollar": {
+                "source": "data/istanbul_yollar.json",
+                "description": "İstanbul'daki tüm yolların detaylı verisi",
+                "size": "61MB",
+                "features": ["yol_tipi", "konum", "uzunluk", "trafik_yoğunluğu"]
+            }
+        },
+        "visualizations": {
+            "tum_noktalar": {
+                "description": "Tüm lokasyonların tek haritada gösterimi",
+                "file": "notebook/tum_noktalar_ikonlu_harita.html"
+            },
+            "istanbul_genel": {
+                "description": "İstanbul'un genel harita görünümü",
+                "file": "notebook/istanbul_map.html"
+            }
+        }
+    }
+} 

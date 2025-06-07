@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konum Seç</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { margin: 0; padding: 0; background: #f4f6fb; }
+        #map { width: 100vw; height: 100vh; z-index: 1; }
+        .info-box {
+            position: absolute;
+            top: 32px;
+            left: 20px;
+            background: #fff;
+            padding: 28px 32px 22px 32px;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(31,38,135,0.15);
+            z-index: 1000;
+            font-size: 1.08rem;
+            color: #2c3e50;
+            min-width: 370px;
+            max-width: 95vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .selection-box {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 10px 18px;
+            margin-bottom: 18px;
+            font-size: 1.08rem;
+            color: #222;
+            box-shadow: 0 1px 8px rgba(44,62,80,0.07);
+            width: 100%;
+            text-align: center;
+        }
+        .filter-section {
+            background: #f4f6fb;
+            padding: 16px 18px 10px 18px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            width: 100%;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .filter-row {
+            width: 100%;
+            margin-bottom: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .modern-select {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1.5px solid #3498db;
+            font-size: 1.08rem;
+            background: #fff;
+            color: #222;
+            margin-bottom: 10px;
+            outline: none;
+            box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+        }
+        .modern-select:focus {
+            border-color: #2c3e50;
+        }
+        .btn {
+            margin-top: 10px;
+            padding: 12px 28px;
+            background: linear-gradient(90deg, #3498db, #2c3e50);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.08rem;
+            font-weight: 500;
+            box-shadow: 0 4px 16px rgba(44,62,80,0.13);
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .btn:hover:not(:disabled) {
+            background: linear-gradient(90deg, #2c3e50, #3498db);
+            box-shadow: 0 6px 24px rgba(44,62,80,0.18);
+        }
+        .modal-bg {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(44,62,80,0.18);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-bg.active { display: flex; }
+        .modal-box {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px 28px 22px 28px;
+            min-width: 320px;
+            max-width: 90vw;
+            box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .modal-title { font-size: 1.2rem; font-weight: 600; margin-bottom: 18px; }
+        .modal-options { width: 100%; margin-bottom: 18px; }
+        .modal-options label { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; cursor: pointer; }
+        .modal-close { position: absolute; top: 18px; right: 28px; font-size: 1.5rem; color: #888; cursor: pointer; }
+        @media (max-width: 600px) {
+            .info-box { min-width: 90vw; padding: 12px 4vw; }
+            .filter-section { padding: 10px 2vw; }
+            .modal-box { min-width: 90vw; padding: 18px 2vw; }
+        }
+    </style>
+</head>
+<body>
+    <div class="info-box">
+        <div id="seciliKonumBox" class="selection-box" style="display:none;">
+            <span id="seciliKonumText"></span>
+        </div>
+        <div class="filter-section">
+            <div class="filter-row">
+                <label for="mekanTurleri" style="font-weight:600; margin-bottom:6px;">Mekan Türü Seçin:</label>
+                <button id="openMekanModal" class="modern-select" style="text-align:left; cursor:pointer;">Mekanları Seç</button>
+                <div id="selectedTypesText" style="margin-top:6px; color:#3498db; font-size:0.98rem;"></div>
+            </div>
+            <div class="filter-row">
+                <label for="mekanSayisi" style="font-weight:600; margin-bottom:6px;">Mekan Sayısı:</label>
+                <select id="mekanSayisi" class="modern-select">
+                    <option value="3">3</option>
+                    <option value="5" selected>5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                </select>
+            </div>
+        </div>
+        <button id="mekanlariGosterBtn" class="btn" disabled>Mekanları Göster</button>
+    </div>
+    <div id="map"></div>
+    <!-- Modal -->
+    <div class="modal-bg" id="mekanModal">
+        <div class="modal-box">
+            <span class="modal-close" id="closeMekanModal">&times;</span>
+            <div class="modal-title">Mekan Türü Seçin</div>
+            <div class="modal-options">
+                <label><input type="checkbox" value="eczane"> <i class="fas fa-clinic-medical" style="color:#3498db"></i> Eczane</label>
+                <label><input type="checkbox" value="benzin"> <i class="fas fa-gas-pump" style="color:#e67e22"></i> Benzin</label>
+                <label><input type="checkbox" value="otel"> <i class="fas fa-hotel" style="color:#8e44ad"></i> Otel</label>
+                <label><input type="checkbox" value="restoran"> <i class="fas fa-utensils" style="color:#e74c3c"></i> Restoran</label>
+                <label><input type="checkbox" value="hastane"> <i class="fas fa-hospital" style="color:#16a085"></i> Hastane</label>
+                <label><input type="checkbox" value="avm"> <i class="fas fa-shopping-bag" style="color:#2ecc71"></i> AVM</label>
+            </div>
+            <button class="btn" id="modalMekanSecBtn">Seçimi Onayla</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script>
+        var map = L.map('map').setView([41.0082, 28.9784], 11);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        let selectedMarker = null;
+        let selectedLatLng = null;
+        const seciliKonumBox = document.getElementById('seciliKonumBox');
+        const seciliKonumText = document.getElementById('seciliKonumText');
+        const mekanlariGosterBtn = document.getElementById('mekanlariGosterBtn');
+        const mekanSayisiSelect = document.getElementById('mekanSayisi');
+        // Modal
+        const openMekanModalBtn = document.getElementById('openMekanModal');
+        const mekanModal = document.getElementById('mekanModal');
+        const closeMekanModalBtn = document.getElementById('closeMekanModal');
+        const modalMekanSecBtn = document.getElementById('modalMekanSecBtn');
+        const selectedTypesText = document.getElementById('selectedTypesText');
+        let selectedTypes = [];
+
+        openMekanModalBtn.onclick = () => { mekanModal.classList.add('active'); };
+        closeMekanModalBtn.onclick = () => { mekanModal.classList.remove('active'); };
+        modalMekanSecBtn.onclick = () => {
+            selectedTypes = Array.from(mekanModal.querySelectorAll('input[type=checkbox]:checked')).map(cb => cb.value);
+            selectedTypesText.textContent = selectedTypes.length ? selectedTypes.map(t => typeToLabel(t)).join(', ') : '';
+            mekanModal.classList.remove('active');
+            mekanlariGosterBtn.disabled = !selectedLatLng || selectedTypes.length === 0;
+        };
+        function typeToLabel(type) {
+            return {
+                eczane: 'Eczane', benzin: 'Benzin', otel: 'Otel', restoran: 'Restoran', hastane: 'Hastane', avm: 'AVM'
+            }[type] || type;
+        }
+
+        map.on('click', function(e) {
+            selectedLatLng = e.latlng;
+            if (selectedMarker) {
+                map.removeLayer(selectedMarker);
+            }
+            selectedMarker = L.marker(selectedLatLng, {
+                icon: L.divIcon({
+                    className: 'custom-marker',
+                    html: '<i class=\'fas fa-map-marker-alt\' style=\'color: #e74c3c; font-size: 28px;\'></i>'
+                })
+            }).addTo(map);
+            seciliKonumBox.style.display = 'block';
+            seciliKonumText.textContent = `${selectedLatLng.lat.toFixed(5)}, ${selectedLatLng.lng.toFixed(5)}`;
+            mekanlariGosterBtn.disabled = selectedTypes.length === 0;
+        });
+
+        mekanlariGosterBtn.addEventListener('click', function() {
+            if (!selectedLatLng || selectedTypes.length === 0) return;
+            const mekanSayisi = parseInt(mekanSayisiSelect.value);
+            // Önceki markerları temizle (seçili konum hariç)
+            map.eachLayer(function(layer) {
+                if (layer instanceof L.Marker && layer !== selectedMarker) {
+                    map.removeLayer(layer);
+                }
+            });
+            selectedTypes.forEach(type => {
+                if (type === 'eczane') {
+                    Papa.parse('data/istanbul_eczaneler.csv', {
+                        download: true,
+                        header: true,
+                        complete: function(results) {
+                            const items = results.data.filter(e => e.latitude && e.longitude && !isNaN(parseFloat(e.latitude)) && !isNaN(parseFloat(e.longitude)));
+                            showNearest(items, 'latitude', 'longitude', 'name', mekanSayisi, type);
+                        }
+                    });
+                } else if (type === 'benzin') {
+                    Papa.parse('data/fuel_station.csv', {
+                        download: true,
+                        header: true,
+                        complete: function(results) {
+                            const items = results.data.filter(e => e.latitude && e.longitude && !isNaN(parseFloat(e.latitude)) && !isNaN(parseFloat(e.longitude)));
+                            showNearest(items, 'longitude', 'latitude', 'adi', mekanSayisi, type);
+                        }
+                    });
+                } else if (type === 'avm') {
+                    Papa.parse('data/istanbul_avmler.csv', {
+                        download: true,
+                        header: true,
+                        complete: function(results) {
+                            const items = results.data.filter(e => e.lat && e.lon && !isNaN(parseFloat(e.lat)) && !isNaN(parseFloat(e.lon)));
+                            showNearest(items, 'lat', 'lon', 'name', mekanSayisi, type);
+                        }
+                    });
+                } else if (type === 'hastane') {
+                    Papa.parse('data/hospitals_osm.csv', {
+                        download: true,
+                        header: true,
+                        complete: function(results) {
+                            const items = results.data.filter(e => e.latitude && e.longitude && !isNaN(parseFloat(e.latitude)) && !isNaN(parseFloat(e.longitude)));
+                            showNearest(items, 'latitude', 'longitude', 'name', mekanSayisi, type);
+                        }
+                    });
+                } else if (type === 'otel') {
+                    fetch('backend/data/hotels_with_reviews.json').then(r => r.json()).then(data => {
+                        const items = data.filter(e => e.coordinates && !isNaN(parseFloat(e.coordinates.lat)) && !isNaN(parseFloat(e.coordinates.lng)));
+                        showNearest(items, 'coordinates.lat', 'coordinates.lng', 'name', mekanSayisi, type);
+                    });
+                } else if (type === 'restoran') {
+                    fetch('backend/data/restaurants_with_reviews.json').then(r => r.json()).then(data => {
+                        const items = data.filter(e => e.coordinates && !isNaN(parseFloat(e.coordinates.lat)) && !isNaN(parseFloat(e.coordinates.lng)));
+                        showNearest(items, 'coordinates.lat', 'coordinates.lng', 'name', mekanSayisi, type);
+                    });
+                }
+            });
+        });
+
+        function showNearest(items, latKey, lngKey, nameKey, count, type) {
+            // latKey/lngKey nested ise (ör: coordinates.lat)
+            function get(obj, key) {
+                return key.split('.').reduce((o, k) => o && o[k], obj);
+            }
+            const locationsWithDistance = items.map(e => {
+                const lat = parseFloat(get(e, latKey));
+                const lng = parseFloat(get(e, lngKey));
+                if (!lat || !lng) return null;
+                const distance = calculateDistance(
+                    selectedLatLng.lat,
+                    selectedLatLng.lng,
+                    lat,
+                    lng
+                );
+                return { name: get(e, nameKey), lat, lng, distance };
+            }).filter(Boolean);
+            const nearest = locationsWithDistance
+                .sort((a, b) => a.distance - b.distance)
+                .slice(0, count);
+            nearest.forEach(loc => {
+                L.marker([loc.lat, loc.lng], {
+                    icon: L.divIcon({
+                        className: 'custom-marker',
+                        html: getIconHtml(type)
+                    })
+                }).addTo(map).bindPopup(`<b>${loc.name}</b><br>Mesafe: ${loc.distance.toFixed(2)} km`);
+            });
+        }
+        function getIconHtml(type) {
+            switch(type) {
+                case 'eczane': return '<i class="fas fa-clinic-medical" style="color:#3498db; font-size:22px;"></i>';
+                case 'benzin': return '<i class="fas fa-gas-pump" style="color:#e67e22; font-size:22px;"></i>';
+                case 'otel': return '<i class="fas fa-hotel" style="color:#8e44ad; font-size:22px;"></i>';
+                case 'restoran': return '<i class="fas fa-utensils" style="color:#e74c3c; font-size:22px;"></i>';
+                case 'hastane': return '<i class="fas fa-hospital" style="color:#16a085; font-size:22px;"></i>';
+                case 'avm': return '<i class="fas fa-shopping-bag" style="color:#2ecc71; font-size:22px;"></i>';
+                default: return '<i class="fas fa-map-marker-alt" style="color:#e74c3c; font-size:22px;"></i>';
+            }
+        }
+        function calculateDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371; // km
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                Math.sin(dLon/2) * Math.sin(dLon/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return R * c;
+        }
+    </script>
+</body>
+</html> 

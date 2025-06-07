@@ -2,11 +2,14 @@ class Chatbot {
     constructor() {
         this.chatWindow = null;
         this.isOpen = false;
-        this.messages = [];
+        this.projectData = null;
+        this.loadProjectData();
+        console.log('Chatbot constructor çalıştı');
         this.initializeChatbot();
     }
 
     initializeChatbot() {
+        console.log('Chatbot initializeChatbot başlıyor');
         // Create chat window
         this.chatWindow = document.createElement('div');
         this.chatWindow.className = 'chat-window';
@@ -14,8 +17,8 @@ class Chatbot {
             position: fixed;
             bottom: 80px;
             right: 20px;
-            width: 300px;
-            height: 400px;
+            width: 400px;
+            height: 500px;
             background: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -50,6 +53,19 @@ class Chatbot {
             flex: 1;
             overflow-y: auto;
             padding: 10px;
+            display: flex;
+            flex-direction: column;
+        `;
+
+        // Create map container
+        const mapContainer = document.createElement('div');
+        mapContainer.className = 'map-container';
+        mapContainer.style.cssText = `
+            flex: 1;
+            display: none;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
         `;
 
         // Create chat input
@@ -70,6 +86,7 @@ class Chatbot {
         // Append elements
         this.chatWindow.appendChild(header);
         this.chatWindow.appendChild(messagesContainer);
+        this.chatWindow.appendChild(mapContainer);
         this.chatWindow.appendChild(inputContainer);
         document.body.appendChild(this.chatWindow);
 
@@ -88,38 +105,89 @@ class Chatbot {
 
         // Add initial message
         this.addMessage('Merhaba! Size nasıl yardımcı olabilirim?', 'bot');
+        console.log('Chatbot initializeChatbot bitti');
+
+        // Bot ve kullanıcı mesajı için zorunlu stil ekle
+        const style = document.createElement('style');
+        style.innerHTML = `
+        .bot-message {
+            background: #000000 ;
+            color: #000000  ;
+            font-weight: 600  ;
+            margin-right: auto;
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            border-radius: 15px;
+            max-width: 80%;
+            word-break: break-word;
+        }
+        .user-message {
+            background: #2c3e50  ;
+            color: #fff  ;
+            margin-left: auto;
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            border-radius: 15px;
+            max-width: 80%;
+            word-break: break-word;
+        }
+        `;
+        document.head.appendChild(style);
     }
 
     toggleChat() {
         this.isOpen = !this.isOpen;
         this.chatWindow.style.display = this.isOpen ? 'flex' : 'none';
+        console.log('Chatbot penceresi açıldı mı:', this.isOpen);
     }
 
     addMessage(text, sender, html = null) {
         const messagesContainer = this.chatWindow.querySelector('.chat-messages');
         const messageDiv = document.createElement('div');
-        messageDiv.style.cssText = `
-            margin-bottom: 10px;
-            padding: 8px 12px;
-            border-radius: 15px;
-            max-width: 80%;
-            ${sender === 'user' ? 'margin-left: auto; background: #2c3e50; color: white;' : 'margin-right: auto; background: #f0f0f0;'}
-        `;
+    
+        if (sender === 'user') {
+            messageDiv.style.cssText = `
+                margin-left: auto  ;
+                background: #2c3e50  ;
+                color: white  ;
+                margin-bottom: 10px  ;
+                padding: 8px 12px  ;
+                border-radius: 15px  ;
+                max-width: 80%  ;
+                font-weight: 500  ;
+            `;
+        } else {
+            messageDiv.style.cssText = `
+                margin-right: auto ;
+                background: #ffffff;
+                color: #000000  ;
+                margin-bottom: 10px  ;
+                padding: 8px 12px  ;
+                border-radius: 15px  ;
+                max-width: 80%  ;
+                font-weight: 500  ;
+            `;
+        }
+    
         if (html) {
             messageDiv.innerHTML = html;
         } else {
             messageDiv.textContent = text;
         }
+    
         messagesContainer.appendChild(messageDiv);
         messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        console.log('addMessage:', sender, text);
     }
+    
+    
 
     async sendMessage(input) {
         const text = input.value.trim();
         if (text) {
             this.addMessage(text, 'user');
             input.value = '';
-
+            console.log('Kullanıcı mesajı gönderdi:', text);
             // Simulate bot response
             const { response, html } = await this.getBotResponse(text);
             setTimeout(() => {
@@ -132,67 +200,185 @@ class Chatbot {
                     });
                 });
             }, 500);
+        } else {
+            console.log('Boş mesaj gönderilmeye çalışıldı');
         }
     }
 
     async getBotResponse(text) {
-        const lowerText = text.toLowerCase();
-        // Navigation helpers
-        const navBtn = (label, href) => `<button class='chat-nav-btn' data-href='${href}' style='margin-top:8px; background:#2c3e50; color:white; border:none; border-radius:5px; padding:5px 12px; cursor:pointer;'>${label}</button>`;
+        try {
+            console.log('OpenAI API fetch başlıyor:', text);
+            const response = await fetch('http://localhost:5001/api/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: text })
+            });
+            const data = await response.json();
+            console.log('OpenAI API cevabı:', data);
+            return { response: data.answer };
+        } catch (error) {
+            console.error('OpenAI API fetch hatası:', error);
+            return { response: 'Üzgünüm, şu anda yanıt veremiyorum.' };
+        }
+    }
 
-        if (lowerText.includes('merhaba') || lowerText.includes('selam')) {
-            return { response: 'Merhaba! Size nasıl yardımcı olabilirim?' };
+    async loadProjectData() {
+        try {
+            const response = await fetch('project_data.json');
+            this.projectData = await response.json();
+            console.log('Proje verileri yüklendi:', this.projectData);
+        } catch (error) {
+            console.error('Proje verileri yüklenirken hata oluştu:', error);
         }
-        if (lowerText.includes('eczane')) {
-            return {
-                response: 'Size en yakın eczaneleri haritada gösterebilirim. Harita sayfasına gitmek ister misiniz?',
-                html: `Size en yakın eczaneleri haritada gösterebilirim.<br>${navBtn('Haritaya Git', 'map.html')}`
-            };
+    }
+
+    showMap(mapFile) {
+        const mapContainer = this.chatWindow.querySelector('.map-container');
+        mapContainer.style.display = 'block';
+        mapContainer.innerHTML = `<iframe src="${mapFile}" style="width: 100%; height: 100%; border: none;"></iframe>`;
+    }
+
+    hideMap() {
+        const mapContainer = this.chatWindow.querySelector('.map-container');
+        mapContainer.style.display = 'none';
+        mapContainer.innerHTML = '';
+    }
+
+    async handleUserMessage(message) {
+        if (!this.projectData) {
+            return "Üzgünüm, proje verileri henüz yüklenemedi. Lütfen daha sonra tekrar deneyin.";
         }
-        if (lowerText.includes('benzin') || lowerText.includes('petrol')) {
-            return {
-                response: 'En yakın benzin istasyonlarını haritada gösterebilirim. Harita sayfasına gitmek ister misiniz?',
-                html: `En yakın benzin istasyonlarını haritada gösterebilirim.<br>${navBtn('Haritaya Git', 'map.html')}`
-            };
+
+        const lowerMessage = message.toLowerCase();
+
+        // Harita görselleştirmeleri hakkında bilgi
+        if (lowerMessage.includes('harita göster') || lowerMessage.includes('haritayı aç')) {
+            if (lowerMessage.includes('tüm') || lowerMessage.includes('hepsi')) {
+                const allPointsMap = this.projectData.map_data.visualizations.tum_noktalar;
+                this.showMap(allPointsMap.file);
+                return `Tüm lokasyonları gösteren harita yükleniyor...`;
+            }
+
+            // Spesifik lokasyon türü için harita
+            for (const [key, value] of Object.entries(this.projectData.map_data.locations)) {
+                if (lowerMessage.includes(key.replace('_', ' ')) && value.visualization) {
+                    this.showMap(value.visualization);
+                    return `${value.description} haritası yükleniyor...`;
+                }
+            }
+
+            // Genel İstanbul haritası
+            if (lowerMessage.includes('istanbul')) {
+                const istanbulMap = this.projectData.map_data.visualizations.istanbul_genel;
+                this.showMap(istanbulMap.file);
+                return `İstanbul genel haritası yükleniyor...`;
+            }
         }
-        if (lowerText.includes('otel')) {
-            return {
-                response: 'Oteller sayfasında en iyi otelleri ve değerlendirmeleri bulabilirsiniz. Oteller sayfasına gitmek ister misiniz?',
-                html: `Oteller sayfasında en iyi otelleri ve değerlendirmeleri bulabilirsiniz.<br>${navBtn('Otellere Git', 'hotels.html')}`
-            };
+
+        // Haritayı kapat
+        if (lowerMessage.includes('haritayı kapat') || lowerMessage.includes('haritayı gizle')) {
+            this.hideMap();
+            return "Harita kapatıldı.";
         }
-        if (lowerText.includes('harita')) {
-            return {
-                response: 'Harita sayfasına yönlendirebilirim.',
-                html: `Harita sayfasına yönlendirebilirim.<br>${navBtn('Haritaya Git', 'map.html')}`
-            };
+
+        // Harita verileri hakkında bilgi
+        if (lowerMessage.includes('harita') || lowerMessage.includes('konum') || lowerMessage.includes('yer')) {
+            if (lowerMessage.includes('trafik')) {
+                const trafficInfo = this.projectData.map_data.traffic_data;
+                return `Trafik verilerimiz şunları içerir:\n` +
+                       `- Yol verileri (${trafficInfo.yollar.size})\n` +
+                       `- Yol tipleri, konumlar, uzunluklar ve trafik yoğunluğu bilgileri\n` +
+                       `Detaylı bilgi için hangi tür trafik verisi hakkında bilgi almak istersiniz?`;
+            }
+
+            // Lokasyon türlerini listele
+            if (lowerMessage.includes('nereler') || lowerMessage.includes('listele')) {
+                const locations = Object.entries(this.projectData.map_data.locations)
+                    .map(([key, value]) => `- ${key.replace('_', ' ')}: ${value.description} (${value.total_count || 'N/A'} kayıt)`)
+                    .join('\n');
+                return `Haritamızda şu lokasyon türleri bulunmaktadır:\n${locations}\n\nHarita görselleştirmelerini görmek için "harita göster [lokasyon adı]" yazabilirsiniz.`;
+            }
+
+            // Spesifik lokasyon türü hakkında bilgi
+            for (const [key, value] of Object.entries(this.projectData.map_data.locations)) {
+                if (lowerMessage.includes(key.replace('_', ' '))) {
+                    return `${value.description}\n` +
+                           `Toplam kayıt: ${value.total_count || 'N/A'}\n` +
+                           `Özellikler: ${value.features.join(', ')}\n` +
+                           `Veri kaynağı: ${value.data_source}\n\n` +
+                           `Haritayı görmek için "harita göster ${key.replace('_', ' ')}" yazabilirsiniz.`;
+                }
+            }
         }
-        if (lowerText.includes('ana sayfa') || lowerText.includes('anasayfa') || lowerText.includes('başlangıç')) {
-            return {
-                response: 'Ana sayfaya yönlendirebilirim.',
-                html: `Ana sayfaya yönlendirebilirim.<br>${navBtn('Ana Sayfa', 'index.html')}`
-            };
+
+        // Mevcut kontroller devam ediyor...
+        if (lowerMessage.includes('proje') || lowerMessage.includes('uygulama') || lowerMessage.includes('sistem')) {
+            return `Bu proje "${this.projectData.project_name}" adında bir web uygulamasıdır. ${this.projectData.description}`;
         }
-        if (lowerText.includes('yardım')) {
-            return {
-                response: 'Size yardımcı olabileceğim başlıca konular: eczane, benzin istasyonu, otel, harita, ana sayfa. Hangi konuda bilgi almak istersiniz?',
-                html: `Size yardımcı olabileceğim başlıca konular:<ul><li>Eczane</li><li>Benzin İstasyonu</li><li>Otel</li><li>Harita</li><li>Ana Sayfa</li></ul>`
-            };
+
+        // Özellikler hakkında bilgi
+        if (lowerMessage.includes('özellik') || lowerMessage.includes('ne yapabilir')) {
+            const features = this.projectData.features.map(f => 
+                `- ${f.name}: ${f.description}`
+            ).join('\n');
+            return `Projemizin özellikleri:\n${features}`;
         }
-        if (lowerText.includes('teşekkür')) {
-            return { response: 'Rica ederim! Başka bir konuda yardıma ihtiyacınız var mı?' };
+
+        // Sayfalar hakkında bilgi
+        if (lowerMessage.includes('sayfa') || lowerMessage.includes('bölüm')) {
+            const pages = this.projectData.pages.map(p => 
+                `- ${p.name}: ${p.description}`
+            ).join('\n');
+            return `Projemizin sayfaları:\n${pages}`;
         }
-        return { response: 'Üzgünüm, bu konuda size yardımcı olamıyorum. Başka bir soru sorabilir misiniz?' };
+
+        // Spesifik özellik hakkında bilgi
+        for (const feature of this.projectData.features) {
+            if (lowerMessage.includes(feature.name.toLowerCase())) {
+                return `${feature.name} özelliği: ${feature.description}`;
+            }
+        }
+
+        // Spesifik sayfa hakkında bilgi
+        for (const page of this.projectData.pages) {
+            if (lowerMessage.includes(page.name.toLowerCase())) {
+                return `${page.name} sayfası: ${page.description}`;
+            }
+        }
+
+        return "Üzgünüm, bu konuda bilgim yok. Proje hakkında daha spesifik bir soru sorabilir misiniz?";
     }
 }
 
 // Initialize chatbot when document is loaded
+console.log('DOMContentLoaded bekleniyor...');
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOMContentLoaded tetiklendi, Chatbot başlatılıyor');
+    
+    // Chat widget'ı oluştur
+    const chatWidget = document.createElement('div');
+    chatWidget.className = 'chat-widget';
+    chatWidget.innerHTML = `
+        <button class="chat-button" style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #3498db, #2c3e50); color: white; border: none; cursor: pointer; box-shadow: 0 2px 8px rgba(44,62,80,0.18); font-size: 2rem; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-robot"></i><span class="fallback-robot" style="display:none;">🤖</span>
+        </button>
+    `;
+    document.body.appendChild(chatWidget);
+
+    // Font Awesome yüklenemezse fallback göster
+    window.addEventListener('DOMContentLoaded', () => {
+        const faRobot = document.querySelector('.chat-button i.fas.fa-robot');
+        const fallback = document.querySelector('.chat-button .fallback-robot');
+        if (faRobot && window.getComputedStyle(faRobot).fontFamily.indexOf('FontAwesome') === -1) {
+            faRobot.style.display = 'none';
+            if (fallback) fallback.style.display = 'inline';
+        }
+    });
+
+    // Chatbot'u başlat
     const chatbot = new Chatbot();
     
-    // Add click event to chat widget
-    const chatWidget = document.querySelector('.chat-widget');
-    if (chatWidget) {
-        chatWidget.addEventListener('click', () => chatbot.toggleChat());
-    }
+    // Chat widget'a tıklama olayı ekle
+    chatWidget.addEventListener('click', () => chatbot.toggleChat());
+    console.log('chat-widget click event eklendi');
 }); 
