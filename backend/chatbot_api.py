@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Buraya kendi güncel API key'ini gir
-client = openai.OpenAI(api_key="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")
+client = openai.OpenAI(api_key="")
 
 @app.route('/api/chat', methods=['POST'])
 def chat():

@@ -567,7 +567,7 @@
                         var seciliKonum = JSON.parse(seciliKonumStr);
                         if (seciliKonum.lat && seciliKonum.lng) {
                             var mapContainer = document.getElementById('map');
-                            var iframe = document.getElementById('haritaIframe');
+            var iframe = document.getElementById('haritaIframe');
                             iframe.style.display = 'none';
                             mapContainer.style.display = 'block';
                             map.setView([seciliKonum.lat, seciliKonum.lng], 14);
