@@ -21,31 +21,29 @@
 
 ## 🖼️ Ekran Görüntüleri
 
-> Görselleri repoda `docs/screens/` klasörüne kaydet ve aşağıdaki isimlerle eşleştir.
-
-| Ana Sayfa (Hero) | Kategori Filtreleri | Tip Seçim Modalı |
+**Ana Akış**
+| Ana Sayfa (Hero) | Tip Seçim Modali | En Yakın Mekanlar |
 |---|---|---|
-| ![](./docs/screens/home-hero.png) | ![](./docs/screens/map-filters.png) | ![](./docs/screens/type-select-modal.png) |
+| ![](./docs/home-hero.png.png) | ![](./docs/mekant%C3%BCr%C3%BC.png.png) | ![](./docs/konumag%C3%B6reenyak%C4%B1nmekan.png) |
 
-| Seçili Tipler & İkonlar | Yakın Mekânlar (Mesafe) | AVM Yoğunluk Katmanı |
+| Eczaneler | Benzin İstasyonları | AVM’ler |
 |---|---|---|
-| ![](./docs/screens/markers-mixed.png) | ![](./docs/screens/popup-distance.png) | ![](./docs/screens/avm-layer.png) |
+| ![](./docs/pharmacies-layer.png.png) | ![](./docs/gas-layer.png.png) | ![](./docs/avm-layer.png.png) |
 
-| En İyi Oteller | En İyi Restoranlar | Konum Paneli |
+**Diğer Katmanlar**
+| Oteller (Harita) | Hastaneler (Harita) |  |
 |---|---|---|
-| ![](./docs/screens/top-hotels.png) | ![](./docs/screens/top-restaurants.png) | ![](./docs/screens/location-panel.png) |
+| ![](./docs/hotel.png.png) | ![](./docs/Hospital-layer.png.png) |  |
 
-> İstersen dosya adlarını şu şekilde eşleyebilirsin:  
-> `Ekran görüntüsü 2025-06-07 161530.png → location-panel.png`  
-> `… 162013.png → map-filters.png`  
-> `… 173749.png → top-hotels.png`  
-> `… 173757.png → top-restaurants.png`  
-> `… 002242.png → home-hero.png`  
-> `… 002324.png → type-select-modal.png`  
-> `… 002415.png → markers-mixed.png`  
-> `… 002435.png → popup-distance.png`  
-> `… 002533.png → markers-alt.png (opsiyonel)`  
-> `… 002616.png → avm-layer.png`
+**Liste/Detay Ekranları**
+| En İyi Oteller | En İyi Restoranlar | Otel Detay Modalı |
+|---|---|---|
+| ![](./docs/top-hotels.png.png) | ![](./docs/top-restaurants.png.png) | ![](./docs/hotel-modal.png.png) |
+
+**Ek**
+| Otel Yorum/Galeri | Hakkında |
+|---|---|
+| ![](./docs/topHotelComment.png.png) | ![](./docs/projectReadme.png) |
 
 ## 🗺️ Veri ve Harita
 - Harita: **Leaflet** + **OpenStreetMap** (© OSM contributors)  
@@ -54,6 +52,7 @@
 
 
 ---
+
 
 
 
