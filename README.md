@@ -19,6 +19,24 @@
 - ⭐ Otel/restoran için puan bazlı “en iyi” listeleri (analiz sayfası)  
 - 🗺️ Kullanıcı dostu arayüz (Ana sayfa, Harita, Analiz, Hakkında)
 
+## 🤖 Yapay Zeka Analiz Modülü (Flask)
+
+Bu projede, **Google Cloud / Places API** üzerinden çekilen **otel ve restoran** verileri,
+**Flask** tabanlı bir servis ile işlenerek aşağıdaki analizler üretilir:
+
+- **Duygu Analizi (Sentiment):** Google yorumlarından genel memnuniyet puanı.
+- **Boyut Bazlı Analiz (Aspect-Based):** *Temizlik, Fiyat, Lezzet, Servis, Konfor* gibi başlıklarda ayrı ayrı skorlar.
+- **Sıralama & Öneri:** Seçilen metriklere göre “**En iyi Oteller / Restoranlar**” listeleri.
+- **Özetleme:** Yorumlardan kısa içgörü/özet metinleri (opsiyonel).
+
+> Not: Metin işleme tarafında Türkçe için durak kelimeler, kök bulma/lemmazizasyon, emojiler/sayısal temizleme gibi adımlar uygulanır. Model, projeye göre **TF-IDF + Lojistik Regresyon** ya da **BERT-tabanlı** bir Türkçe duygu modeli olarak yapılandırılabilir.
+
+### Mimarinin Kısa Akışı
+1. **Veri Toplama:** Google Places API ile yer, puan, yorum ve temel meta veriler alınır.
+2. **Önişleme:** Yorumlar temizlenir, dil/karakter normalizasyonu yapılır.
+3. **Modelleme:** Yorumlar için sentiment ve/veya aspect skorları üretilir.
+4. **Skorlama & Sıralama:** Mekânlar metriklere göre puanlanır ve sıralanır.
+5. **Sunum:** Flask API sonuçlarını frontend (harita/analiz sayfası) tüketir.
 ## 🖼️ Ekran Görüntüleri
 
 **Ana Akış**
@@ -52,6 +70,7 @@
 
 
 ---
+
 
 
 
